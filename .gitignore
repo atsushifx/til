@@ -1,0 +1,59 @@
+##  @(#) : git ignore settings for til (Today I learned)
+#
+# @version  1.0.0
+# @author   Furukawa Atsushi <atsushifx@aglabo.com>
+# @update   2024-04-22
+# @license  MIT
+#
+# @desc<<
+#
+# git ignore settings for til,
+# ignore general
+#
+#<<
+
+##
+#	OS created files
+#
+.DS_Store
+thumbs.db
+
+##
+#	backup/swap/temp
+$~*
+~*
+*~
+*tmp
+*swp
+*swap
+*lock
+
+##  Editor
+
+# Vim
+
+# Session
+Session.vim
+Sessionx.vim
+
+# Temporary
+.netrwhist
+*~
+
+tags
+# Persistent undo
+[._]*.un~
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
