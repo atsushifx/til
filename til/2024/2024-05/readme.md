@@ -1,5 +1,13 @@
 # Today I learned: 2024年5月
 
+## 2024年5月13日
+  - file-opener
+    file-opener用にdocfxをカスタマイズ
+
+## 2024年5月12日
+  - file-opener
+    APIドキュメント作成用にdocfxを組み込み
+
 ## 2024年5月10日
 
 - zenn に記事を執筆:
