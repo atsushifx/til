@@ -1,18 +1,21 @@
 # Today I learned: 2024年5月
 
 ## 2024年5月15日
-  - template
-    リポジトリ名を変更、ISSUE TEMPLATEを.githubに移動
-  - .github
-    githubの各リポジトリのGlobal設定、ISSUE TEMPLATEを追加してリポジトリを作成
+
+- template
+    リポジトリ名を変更、ISSUE TEMPLATE を.GitHub に移動
+- .GitHub
+    GitHub の各リポジトリの Global 設定、ISSUE TEMPLATE を追加してリポジトリを作成
 
 ## 2024年5月13日
-  - file-opener  
-    file-opener用にdocfxをカスタマイズ
+
+- file-opener
+    file-opener用に docfx をカスタマイズ
 
 ## 2024年5月12日
-  - file-opener  
-    APIドキュメント作成用にdocfxを組み込み
+
+- file-opener
+    API ドキュメント作成用に`docfx`を組み込み
 
 ## 2024年5月10日
 
