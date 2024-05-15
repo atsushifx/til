@@ -1,5 +1,11 @@
 # Today I learned: 2024年5月
 
+## 2024年5月15日
+  - template
+    リポジトリ名を変更、ISSUE TEMPLATEを.githubに移動
+  - .github
+    githubの各リポジトリのGlobal設定、ISSUE TEMPLATEを追加してリポジトリを作成
+
 ## 2024年5月13日
   - file-opener  
     file-opener用にdocfxをカスタマイズ
