@@ -1,5 +1,11 @@
 # Today I learned: 2024年5月
 
+## 2024年5月16日
+
+- commit2feed
+  JavaScriptプロジェクト用に、eslint,prettier,jest,jsdocなどの設定方法、使い方を調べた
+  
+
 ## 2024年5月15日
 
 - template
