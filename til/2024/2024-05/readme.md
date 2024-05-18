@@ -1,5 +1,10 @@
 # Today I learned: 2024年5月
 
+## 2024年5月18日
+
+- commit2feed
+  jest, babelの設定を、ESMのままでトランスパイルするように設定
+
 ## 2024年5月16日
 
 - commit2feed
