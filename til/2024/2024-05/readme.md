@@ -2,18 +2,18 @@
 
 ## 2024年5月19日
 
-- commit2feed
-  クラス commit2feed を作成、リポジトリから RSS フィードを作成できるようになった
+- `commit2feed`  
+  クラス `commit2feed` を作成、リポジトリから RSS フィードを作成できるようになった
 
 ## 2024年5月18日
 
-- commit2feed
-  jest, babel の設定を、ESM のままでトランスパイルするように設定
+- `commit2feed`  
+  `jest`, `babel` の設定を、`ESM`のままでトランスパイルするように設定
 
 ## 2024年5月16日
 
-- commit2feed
-  JavaScript プロジェクト用に、eslint,prettier,jest,JSDoc などの設定方法、使い方を調べた
+- `commit2feed`
+  `JavaScript`プロジェクト用に、eslint,prettier,jest,JSDoc などの設定方法、使い方を調べた
 
 ## 2024年5月15日
 
