@@ -61,7 +61,12 @@
 		"spelling": {
 			"language": "en",
 			"skipPatterns": [
-				"zenn"
+				"zenn",
+				"RSS",
+				"ESM",
+				"eslint",
+				"JSDoc",
+				"commit2feed"
 			]
 		},
 		"@proofdict/proofdict": {
