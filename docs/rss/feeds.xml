@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-05-20T16:41:03.000Z</updated>
+    <updated>2024-05-20T17:18:50.000Z</updated>
     <generator>htttps://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,66 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 5 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[uodate 05-21
+
+TILリポジトリーをWebページに、RSSフィード組み込み]]></title>
+        <id>a15a6e986cb25506c00df9c9e95ff713676cfeb6</id>
+        <link href="https://github.com/atsushifx/til/commit/a15a6e986cb25506c00df9c9e95ff713676cfeb6"/>
+        <updated>2024-05-20T17:18:50.000Z</updated>
+        <content type="html"><![CDATA[docs/2024/2024-05.md
+
+### 2024年5月21日 
+
+- 'TIL'  
+  GitHub Page、RSS Feedをページに組み込み
+ ]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Update RSS feed]]></title>
+        <id>8e0e28d2bef4e7d8ffe383f3591632d4472bd858</id>
+        <link href="https://github.com/atsushifx/til/commit/8e0e28d2bef4e7d8ffe383f3591632d4472bd858"/>
+        <updated>2024-05-20T17:12:57.000Z</updated>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2024-05-20T17:09:59.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[workflows: mainにpush時にjob実行]]]]><![CDATA[></title>
+        <id>6a70229760c2facfc3de1cb12a55a54d1de96478</id>
+        <link href="https://github.com/atsushifx/til/commit/6a70229760c2facfc3de1cb12a55a54d1de96478"/>
+        <updated>2024-05-20T17:08:55.000Z</updated>
+        <content type="html"><![CDATA[.github/workflows/generate_rss.yml
+
+  push:
+    branches: [ main ]
+------
+docs/rss/feeds.xml]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[workflows: mainにpush時にjob実行]]></title>
+        <id>6a70229760c2facfc3de1cb12a55a54d1de96478</id>
+        <link href="https://github.com/atsushifx/til/commit/6a70229760c2facfc3de1cb12a55a54d1de96478"/>
+        <updated>2024-05-20T17:08:55.000Z</updated>
+        <content type="html"><![CDATA[.github/workflows/generate_rss.yml
+
+  push:
+    branches: [ main ]
+------
+docs/rss/feeds.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
+    <title>atsushifx / TIL</title>
+    <updated>2024-05-20T16:41:03.000Z</updated>
+    <generator>htttps://github.com/atsushifx/commit2feed</generator>
+    <author>
+        <name>atsushifx</name>
+        <uri>https://github.com/atsushifx</uri>
+    </author>
+    <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
+    <subtitle>Latest 5 commits for atsushifx / TIL</subtitle>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[github page用設定]]></title>
         <id>de8b8ff12dd3a638f0dc5997a72b1de2edbb6c67</id>
@@ -40,63 +100,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[技術用語をエスケープ]]></title>
-        <id>4f0457070cb96b5f37a2ffe224a809b1673e6c20</id>
-        <link href="https://github.com/atsushifx/til/commit/4f0457070cb96b5f37a2ffe224a809b1673e6c20"/>
-        <updated>2024-05-19T10:02:25.000Z</updated>
-        <content type="html"><![CDATA[til/2024/2024-05/readme.md
-
-- `commit2feed`  
-  クラス `commit2feed` を作成、リポジトリから RSS フィードを作成できるようになった
-- `commit2feed`  
-  `jest`, `babel` の設定を、`ESM`のままでトランスパイルするように設定
-- `commit2feed`
-  `JavaScript`プロジェクト用に、eslint,prettier,jest,JSDoc などの設定方法、使い方を調べた]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: til
-
-	update: til
-	  - 5月19日分: commit2feedの概要
-
-	fix: textlintrc
-	  - commit2feed関連の英単語をskip]]></title>
-        <id>900814ddabcd387dc096066b208140bc129523f3</id>
-        <link href="https://github.com/atsushifx/til/commit/900814ddabcd387dc096066b208140bc129523f3"/>
-        <updated>2024-05-19T09:51:39.000Z</updated>
-        <content type="html"><![CDATA[.textlintrc.json
-
-				"zenn",
-				"RSS",
-				"ESM",
-				"eslint",
-				"JSDoc",
-				"commit2feed"
-------
-til/2024/2024-05/readme.md
-
-## 2024年5月19日
-
-- commit2feed
-  クラス commit2feed を作成、リポジトリから RSS フィードを作成できるようになった
-
-  jest, babel の設定を、ESM のままでトランスパイルするように設定
-  JavaScript プロジェクト用に、eslint,prettier,jest,JSDoc などの設定方法、使い方を調べた]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Update readme.md]]></title>
-        <id>5c0df48c34145e5d8204a18116ce68135cdac936</id>
-        <link href="https://github.com/atsushifx/til/commit/5c0df48c34145e5d8204a18116ce68135cdac936"/>
-        <updated>2024-05-18T14:53:57.000Z</updated>
-        <content type="html"><![CDATA[til/2024/2024-05/readme.md
-
-## 2024年5月18日
-
-- commit2feed
-  jest, babelの設定を、ESMのままでトランスパイルするように設定
 ]]></content>
     </entry>
 </feed>
