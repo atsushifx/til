@@ -2,7 +2,7 @@
 
 ## RSS Feed
 
-[RSS Feed](https://github.com/atsushifx/til/blob/main/docs/rss/feeds.xml)
+[RSS Feed](https://atsushifx.github.io/til/rss/feeds.xml)
 
 ## index of til
 
