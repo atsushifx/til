@@ -21,9 +21,9 @@
 				"allow": []
 			},
 			"ja-no-mixed-period": {
-				"periodMark": "｡B",
+				"periodMark": "｡",
 				"allowPeriodMarks": [
-					"､A",
+					"､",
 					":"
 				]
 			},
