@@ -33,3 +33,5 @@ jobs:
           git add docs/rss/feeds.xml
           git commit -m "Update RSS feed"
           git push
+          exit 0
+
