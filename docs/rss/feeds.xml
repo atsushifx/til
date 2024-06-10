@@ -2,29 +2,152 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-06-03T03:01:54.000Z</updated>
-    <generator>htttps://github.com/atsushifx/commit2feed</generator>
+    <updated>2024-06-10T20:14:28.000Z</updated>
+    <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
         <uri>https://github.com/atsushifx</uri>
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
-    <subtitle>Latest 5 commits for atsushifx / TIL</subtitle>
+    <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[6月10日の日記を執筆]]></title>
+        <id>cab4fe05c4ea9aca8510a34ce48cc2c7bfb95e51</id>
+        <link href="https://github.com/atsushifx/til/commit/cab4fe05c4ea9aca8510a34ce48cc2c7bfb95e51"/>
+        <updated>2024-06-10T20:13:29.000Z</updated>
+        <summary type="html"><![CDATA[6月10日の日記を執筆]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+### 2024年6月10日
+
+- `Commit2Feed`用に記事執筆:
+ 「おわりに」まで執筆]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: 句読点の設定をfix]]></title>
+        <id>1dab7219edd11ec2947c1943f08e38f594c94a66</id>
+        <link href="https://github.com/atsushifx/til/commit/1dab7219edd11ec2947c1943f08e38f594c94a66"/>
+        <updated>2024-06-10T20:12:55.000Z</updated>
+        <summary type="html"><![CDATA[chore: 句読点の設定をfix]]></summary>
+        <content type="html"><![CDATA[.textlintrc.json
+
+				"periodMark": "｡",
+					"､",]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: workflow: commit feedでエラー無視]]></title>
+        <id>dbc551c1319078026f28b522b5bbf2b57da73ad4</id>
+        <link href="https://github.com/atsushifx/til/commit/dbc551c1319078026f28b522b5bbf2b57da73ad4"/>
+        <updated>2024-06-10T18:45:25.000Z</updated>
+        <summary type="html"><![CDATA[chore: workflow: commit feedでエラー無視]]></summary>
+        <content type="html"><![CDATA[.github/workflows/generate_rss.yml
+
+          exit 0]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[update: 日報執筆]]></title>
+        <id>36c1e79a398210ca33c3378617068e2ffb3e3f92</id>
+        <link href="https://github.com/atsushifx/til/commit/36c1e79a398210ca33c3378617068e2ffb3e3f92"/>
+        <updated>2024-06-08T14:58:27.000Z</updated>
+        <summary type="html"><![CDATA[update: 日報執筆]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+### 2024年6月8日
+- `Commit2Feed`用に記事執筆:
+  権限設定まで執筆
+
+### 2024年6月2日
+
+- `Commit2Feed`]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: RSSフィードをATOM形式に変更]]></title>
+        <id>7c398c5214fcfd1654221998c3b4e0171cbb3137</id>
+        <link href="https://github.com/atsushifx/til/commit/7c398c5214fcfd1654221998c3b4e0171cbb3137"/>
+        <updated>2024-06-08T14:58:11.000Z</updated>
+        <summary type="html"><![CDATA[chore: RSSフィードをATOM形式に変更]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+
+### 2024年6月日
+
+- `Commit2Feed`  
+  ``タグを削除し、`Feed`を正常に`parse`できるようにした
+------
+docs/_includes/head-custom.html
+
+<link rel="alternate" type="application/atom+xml" title="RSS Feed (ATOM" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[update: updare header's RSS]]></title>
+        <id>5795d11186d898bfc03ccc55a41ac61069da8e28</id>
+        <link href="https://github.com/atsushifx/til/commit/5795d11186d898bfc03ccc55a41ac61069da8e28"/>
+        <updated>2024-06-03T03:15:46.000Z</updated>
+        <summary type="html"><![CDATA[update: updare header's RSS]]></summary>
+        <content type="html"><![CDATA[docs/_includes/head-custom.html
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[fix: RSSのリンクを修正]]></title>
+        <id>6c9e9fe6921797a14bf2f6504784307fa4ea74b2</id>
+        <link href="https://github.com/atsushifx/til/commit/6c9e9fe6921797a14bf2f6504784307fa4ea74b2"/>
+        <updated>2024-06-03T02:56:08.000Z</updated>
+        <summary type="html"><![CDATA[fix: RSSのリンクを修正]]></summary>
+        <content type="html"><![CDATA[docs/_includes/head-custom.html
+
+<link rel="alternate" type="application/rss+xml" title="RSS Feed"
+	href="https://atsushifx.github.io/til/rss/feeds.xml">
+------
+docs/rss/feeds.xml
+
+    <updated>2024-06-03T03:01:54.000Z</updated>
+        <title type="html"><![CDATA[fix: RSSのリンクを修正</title>
         <id>849b3fafb1f58417f83a1ab3145db244585bc261</id>
         <link href="https://github.com/atsushifx/til/commit/849b3fafb1f58417f83a1ab3145db244585bc261"/>
         <updated>2024-06-03T02:56:08.000Z</updated>
         <content type="html"><![CDATA[docs/_includes/head-custom.html
-
 <link rel="alternate" type="application/rss+xml" title="RSS Feed"
-	href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
+	href="https://atsushifx.github.io/til/rss/feeds.xml"></content>
+        <title type="html"><![CDATA[add: 2024年6月分のTILページを追加</title>
+        <id>ade2498f79e79f66d1584cb19bd03a0ae870193a</id>
+        <link href="https://github.com/atsushifx/til/commit/ade2498f79e79f66d1584cb19bd03a0ae870193a"/>
+        <updated>2024-06-03T02:32:51.000Z</updated>]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[add: 2024年6月分のTILページを追加]]></title>
         <id>ade2498f79e79f66d1584cb19bd03a0ae870193a</id>
         <link href="https://github.com/atsushifx/til/commit/ade2498f79e79f66d1584cb19bd03a0ae870193a"/>
         <updated>2024-06-03T02:32:51.000Z</updated>
+        <summary type="html"><![CDATA[add: 2024年6月分のTILページを追加]]></summary>
         <content type="html"><![CDATA[docs/2024/2024-06.md
 
 ---
@@ -37,12 +160,17 @@ layout: default
 docs/index.md
 
 - [2024年6月分](2024/2024-06)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[fix: RSSフィードをGitHub Page内のリンクに変更]]></title>
         <id>b20b7d6ce0e39b29760e0dd01bc3e5b3093beb53</id>
         <link href="https://github.com/atsushifx/til/commit/b20b7d6ce0e39b29760e0dd01bc3e5b3093beb53"/>
         <updated>2024-05-28T08:59:14.000Z</updated>
+        <summary type="html"><![CDATA[fix: RSSフィードをGitHub Page内のリンクに変更]]></summary>
         <content type="html"><![CDATA[docs/_includes/head-custom.html
 
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://atsushifx.github.io/til/rss/feeds.xml">
@@ -50,12 +178,17 @@ docs/index.md
 docs/index.md
 
 [RSS Feed](https://atsushifx.github.io/til/rss/feeds.xml)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[2024年5月28日文のTILを作成]]></title>
         <id>29e1185b87a09e73a39d9f059b8d60c1e6a5c82d</id>
         <link href="https://github.com/atsushifx/til/commit/29e1185b87a09e73a39d9f059b8d60c1e6a5c82d"/>
         <updated>2024-05-28T08:17:36.000Z</updated>
+        <summary type="html"><![CDATA[2024年5月28日文のTILを作成]]></summary>
         <content type="html"><![CDATA[docs/2024/2024-05.md
 
 ### 2024年5月28日
@@ -63,18 +196,10 @@ docs/index.md
 - `Commit2Feed`
   - develop ブランチと main ブランチで実行するスクリプトを分けようとしたが、`action.yml`からではできなかった
   - develop ブランチで、`src/main.js` でスクリプトを実行しようとしたが、@actions/core が読み込めなかった
-  - `pnpm`でモジュールを読み込んでいたのを、`npm`を使用するように修正
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 5月27日
-
-Commit2Feed: GitHub ActionsによるコミットをRSSフィードに含めないように修正]]></title>
-        <id>8e429ed7e395b785dc4d86fce05584d784a8bfaf</id>
-        <link href="https://github.com/atsushifx/til/commit/8e429ed7e395b785dc4d86fce05584d784a8bfaf"/>
-        <updated>2024-05-27T21:05:58.000Z</updated>
-        <content type="html"><![CDATA[docs/2024/2024-05.md
-
-]]></content>
+  - `pnpm`でモジュールを読み込んでいたのを、`npm`を使用するように修正]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
     </entry>
 </feed>
