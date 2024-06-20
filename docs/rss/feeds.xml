@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-06-10T20:14:28.000Z</updated>
+    <updated>2024-06-20T15:28:44.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,28 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[update: Kinoppyへの技術書登録についてメモ]]></title>
+        <id>c4f4ce6fe9688d68540b864a8afb805cc82c3568</id>
+        <link href="https://github.com/atsushifx/til/commit/c4f4ce6fe9688d68540b864a8afb805cc82c3568"/>
+        <updated>2024-06-20T15:28:44.000Z</updated>
+        <summary type="html"><![CDATA[update: Kinoppyへの技術書登録についてメモ]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+### 2024年6月20日
+
+- 技術書の整理
+  `NoDRM`で提供されている電子書籍を、`Google Drive`に保存しなおした。
+  その後、`Kinoppy`に上記書籍を登録しなおし、分野ごとに棚に整理した。
+
+  おわりにまで執筆。
+  権限設定まで執筆。
+  ``タグを削除し、`Feed`を正常に`parse`できるようにした。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[6月10日の日記を執筆]]></title>
         <id>cab4fe05c4ea9aca8510a34ce48cc2c7bfb95e51</id>
@@ -178,25 +200,6 @@ docs/index.md
 docs/index.md
 
 [RSS Feed](https://atsushifx.github.io/til/rss/feeds.xml)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024年5月28日文のTILを作成]]></title>
-        <id>29e1185b87a09e73a39d9f059b8d60c1e6a5c82d</id>
-        <link href="https://github.com/atsushifx/til/commit/29e1185b87a09e73a39d9f059b8d60c1e6a5c82d"/>
-        <updated>2024-05-28T08:17:36.000Z</updated>
-        <summary type="html"><![CDATA[2024年5月28日文のTILを作成]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-05.md
-
-### 2024年5月28日
-
-- `Commit2Feed`
-  - develop ブランチと main ブランチで実行するスクリプトを分けようとしたが、`action.yml`からではできなかった
-  - develop ブランチで、`src/main.js` でスクリプトを実行しようとしたが、@actions/core が読み込めなかった
-  - `pnpm`でモジュールを読み込んでいたのを、`npm`を使用するように修正]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
