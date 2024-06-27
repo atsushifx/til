@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-06-22T19:03:08.000Z</updated>
+    <updated>2024-06-27T06:34:47.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,24 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Update: 6月27日の活動]]></title>
+        <id>7ff8663287a70c09054ee234ac269395e467fb5f</id>
+        <link href="https://github.com/atsushifx/til/commit/7ff8663287a70c09054ee234ac269395e467fb5f"/>
+        <updated>2024-06-27T06:34:47.000Z</updated>
+        <summary type="html"><![CDATA[Update: 6月27日の活動]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+### 2024年6月27日
+
+- `Coursera`受講
+  - プログラミング言語 Part-A (`SML/NJ`) を受講
+    `module03`をすべて受講し、課題 1 に取りかかった]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[update: Coursera受講内容をメモ]]></title>
         <id>64529379be9e057cfde23ba00e0f1de468c70e61</id>
@@ -180,29 +198,6 @@ docs/rss/feeds.xml
         <id>ade2498f79e79f66d1584cb19bd03a0ae870193a</id>
         <link href="https://github.com/atsushifx/til/commit/ade2498f79e79f66d1584cb19bd03a0ae870193a"/>
         <updated>2024-06-03T02:32:51.000Z</updated>]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: 2024年6月分のTILページを追加]]></title>
-        <id>ade2498f79e79f66d1584cb19bd03a0ae870193a</id>
-        <link href="https://github.com/atsushifx/til/commit/ade2498f79e79f66d1584cb19bd03a0ae870193a"/>
-        <updated>2024-06-03T02:32:51.000Z</updated>
-        <summary type="html"><![CDATA[add: 2024年6月分のTILページを追加]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
----
-title: 2024-06
-layout: default
----
-
-## TIL: 2024年6月分
-------
-docs/index.md
-
-- [2024年6月分](2024/2024-06)]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
