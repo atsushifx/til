@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-06-27T06:34:47.000Z</updated>
+    <updated>2024-06-29T02:07:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,23 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[update: 6月29日 / 記事を執筆]]></title>
+        <id>5913d1c96c58f700c751fcf1c483c0ea950f8a44</id>
+        <link href="https://github.com/atsushifx/til/commit/5913d1c96c58f700c751fcf1c483c0ea950f8a44"/>
+        <updated>2024-06-29T02:07:28.000Z</updated>
+        <summary type="html"><![CDATA[update: 6月29日 / 記事を執筆]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-06.md
+
+### 2024年6月29日
+
+- `Zenn`に記事を執筆
+  [Racket で "Hello World" を出力する方法](https://zenn.dev/atsushifx/articles/edu-racket-basic-helloworld)を執筆]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update: 6月27日の活動]]></title>
         <id>7ff8663287a70c09054ee234ac269395e467fb5f</id>
@@ -168,36 +185,6 @@ docs/_includes/head-custom.html
         <content type="html"><![CDATA[docs/_includes/head-custom.html
 
 <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[fix: RSSのリンクを修正]]></title>
-        <id>6c9e9fe6921797a14bf2f6504784307fa4ea74b2</id>
-        <link href="https://github.com/atsushifx/til/commit/6c9e9fe6921797a14bf2f6504784307fa4ea74b2"/>
-        <updated>2024-06-03T02:56:08.000Z</updated>
-        <summary type="html"><![CDATA[fix: RSSのリンクを修正]]></summary>
-        <content type="html"><![CDATA[docs/_includes/head-custom.html
-
-<link rel="alternate" type="application/rss+xml" title="RSS Feed"
-	href="https://atsushifx.github.io/til/rss/feeds.xml">
-------
-docs/rss/feeds.xml
-
-    <updated>2024-06-03T03:01:54.000Z</updated>
-        <title type="html"><![CDATA[fix: RSSのリンクを修正</title>
-        <id>849b3fafb1f58417f83a1ab3145db244585bc261</id>
-        <link href="https://github.com/atsushifx/til/commit/849b3fafb1f58417f83a1ab3145db244585bc261"/>
-        <updated>2024-06-03T02:56:08.000Z</updated>
-        <content type="html"><![CDATA[docs/_includes/head-custom.html
-<link rel="alternate" type="application/rss+xml" title="RSS Feed"
-	href="https://atsushifx.github.io/til/rss/feeds.xml"></content>
-        <title type="html"><![CDATA[add: 2024年6月分のTILページを追加</title>
-        <id>ade2498f79e79f66d1584cb19bd03a0ae870193a</id>
-        <link href="https://github.com/atsushifx/til/commit/ade2498f79e79f66d1584cb19bd03a0ae870193a"/>
-        <updated>2024-06-03T02:32:51.000Z</updated>]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
