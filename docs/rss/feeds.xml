@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-06-29T02:07:28.000Z</updated>
+    <updated>2024-07-07T13:10:35.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[update: 2024年7月7日更新分]]></title>
+        <id>17da0bad0b9b870a5f301bfb3e30f975dc3a4b88</id>
+        <link href="https://github.com/atsushifx/til/commit/17da0bad0b9b870a5f301bfb3e30f975dc3a4b88"/>
+        <updated>2024-07-07T13:10:35.000Z</updated>
+        <summary type="html"><![CDATA[update: 2024年7月7日更新分]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-07.md
+
+---
+title: 2024-07
+layout: default
+---
+
+## TIL: 2024年7月分
+
+### 2024年7月7日
+
+- [`Zenn`](https://zenn.dev)に[Racket: Racketの基本データ型](https://zenn.dev/atsushifx/articles/edu-racket-basic-datatype-basic)を追加
+------
+docs/index.md
+
+- [2024年7月分](2024/2024-07)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[update: 6月29日 / 記事を執筆]]></title>
         <id>5913d1c96c58f700c751fcf1c483c0ea950f8a44</id>
@@ -171,20 +198,6 @@
 docs/_includes/head-custom.html
 
 <link rel="alternate" type="application/atom+xml" title="RSS Feed (ATOM" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: updare header's RSS]]></title>
-        <id>5795d11186d898bfc03ccc55a41ac61069da8e28</id>
-        <link href="https://github.com/atsushifx/til/commit/5795d11186d898bfc03ccc55a41ac61069da8e28"/>
-        <updated>2024-06-03T03:15:46.000Z</updated>
-        <summary type="html"><![CDATA[update: updare header's RSS]]></summary>
-        <content type="html"><![CDATA[docs/_includes/head-custom.html
-
-<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
