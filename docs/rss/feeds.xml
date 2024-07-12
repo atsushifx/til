@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-07-07T13:10:35.000Z</updated>
+    <updated>2024-07-12T02:17:30.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,22 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[2024年7月11日分の更新]]></title>
+        <id>8f5287ba9195f0e6384802a8a5251d99ebb1212b</id>
+        <link href="https://github.com/atsushifx/til/commit/8f5287ba9195f0e6384802a8a5251d99ebb1212b"/>
+        <updated>2024-07-12T02:17:30.000Z</updated>
+        <summary type="html"><![CDATA[2024年7月11日分の更新]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-07.md
+
+### 2024年7月11日
+
+- [`Zenn`](https://zenn.dev)に[Racketにおける入出力](https://zenn.dev/atsushifx/articles/edu-racket-programming-stdio)を追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[update: 2024年7月7日更新分]]></title>
         <id>17da0bad0b9b870a5f301bfb3e30f975dc3a4b88</id>
@@ -176,28 +192,6 @@ docs/index.md
 ### 2024年6月2日
 
 - `Commit2Feed`]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: RSSフィードをATOM形式に変更]]></title>
-        <id>7c398c5214fcfd1654221998c3b4e0171cbb3137</id>
-        <link href="https://github.com/atsushifx/til/commit/7c398c5214fcfd1654221998c3b4e0171cbb3137"/>
-        <updated>2024-06-08T14:58:11.000Z</updated>
-        <summary type="html"><![CDATA[chore: RSSフィードをATOM形式に変更]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-
-### 2024年6月日
-
-- `Commit2Feed`  
-  ``タグを削除し、`Feed`を正常に`parse`できるようにした
-------
-docs/_includes/head-custom.html
-
-<link rel="alternate" type="application/atom+xml" title="RSS Feed (ATOM" href="https://atsushifx.github.io/til/rss/feeds.xml">]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
