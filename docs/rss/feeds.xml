@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-07-12T02:17:30.000Z</updated>
+    <updated>2024-07-19T02:41:47.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,26 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[update: 7月16日、7月18日の活動を追加]]></title>
+        <id>77fdfd9e5d5c3b750873bedcae970faf42b66e39</id>
+        <link href="https://github.com/atsushifx/til/commit/77fdfd9e5d5c3b750873bedcae970faf42b66e39"/>
+        <updated>2024-07-19T02:41:47.000Z</updated>
+        <summary type="html"><![CDATA[update: 7月16日、7月18日の活動を追加]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-07.md
+
+### 2024年7月18日
+
+- `agla.file-opener`の開発
+
+### 2024年7月16日
+
+- [`Zenn`](https://zenn.dev)に[`fzf`-tab-completion`を使ってタブ補完機能を強化する](https://zenn.dev/atsushifx/articles/devtool-bash-fzf-tabcompletion)を追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024年7月11日分の更新]]></title>
         <id>8f5287ba9195f0e6384802a8a5251d99ebb1212b</id>
@@ -172,26 +192,6 @@ docs/index.md
         <content type="html"><![CDATA[.github/workflows/generate_rss.yml
 
           exit 0]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 日報執筆]]></title>
-        <id>36c1e79a398210ca33c3378617068e2ffb3e3f92</id>
-        <link href="https://github.com/atsushifx/til/commit/36c1e79a398210ca33c3378617068e2ffb3e3f92"/>
-        <updated>2024-06-08T14:58:27.000Z</updated>
-        <summary type="html"><![CDATA[update: 日報執筆]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-### 2024年6月8日
-- `Commit2Feed`用に記事執筆:
-  権限設定まで執筆
-
-### 2024年6月2日
-
-- `Commit2Feed`]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
