@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-07-19T02:41:47.000Z</updated>
+    <updated>2024-07-29T05:44:00.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,22 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[7月28日分の更新]]></title>
+        <id>17caeafa43a88f93cd5224d09eabb481e4b45bd5</id>
+        <link href="https://github.com/atsushifx/til/commit/17caeafa43a88f93cd5224d09eabb481e4b45bd5"/>
+        <updated>2024-07-29T05:44:00.000Z</updated>
+        <summary type="html"><![CDATA[7月28日分の更新]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-07.md
+
+### 2024年7月28日
+
+- [`Zenn`](https://zenn.dev)に`Proxmoxのセットアップ - 構成の概要`を追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[update: 7月16日、7月18日の活動を追加]]></title>
         <id>77fdfd9e5d5c3b750873bedcae970faf42b66e39</id>
@@ -178,20 +194,6 @@ docs/index.md
 
 				"periodMark": "｡",
 					"､",]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: workflow: commit feedでエラー無視]]></title>
-        <id>dbc551c1319078026f28b522b5bbf2b57da73ad4</id>
-        <link href="https://github.com/atsushifx/til/commit/dbc551c1319078026f28b522b5bbf2b57da73ad4"/>
-        <updated>2024-06-10T18:45:25.000Z</updated>
-        <summary type="html"><![CDATA[chore: workflow: commit feedでエラー無視]]></summary>
-        <content type="html"><![CDATA[.github/workflows/generate_rss.yml
-
-          exit 0]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
