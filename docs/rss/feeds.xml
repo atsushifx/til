@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-07-29T05:44:00.000Z</updated>
+    <updated>2024-08-25T18:59:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,36 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[2024年8月分の更新を追加]]></title>
+        <id>8885d102d20f943a5b52e93fc6fd896e0defd413</id>
+        <link href="https://github.com/atsushifx/til/commit/8885d102d20f943a5b52e93fc6fd896e0defd413"/>
+        <updated>2024-08-25T18:59:28.000Z</updated>
+        <summary type="html"><![CDATA[2024年8月分の更新を追加]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-08.md
+
+---
+title: 2024-08
+layout: default
+---
+
+## TIL: 2024年8月分
+
+### 2024年8月258日
+
+- [`Zenn`](https://zenn.dev)に`wingetインストールガイド`を追加
+------
+docs/index.md
+
+- [2024年8月分](2024/2024-08)
+- [2024年6月分](2024/2024-06)
+- [2024年5月分](2024/2024-05)
+- [2024年4月分](2024/2024-04)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[7月28日分の更新]]></title>
         <id>17caeafa43a88f93cd5224d09eabb481e4b45bd5</id>
@@ -179,21 +209,6 @@ docs/index.md
 
 - `Commit2Feed`用に記事執筆:
  「おわりに」まで執筆]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: 句読点の設定をfix]]></title>
-        <id>1dab7219edd11ec2947c1943f08e38f594c94a66</id>
-        <link href="https://github.com/atsushifx/til/commit/1dab7219edd11ec2947c1943f08e38f594c94a66"/>
-        <updated>2024-06-10T20:12:55.000Z</updated>
-        <summary type="html"><![CDATA[chore: 句読点の設定をfix]]></summary>
-        <content type="html"><![CDATA[.textlintrc.json
-
-				"periodMark": "｡",
-					"､",]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
