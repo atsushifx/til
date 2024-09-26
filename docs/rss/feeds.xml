@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-08-25T18:59:28.000Z</updated>
+    <updated>2024-09-26T14:03:16.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[add: TIL: 2024年9月の活動 / インストールUSBの作成を執筆]]></title>
+        <id>d541c88127573c91f47219dd91da25f8a1eafcd4</id>
+        <link href="https://github.com/atsushifx/til/commit/d541c88127573c91f47219dd91da25f8a1eafcd4"/>
+        <updated>2024-09-26T14:03:16.000Z</updated>
+        <summary type="html"><![CDATA[add: TIL: 2024年9月の活動 / インストールUSBの作成を執筆]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-08.md
+
+### 2024年8月25日
+------
+docs/2024/2024-09.md
+
+---
+title: 2024-09
+layout: default
+---
+
+## TIL: 2024年9月分
+
+### 2024年9月26日
+
+- [`Zenn`](https://zenn.dev)に`Proxmox: インストールUSBの作成`を追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2024年8月分の更新を追加]]></title>
         <id>8885d102d20f943a5b52e93fc6fd896e0defd413</id>
@@ -192,23 +219,6 @@ docs/index.md
   おわりにまで執筆。
   権限設定まで執筆。
   ``タグを削除し、`Feed`を正常に`parse`できるようにした。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[6月10日の日記を執筆]]></title>
-        <id>cab4fe05c4ea9aca8510a34ce48cc2c7bfb95e51</id>
-        <link href="https://github.com/atsushifx/til/commit/cab4fe05c4ea9aca8510a34ce48cc2c7bfb95e51"/>
-        <updated>2024-06-10T20:13:29.000Z</updated>
-        <summary type="html"><![CDATA[6月10日の日記を執筆]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-### 2024年6月10日
-
-- `Commit2Feed`用に記事執筆:
- 「おわりに」まで執筆]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
