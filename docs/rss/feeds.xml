@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-10-06T00:09:04.000Z</updated>
+    <updated>2024-10-15T03:37:21.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,48 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[merge: til: GitHub Actionsにより作成したコミット情報をマージ]]></title>
+        <id>ebd32d7be9a0d25ca53402a8943b88fc0e616fa4</id>
+        <link href="https://github.com/atsushifx/til/commit/ebd32d7be9a0d25ca53402a8943b88fc0e616fa4"/>
+        <updated>2024-10-15T03:37:21.000Z</updated>
+        <summary type="html"><![CDATA[merge: til: GitHub Actionsにより作成したコミット情報をマージ]]></summary>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2024-10-06T00:09:04.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[add: TIL: 2025年10月分のページを追加</title>
+        <id>9e5d3d3484c2e16a94534f125f41218f1bce8f26</id>
+        <link href="https://github.com/atsushifx/til/commit/9e5d3d3484c2e16a94534f125f41218f1bce8f26"/>
+        <updated>2024-10-06T00:09:04.000Z</updated>
+        <summary type="html"><![CDATA[add: TIL: 2025年10月分のページを追加</summary>
+        <content type="html"><![CDATA[docs/2024/2024-10.md
+
+---
+title: 2024-09
+layout: default]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: husky: husky,gitleakでsecretの流出チェック]]></title>
+        <id>87658ece68a6821fcfc586762de132632680b89a</id>
+        <link href="https://github.com/atsushifx/til/commit/87658ece68a6821fcfc586762de132632680b89a"/>
+        <updated>2024-10-15T03:37:00.000Z</updated>
+        <summary type="html"><![CDATA[chore: husky: husky,gitleakでsecretの流出チェック]]></summary>
+        <content type="html"><![CDATA[.husky/pre-commit
+
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+gitleaks protect --staged]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[add: TIL: 2025年10月分のページを追加]]></title>
         <id>9e5d3d3484c2e16a94534f125f41218f1bce8f26</id>
@@ -185,45 +227,6 @@ docs/index.md
 
 - `Zenn`に記事を執筆
   [Racket で "Hello World" を出力する方法](https://zenn.dev/atsushifx/articles/edu-racket-basic-helloworld)を執筆]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Update: 6月27日の活動]]></title>
-        <id>7ff8663287a70c09054ee234ac269395e467fb5f</id>
-        <link href="https://github.com/atsushifx/til/commit/7ff8663287a70c09054ee234ac269395e467fb5f"/>
-        <updated>2024-06-27T06:34:47.000Z</updated>
-        <summary type="html"><![CDATA[Update: 6月27日の活動]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-### 2024年6月27日
-
-- `Coursera`受講
-  - プログラミング言語 Part-A (`SML/NJ`) を受講
-    `module03`をすべて受講し、課題 1 に取りかかった]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: Coursera受講内容をメモ]]></title>
-        <id>64529379be9e057cfde23ba00e0f1de468c70e61</id>
-        <link href="https://github.com/atsushifx/til/commit/64529379be9e057cfde23ba00e0f1de468c70e61"/>
-        <updated>2024-06-22T19:03:08.000Z</updated>
-        <summary type="html"><![CDATA[update: Coursera受講内容をメモ]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-### 2024年6月22日
-
-- `Coursera`受講
-  - プログラミング言語 Part-A (`SML/NJ`) を受講
-    講義「ペアとそのほかのタプル」まで視聴。
-
-  - プログラミング言語 Part-B (`Racket`) を受講
-    講義"Racket Definitions, Functions, Conditionals"まで視聴。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
