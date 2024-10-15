@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-10-15T03:37:21.000Z</updated>
+    <updated>2024-10-15T04:18:31.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,22 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[add: husky, gitleaksによるスキャンを追加]]></title>
+        <id>6f52aa45685136c4a741162166ff93c8116c9e80</id>
+        <link href="https://github.com/atsushifx/til/commit/6f52aa45685136c4a741162166ff93c8116c9e80"/>
+        <updated>2024-10-15T04:18:31.000Z</updated>
+        <summary type="html"><![CDATA[add: husky, gitleaksによるスキャンを追加]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-10.md
+
+### 2024年10月156日
+
+- [`atsushifx`](https://github.com/atsushifx)の主要リポジトリに、`husky`, `gitleaks`によるキースキャンを追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[merge: til: GitHub Actionsにより作成したコミット情報をマージ]]></title>
         <id>ebd32d7be9a0d25ca53402a8943b88fc0e616fa4</id>
@@ -210,23 +226,6 @@ layout: default
 docs/index.md
 
 - [2024年7月分](2024/2024-07)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 6月29日 / 記事を執筆]]></title>
-        <id>5913d1c96c58f700c751fcf1c483c0ea950f8a44</id>
-        <link href="https://github.com/atsushifx/til/commit/5913d1c96c58f700c751fcf1c483c0ea950f8a44"/>
-        <updated>2024-06-29T02:07:28.000Z</updated>
-        <summary type="html"><![CDATA[update: 6月29日 / 記事を執筆]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-06.md
-
-### 2024年6月29日
-
-- `Zenn`に記事を執筆
-  [Racket で "Hello World" を出力する方法](https://zenn.dev/atsushifx/articles/edu-racket-basic-helloworld)を執筆]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
