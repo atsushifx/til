@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2024-10-15T04:18:31.000Z</updated>
+    <updated>2024-11-29T02:25:39.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,71 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[add: 2024年10月28日の活動を追加]]></title>
+        <id>5c56ab4e1318f2d85dbe64aa954e1a317d5d60f0</id>
+        <link href="https://github.com/atsushifx/til/commit/5c56ab4e1318f2d85dbe64aa954e1a317d5d60f0"/>
+        <updated>2024-11-29T02:25:39.000Z</updated>
+        <summary type="html"><![CDATA[add: 2024年10月28日の活動を追加]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-11.md
+
+- "[コマンドラインの黒い画面が怖いんです。](https://www.seshop.com/product/detail/26161)"、読了。
+
+  全くの未経験者向けに、`CLI`の使い方を説明した本。そのため、中盤からのコマンド解説からは`WSL`+`Ubuntu`環境で決め打ちしているて、`WSL`の環境構築はコマンド簿説明が足りず不親切である。
+  初心者向けということもあり`パイプ`や`shebang`については使い方を簡単に紹介するだけで、標準入出力などの肝心なところは説明していない。
+  ファイルの文字コードや改行コードのような初心者がはまりやすいポイントについて書いてあるのは、好感が持てるが全角／半角スペースについて書いていないため片手落ち感が目立つ。
+  この本だけで`CLI`を使わせるのは危なく、経験者によるメンタリングが必須だろう。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[update: add 2024年11月のtilページ]]></title>
+        <id>bc9df4b8c96b3d055ee3db1c3b51f11facacdd01</id>
+        <link href="https://github.com/atsushifx/til/commit/bc9df4b8c96b3d055ee3db1c3b51f11facacdd01"/>
+        <updated>2024-11-29T01:41:53.000Z</updated>
+        <summary type="html"><![CDATA[update: add 2024年11月のtilページ]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-10.md
+
+title: 2024-10
+### 2024年10月15日
+------
+docs/2024/2024-11.md
+
+---
+title: 2024-11
+layout: default
+---
+
+## TIL: 2024年11月分
+
+### 2024年11月28日]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: husky: remove init script by husky version up]]></title>
+        <id>73528f196140d85e45da4b410b352827d857ee62</id>
+        <link href="https://github.com/atsushifx/til/commit/73528f196140d85e45da4b410b352827d857ee62"/>
+        <updated>2024-11-29T01:40:53.000Z</updated>
+        <summary type="html"><![CDATA[chore: husky: remove init script by husky version up]]></summary>
+        <content type="html"><![CDATA[.husky/pre-commit
+
+## @(#) : husky pre-commit
+#
+# @version 1.0.0
+# @author  Furukawa, Atsushi <atsushifx@gmail.com>
+# @date    2024-11-29
+# @license MIT
+gitleaks protect --staged]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[add: husky, gitleaksによるスキャンを追加]]></title>
         <id>6f52aa45685136c4a741162166ff93c8116c9e80</id>
@@ -163,69 +228,6 @@ docs/index.md
 ### 2024年7月28日
 
 - [`Zenn`](https://zenn.dev)に`Proxmoxのセットアップ - 構成の概要`を追加]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 7月16日、7月18日の活動を追加]]></title>
-        <id>77fdfd9e5d5c3b750873bedcae970faf42b66e39</id>
-        <link href="https://github.com/atsushifx/til/commit/77fdfd9e5d5c3b750873bedcae970faf42b66e39"/>
-        <updated>2024-07-19T02:41:47.000Z</updated>
-        <summary type="html"><![CDATA[update: 7月16日、7月18日の活動を追加]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-07.md
-
-### 2024年7月18日
-
-- `agla.file-opener`の開発
-
-### 2024年7月16日
-
-- [`Zenn`](https://zenn.dev)に[`fzf`-tab-completion`を使ってタブ補完機能を強化する](https://zenn.dev/atsushifx/articles/devtool-bash-fzf-tabcompletion)を追加]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2024年7月11日分の更新]]></title>
-        <id>8f5287ba9195f0e6384802a8a5251d99ebb1212b</id>
-        <link href="https://github.com/atsushifx/til/commit/8f5287ba9195f0e6384802a8a5251d99ebb1212b"/>
-        <updated>2024-07-12T02:17:30.000Z</updated>
-        <summary type="html"><![CDATA[2024年7月11日分の更新]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-07.md
-
-### 2024年7月11日
-
-- [`Zenn`](https://zenn.dev)に[Racketにおける入出力](https://zenn.dev/atsushifx/articles/edu-racket-programming-stdio)を追加]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 2024年7月7日更新分]]></title>
-        <id>17da0bad0b9b870a5f301bfb3e30f975dc3a4b88</id>
-        <link href="https://github.com/atsushifx/til/commit/17da0bad0b9b870a5f301bfb3e30f975dc3a4b88"/>
-        <updated>2024-07-07T13:10:35.000Z</updated>
-        <summary type="html"><![CDATA[update: 2024年7月7日更新分]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-07.md
-
----
-title: 2024-07
-layout: default
----
-
-## TIL: 2024年7月分
-
-### 2024年7月7日
-
-- [`Zenn`](https://zenn.dev)に[Racket: Racketの基本データ型](https://zenn.dev/atsushifx/articles/edu-racket-basic-datatype-basic)を追加
-------
-docs/index.md
-
-- [2024年7月分](2024/2024-07)]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
