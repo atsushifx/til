@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-01-08T10:42:21.000Z</updated>
+    <updated>2025-01-17T11:26:30.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,27 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[update: 2025年1月17日: 技術記事を執筆]]></title>
+        <id>722fec471dc76c28ab86ae1ce5b6d0e1a21c0cd0</id>
+        <link href="https://github.com/atsushifx/til/commit/722fec471dc76c28ab86ae1ce5b6d0e1a21c0cd0"/>
+        <updated>2025-01-17T11:26:30.000Z</updated>
+        <summary type="html"><![CDATA[update: 2025年1月17日: 技術記事を執筆]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-01.md
+
+### 2025年1月17日
+
+- [`Zenn`](https://zenn.dev/atsushifx)で技術記事を執筆:
+  [`Proxmox VE`: インストール手順ガイド](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-install)
+
+### 2025年1月16日
+
+- 技術記事を執筆 (`Proxmox VE`:インストール手順ガイド)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2025年1月8日分の更新]]></title>
         <id>772eb95f3f342b0cb1a47e096cd5a1cfdc44bef6</id>
@@ -214,22 +235,6 @@ layout: default
 # @date    2024-11-29
 # @license MIT
 gitleaks protect --staged]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: husky, gitleaksによるスキャンを追加]]></title>
-        <id>6f52aa45685136c4a741162166ff93c8116c9e80</id>
-        <link href="https://github.com/atsushifx/til/commit/6f52aa45685136c4a741162166ff93c8116c9e80"/>
-        <updated>2024-10-15T04:18:31.000Z</updated>
-        <summary type="html"><![CDATA[add: husky, gitleaksによるスキャンを追加]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-10.md
-
-### 2024年10月156日
-
-- [`atsushifx`](https://github.com/atsushifx)の主要リポジトリに、`husky`, `gitleaks`によるキースキャンを追加]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
