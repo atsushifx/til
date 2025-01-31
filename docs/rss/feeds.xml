@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-01-31T07:27:51.000Z</updated>
+    <updated>2025-01-31T07:51:44.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,79 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[merge: merge RSS Feed]]></title>
+        <id>f7c6548cd751ae0a61978ac79a57b9e30b30c0b8</id>
+        <link href="https://github.com/atsushifx/til/commit/f7c6548cd751ae0a61978ac79a57b9e30b30c0b8"/>
+        <updated>2025-01-31T07:51:44.000Z</updated>
+        <summary type="html"><![CDATA[merge: merge RSS Feed]]></summary>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2025-01-31T07:27:51.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[build: update system configuration</title>
+        <id>77e08a525b631c419247ff356d2d9873b9ac2c06</id>
+        <link href="https://github.com/atsushifx/til/commit/77e08a525b631c419247ff356d2d9873b9ac2c06"/>
+        <updated>2025-01-31T05:57:24.000Z</updated>
+        <summary type="html"><![CDATA[build: update system configuration
+
+- install commitlint
+- config commitlint with .commitlintrc.ts
+- add husky to run commitlint on commit
+- husky : update ci-lint.sh use markdownlint-cli2]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[build: add commit type]]></title>
+        <id>bb8e2b910429d74deddf5e4e90311e073bdc5e03</id>
+        <link href="https://github.com/atsushifx/til/commit/bb8e2b910429d74deddf5e4e90311e073bdc5e03"/>
+        <updated>2025-01-31T07:51:23.000Z</updated>
+        <summary type="html"><![CDATA[build: add commit type]]></summary>
+        <content type="html"><![CDATA[.commitlintrc.ts
+
+	rules: {
+		"type-enum": [2, "always", [
+			"build",
+			"chore",
+			"docs",
+			"feat",
+			"fix",
+			"refactor",
+			"revert",
+			"style",
+			// added commit type
+			"merge",]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs: 2025-01-31: add commitlint for TIL repo]]></title>
+        <id>ae2ad5f9006f1810065348bbd5fbf3f8dd8733ed</id>
+        <link href="https://github.com/atsushifx/til/commit/ae2ad5f9006f1810065348bbd5fbf3f8dd8733ed"/>
+        <updated>2025-01-31T07:46:58.000Z</updated>
+        <summary type="html"><![CDATA[docs: 2025-01-31: add commitlint for TIL repo]]></summary>
+        <content type="html"><![CDATA[.markdownlint.yaml
+
+# lint rules
+  line_length: 120
+------
+docs/2025/2025-01.md
+
+### 2025年1月31日
+
+- ["TIL"](https://github.com/atsushifx/til)に commitlint を追加
+
+- ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/)に commitlint を追加]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[build: update system configuration]]></title>
         <id>77e08a525b631c419247ff356d2d9873b9ac2c06</id>
@@ -183,75 +256,6 @@ docs/index.md
 # @desc<<
 #
 # lint script for writing markdown text.]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: 2024年12月分を追加]]></title>
-        <id>ec7f22aea71d73540ae118b06873f1f53d3a54e9</id>
-        <link href="https://github.com/atsushifx/til/commit/ec7f22aea71d73540ae118b06873f1f53d3a54e9"/>
-        <updated>2024-12-19T08:07:35.000Z</updated>
-        <summary type="html"><![CDATA[add: 2024年12月分を追加]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-12.md
-
----
-title: 2024-12
-layout: default
----
-
-## TIL: 2024年12月分
-
-------
-docs/index.md
-
-- [2024年12月分](2024/2024-12)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: 2024年10月28日の活動を追加]]></title>
-        <id>5c56ab4e1318f2d85dbe64aa954e1a317d5d60f0</id>
-        <link href="https://github.com/atsushifx/til/commit/5c56ab4e1318f2d85dbe64aa954e1a317d5d60f0"/>
-        <updated>2024-11-29T02:25:39.000Z</updated>
-        <summary type="html"><![CDATA[add: 2024年10月28日の活動を追加]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-11.md
-
-- "[コマンドラインの黒い画面が怖いんです。](https://www.seshop.com/product/detail/26161)"、読了。
-
-  全くの未経験者向けに、`CLI`の使い方を説明した本。そのため、中盤からのコマンド解説からは`WSL`+`Ubuntu`環境で決め打ちしているて、`WSL`の環境構築はコマンド簿説明が足りず不親切である。
-  初心者向けということもあり`パイプ`や`shebang`については使い方を簡単に紹介するだけで、標準入出力などの肝心なところは説明していない。
-  ファイルの文字コードや改行コードのような初心者がはまりやすいポイントについて書いてあるのは、好感が持てるが全角／半角スペースについて書いていないため片手落ち感が目立つ。
-  この本だけで`CLI`を使わせるのは危なく、経験者によるメンタリングが必須だろう。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: add 2024年11月のtilページ]]></title>
-        <id>bc9df4b8c96b3d055ee3db1c3b51f11facacdd01</id>
-        <link href="https://github.com/atsushifx/til/commit/bc9df4b8c96b3d055ee3db1c3b51f11facacdd01"/>
-        <updated>2024-11-29T01:41:53.000Z</updated>
-        <summary type="html"><![CDATA[update: add 2024年11月のtilページ]]></summary>
-        <content type="html"><![CDATA[docs/2024/2024-10.md
-
-title: 2024-10
-### 2024年10月15日
-------
-docs/2024/2024-11.md
-
----
-title: 2024-11
-layout: default
----
-
-## TIL: 2024年11月分
-
-### 2024年11月28日]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
