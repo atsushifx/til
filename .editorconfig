@@ -15,7 +15,6 @@
 #
 #<<
 
-# top-most EditorConfig file
 root = true
 
 # Unix-style newlines with a newline ending every file
@@ -26,21 +25,20 @@ insert_final_newline = true
 # default character-set
 charset = utf-8
 
-# indent style
-indent_size = tab
+# default indent style
 indent_style = tab
-tab_width=4
+indent_size = tab
+tab_width = 4
 
-# ext type settings
 
-# script executable
+### Settings by ext type
+# no ext: general files settings
 [**.]
 indent_style = space
 indent_size = 2
 tab_width = 2
 
-
-### Languages
+### Programming Languages
 
 ### Documents
 # markdown
@@ -50,11 +48,36 @@ tab_width = 2
 indent_style = space
 
 ### Settings
-# json, yml
-[**.{json,yml,yaml}]
-tab_width = 4
+# json
+[**.json]
+tab_width = 2
+indent_size = tab
 indent_style = tab
 
+# yaml
+[**.{yaml,yml}]
+tab_width = 2
+indent_size = tab
+indent_style = space
+
+# ini, toml
+[**.{ini,toml}]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+# rc files
+[**rc]
+indent_style = space
+indent_size = tab
+tab_width = 2
+
+### Shell Scripts
+# shell script
+[**.{sh,bash,zsh}]
+indent_style = space
+indent_size = 2
+tab_width = 2
 
 ### Git config
 # for git config

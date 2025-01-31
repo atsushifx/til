@@ -17,7 +17,6 @@
 set -euC -o pipefail
 readonly THISCMD=$( basename  "$0" )
 
-
 # cd "$SCRIPTDIR"
 
 ## librarys
@@ -29,7 +28,7 @@ while IFS= read -r filename; do
   textlint --quiet "$filename" || exit 1
 
   ## check markdown
-  markdownlint "$filename" || exit
+  markdownlint-cli2 "$filename" || exit
 
 done
 
