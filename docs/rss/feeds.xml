@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-01-17T11:26:30.000Z</updated>
+    <updated>2025-01-31T07:27:51.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,43 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[build: update system configuration]]></title>
+        <id>77e08a525b631c419247ff356d2d9873b9ac2c06</id>
+        <link href="https://github.com/atsushifx/til/commit/77e08a525b631c419247ff356d2d9873b9ac2c06"/>
+        <updated>2025-01-31T05:57:24.000Z</updated>
+        <summary type="html"><![CDATA[build: update system configuration
+
+- install commitlint
+- config commitlint with .commitlintrc.ts
+- add husky to run commitlint on commit
+- husky : update ci-lint.sh use markdownlint-cli2
+- textlint : update prh dictionary
+  - delete icsmedia dictionary
+  - add smarthr dictionary
+- editorconfig: update indent_size
+- textlint: update configuration to yaml
+- textlint: update prh dictionary\
+- clear lint error from markdown]]></summary>
+        <content type="html"><![CDATA[.commitlintrc.ts
+
+const Configuration = {
+	/*
+	 * Resolve and load @commitlint/config-conventional from node_modules.
+	 * Referenced packages must be installed
+	 */
+	extends: ['@commitlint/config-conventional'],
+
+	formatter: '@commitlint/format',
+
+};
+
+export default Configuration]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[update: 2025年1月17日: 技術記事を執筆]]></title>
         <id>722fec471dc76c28ab86ae1ce5b6d0e1a21c0cd0</id>
@@ -215,26 +252,6 @@ layout: default
 ## TIL: 2024年11月分
 
 ### 2024年11月28日]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: husky: remove init script by husky version up]]></title>
-        <id>73528f196140d85e45da4b410b352827d857ee62</id>
-        <link href="https://github.com/atsushifx/til/commit/73528f196140d85e45da4b410b352827d857ee62"/>
-        <updated>2024-11-29T01:40:53.000Z</updated>
-        <summary type="html"><![CDATA[chore: husky: remove init script by husky version up]]></summary>
-        <content type="html"><![CDATA[.husky/pre-commit
-
-## @(#) : husky pre-commit
-#
-# @version 1.0.0
-# @author  Furukawa, Atsushi <atsushifx@gmail.com>
-# @date    2024-11-29
-# @license MIT
-gitleaks protect --staged]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
