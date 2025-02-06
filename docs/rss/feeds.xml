@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-01-31T07:51:44.000Z</updated>
+    <updated>2025-02-06T12:14:09.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,62 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs: 2025-02: zenn-devにgithub actionsを導入]]></title>
+        <id>804f9ccd39f715ea49beb84a44285300dbf1d714</id>
+        <link href="https://github.com/atsushifx/til/commit/804f9ccd39f715ea49beb84a44285300dbf1d714"/>
+        <updated>2025-02-06T12:14:09.000Z</updated>
+        <summary type="html"><![CDATA[docs: 2025-02: zenn-devにgithub actionsを導入]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-02.md
+
+---
+title: 2025-02
+layout: default
+---
+
+## TIL: 2025年2月分
+
+### 2025年2月6日
+
+- ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/)に`Github Actions`導入
+  PR時に記事をlint]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[build: lefthook: add lefthook instead of husky for githook]]></title>
+        <id>c5a11bc4f044d862342c9babcbeeb4f4c8652b9c</id>
+        <link href="https://github.com/atsushifx/til/commit/c5a11bc4f044d862342c9babcbeeb4f4c8652b9c"/>
+        <updated>2025-02-06T12:07:19.000Z</updated>
+        <summary type="html"><![CDATA[build: lefthook: add lefthook instead of husky for githook
+--
+
+- lefthook.yml:		lefthook config
+- gitignore:s		ignore cache
+- textlintrc.yaml:  remove preset-japanese]]></summary>
+        <content type="html"><![CDATA[.gitignore
+
+# cache
+*cache*
+
+
+------
+.husky/ci-lint.sh
+
+
+------
+.husky/commit-msg
+
+
+------
+.husky/pre-commit]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[merge: merge RSS Feed]]></title>
         <id>f7c6548cd751ae0a61978ac79a57b9e30b30c0b8</id>
@@ -199,63 +255,6 @@ docs/2025/2025-01.md
 ### 2025年1月2日
 
 - [`Zenn`](https://zenn.dev/atsushifx)で「[自宅サーバーの構築 オーバービュー](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-overview)」をアップデートした。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: 2025-01: 2025年1月1日の更新]]></title>
-        <id>e4647935772edea9c0a229fa30960567a386bc55</id>
-        <link href="https://github.com/atsushifx/til/commit/e4647935772edea9c0a229fa30960567a386bc55"/>
-        <updated>2025-01-01T17:22:16.000Z</updated>
-        <summary type="html"><![CDATA[add: 2025-01: 2025年1月1日の更新]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-01.md
-
----
-title: 2025-01
-layout: default
----
-
-## TIL: 2025年1月分
-
-### 2025年1月1日
-
-- [`Zenn`](https://zenn.dev/atsushifx) に「`Proxmox`のインストール」を執筆。
-  説明用のスクリーンショットを作成した
-------
-docs/index.md
-
-### 2025年
-
-- [2025年1月分](2025/2025-01)
-
-### 2024年]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: husky : add linting text & markdown]]></title>
-        <id>829d039404a9880dc92c289236e7dcb2fcaa3415</id>
-        <link href="https://github.com/atsushifx/til/commit/829d039404a9880dc92c289236e7dcb2fcaa3415"/>
-        <updated>2025-01-01T17:14:44.000Z</updated>
-        <summary type="html"><![CDATA[chore: husky : add linting text & markdown]]></summary>
-        <content type="html"><![CDATA[.husky/ci-lint.sh
-
-#!/usr/bin/env sh
-#
-# @(#) : CI's text linting script
-#
-# @version	1.0.0
-# @date		2024-12-31
-# @author	Furukawa, Atsushi <atsushifx@gmail.com>
-# @license	MIT
-#
-# @desc<<
-#
-# lint script for writing markdown text.]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
