@@ -14,13 +14,6 @@ rules:
     no-exclamation-question-mark: false
     no-doubled-joshi:
       strict: false
-  preset-japanese:
-    sentence-length:
-      max: 100
-    max-ten:
-      max: 4
-    no-doubled-joshi:
-      strict: false
   preset-ja-spacing:
     ja-space-between-half-and-full-width:
       space:
@@ -28,7 +21,6 @@ rules:
         - numbers
   no-mixed-zenkaku-and-hankaku-alphabet: true
   common-misspellings: true
-  spellcheck-tech-word: true
   prh:
     rulePaths:
       - ./.textlint/dict/prh.yml

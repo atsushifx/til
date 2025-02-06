@@ -36,9 +36,9 @@ $~*
 Session.vim
 Sessionx.vim
 
-# Temporary
-.netrwhist
-*~
+# cache
+*cache*
+
 
 tags
 # Persistent undo
@@ -56,4 +56,4 @@ tags
 .history/
 
 # Built Visual Studio Code Extensions
-*.vsix
+
