@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-02-21T08:18:40.000Z</updated>
+    <updated>2025-02-24T07:50:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,26 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs (2025/2025-02): 2025年2月23日のTILを追加]]></title>
+        <id>453f548428c20c51d5b0a3b5644c595b4280a79f</id>
+        <link href="https://github.com/atsushifx/til/commit/453f548428c20c51d5b0a3b5644c595b4280a79f"/>
+        <updated>2025-02-24T07:50:28.000Z</updated>
+        <summary type="html"><![CDATA[docs (2025/2025-02): 2025年2月23日のTILを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-02.md
+
+##  2025年2月分
+
+### 2025年2月23日
+
+- ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/) に、"WindowsでGnuPGによる署名付きコミットを確実に実現する設定方"を執筆
+
+### 2025年2月209日]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat: add project-specific dictionary to VSCode settings]]></title>
         <id>ea72e333cce480d5cc30c4eb04b7af21270fddec</id>
@@ -242,33 +262,6 @@ export default Configuration]]></content>
 - [`Zenn`](https://zenn.dev/atsushifx)で技術記事を執筆:
   [インストーラー起動のためのBIOS設定](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-configbios) を執筆。
   [インストールメディア作成](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-installmedia) を執筆。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[add: 2025年1月4日、5日の作業を追加]]></title>
-        <id>c0fcd309d22789893acb4b90ae2e25acd6172e8f</id>
-        <link href="https://github.com/atsushifx/til/commit/c0fcd309d22789893acb4b90ae2e25acd6172e8f"/>
-        <updated>2025-01-05T07:38:56.000Z</updated>
-        <summary type="html"><![CDATA[add: 2025年1月4日、5日の作業を追加]]></summary>
-        <content type="html"><![CDATA[.textlintrc.json
-
-				"commit2feed",
-				"TechArticleReviewer"
-------
-docs/2025/2025-01.md
-
-### 2025年1月5日
-
-- プロンプト作成:
-  [TechArticleReviewer](https://github.com/atsushifx/tech-article-reviewer)に校閲用プロンプトを追加した。
-
-### 2025年1月4日
-
-- [`Zenn`](https://zenn.dev/atsushifx)で技術記事を執筆:
-  [技術ブログ執筆を支援する記事編集フレームワーク](https://zenn.dev/atsushifx/articles/oss-articlereviewer-howtouse) を執筆。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
