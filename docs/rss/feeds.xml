@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-02-24T07:50:28.000Z</updated>
+    <updated>2025-03-08T00:00:29.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,30 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[build: 2024年3月分を追加]]></title>
+        <id>e8ac23a4ad6422c0b7e203c153d592ce22ca9132</id>
+        <link href="https://github.com/atsushifx/til/commit/e8ac23a4ad6422c0b7e203c153d592ce22ca9132"/>
+        <updated>2025-03-08T00:00:29.000Z</updated>
+        <summary type="html"><![CDATA[build: 2024年3月分を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-03.md
+
+---
+title: 2025-03
+layout: default
+---
+
+##  2025年2月分
+
+### 2025年3月6日 ～ 8日
+
+- WSL をセットアップする方法`の記事を執筆
+- [`Tech Article Reviwer`](https://github.com/atsushifx/tech-article-reviewer)もプロンプトをバージョンアップ]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs (2025/2025-02): 2025年2月23日のTILを追加]]></title>
         <id>453f548428c20c51d5b0a3b5644c595b4280a79f</id>
@@ -244,24 +268,6 @@ export default Configuration]]></content>
 ### 2025年1月16日
 
 - 技術記事を執筆 (`Proxmox VE`:インストール手順ガイド)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2025年1月8日分の更新]]></title>
-        <id>772eb95f3f342b0cb1a47e096cd5a1cfdc44bef6</id>
-        <link href="https://github.com/atsushifx/til/commit/772eb95f3f342b0cb1a47e096cd5a1cfdc44bef6"/>
-        <updated>2025-01-08T10:42:21.000Z</updated>
-        <summary type="html"><![CDATA[2025年1月8日分の更新]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-01.md
-
-### 2025年1月8日
-
-- [`Zenn`](https://zenn.dev/atsushifx)で技術記事を執筆:
-  [インストーラー起動のためのBIOS設定](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-configbios) を執筆。
-  [インストールメディア作成](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-installmedia) を執筆。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
