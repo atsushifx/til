@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-03-08T00:00:29.000Z</updated>
+    <updated>2025-03-17T23:44:46.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,88 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-02, 2025-03): textlintに従い、空白を挿入]]></title>
+        <id>f00b5d0a763916eb170f2fd7aaebea1b7d93f834</id>
+        <link href="https://github.com/atsushifx/til/commit/f00b5d0a763916eb170f2fd7aaebea1b7d93f834"/>
+        <updated>2025-03-17T23:44:46.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-02, 2025-03): textlintに従い、空白を挿入]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+dic
+------
+docs/2025/2025-02.md
+
+## 2025年2月分
+- ["zenn-dev"](https://github.com/atsushifx/zenn-dev/) に、"Windows で GnuPG による署名付きコミットを確実に実現する設定方"を執筆
+- GitHub用に GnuPG による署名を設定
+- 開発用PC に Windows を再インストール、再度環境構築
+- Zenn の`GitHub Actions`で削除したファイルを Lint しようとする Bug を Fix
+- ["zenn-dev"](https://github.com/atsushifx/zenn-dev/)にカスタム Debian のインストールを追加
+- ["zenn-dev"](https://github.com/atsushifx/zenn-dev/)に`Github Actions`導入
+  PR 時に記事を lint
+- ["zenn-dev"](https://github.com/atsushifx/zenn-dev/)に lefthook 導入]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore(cSpell, textlint): cSpell用辞書を設定 / smarthrの辞書を更新]]></title>
+        <id>0678ad0c28699848ca638c92a3a96d7b234a7a8e</id>
+        <link href="https://github.com/atsushifx/til/commit/0678ad0c28699848ca638c92a3a96d7b234a7a8e"/>
+        <updated>2025-03-17T23:41:03.000Z</updated>
+        <summary type="html"><![CDATA[chore(cSpell, textlint): cSpell用辞書を設定 / smarthrの辞書を更新
+
+- cSpell.json: このプロジェクト用にtil-dicを追加
+- allowlist.yml: 用xx で空白を入れない
+- prh-idiomatic-usage: PC→パソコン を削除]]></summary>
+        <content type="html"><![CDATA[.textlint/allowlist.yml
+
+- /[用][A-Za-z]+/g
+- /[用][A-Zaz-0-9]+/ig
+------
+.textlint/dict/smarthr/prh-idiomatic-usage.yml
+
+
+------
+.vscode/cspell.json
+
+// @(#) :  cspell config for user centric settings
+{
+	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+	"version": "0.2",
+	"language": "en",
+	"caseSensitive": true,
+	"dictionaryDefinitions": [
+		{
+			"name": "til-dic",
+			"description": " dictionary: til(Today I Leaened) specific words",
+			"path": "./cspell/dicts/til.dic",
+			"addWords": true,]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025/03): cSpellの設定を更新]]></title>
+        <id>bc2e4a1c51d607f1a124d440757e554a299eb4d4</id>
+        <link href="https://github.com/atsushifx/til/commit/bc2e4a1c51d607f1a124d440757e554a299eb4d4"/>
+        <updated>2025-03-17T23:23:26.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025/03): cSpellの設定を更新]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-03.md
+
+##  2025年3月分
+
+### 2025年3月16日
+
+- cSpellでプロジェクト用辞書の設定を見直し]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[build: 2024年3月分を追加]]></title>
         <id>e8ac23a4ad6422c0b7e203c153d592ce22ca9132</id>
@@ -187,87 +269,6 @@ layout: default
 			"style",
 			// added commit type
 			"merge",]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs: 2025-01-31: add commitlint for TIL repo]]></title>
-        <id>ae2ad5f9006f1810065348bbd5fbf3f8dd8733ed</id>
-        <link href="https://github.com/atsushifx/til/commit/ae2ad5f9006f1810065348bbd5fbf3f8dd8733ed"/>
-        <updated>2025-01-31T07:46:58.000Z</updated>
-        <summary type="html"><![CDATA[docs: 2025-01-31: add commitlint for TIL repo]]></summary>
-        <content type="html"><![CDATA[.markdownlint.yaml
-
-# lint rules
-  line_length: 120
-------
-docs/2025/2025-01.md
-
-### 2025年1月31日
-
-- ["TIL"](https://github.com/atsushifx/til)に commitlint を追加
-
-- ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/)に commitlint を追加]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[build: update system configuration]]></title>
-        <id>77e08a525b631c419247ff356d2d9873b9ac2c06</id>
-        <link href="https://github.com/atsushifx/til/commit/77e08a525b631c419247ff356d2d9873b9ac2c06"/>
-        <updated>2025-01-31T05:57:24.000Z</updated>
-        <summary type="html"><![CDATA[build: update system configuration
-
-- install commitlint
-- config commitlint with .commitlintrc.ts
-- add husky to run commitlint on commit
-- husky : update ci-lint.sh use markdownlint-cli2
-- textlint : update prh dictionary
-  - delete icsmedia dictionary
-  - add smarthr dictionary
-- editorconfig: update indent_size
-- textlint: update configuration to yaml
-- textlint: update prh dictionary\
-- clear lint error from markdown]]></summary>
-        <content type="html"><![CDATA[.commitlintrc.ts
-
-const Configuration = {
-	/*
-	 * Resolve and load @commitlint/config-conventional from node_modules.
-	 * Referenced packages must be installed
-	 */
-	extends: ['@commitlint/config-conventional'],
-
-	formatter: '@commitlint/format',
-
-};
-
-export default Configuration]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[update: 2025年1月17日: 技術記事を執筆]]></title>
-        <id>722fec471dc76c28ab86ae1ce5b6d0e1a21c0cd0</id>
-        <link href="https://github.com/atsushifx/til/commit/722fec471dc76c28ab86ae1ce5b6d0e1a21c0cd0"/>
-        <updated>2025-01-17T11:26:30.000Z</updated>
-        <summary type="html"><![CDATA[update: 2025年1月17日: 技術記事を執筆]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-01.md
-
-### 2025年1月17日
-
-- [`Zenn`](https://zenn.dev/atsushifx)で技術記事を執筆:
-  [`Proxmox VE`: インストール手順ガイド](https://zenn.dev/atsushifx/articles/dev-proxmox-setup-install)
-
-### 2025年1月16日
-
-- 技術記事を執筆 (`Proxmox VE`:インストール手順ガイド)]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
