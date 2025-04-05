@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-03-25T06:08:06.000Z</updated>
+    <updated>2025-04-05T02:06:19.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025-04): 2025年4月用のTILページを設定]]></title>
+        <id>efa5a7192236e9b21547e6d2f5646f051c3ff0cc</id>
+        <link href="https://github.com/atsushifx/til/commit/efa5a7192236e9b21547e6d2f5646f051c3ff0cc"/>
+        <updated>2025-04-05T02:06:19.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025-04): 2025年4月用のTILページを設定]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+Zora
+------
+docs/2025/2025-04.md
+
+---
+title: 2025-04
+layout: default
+---
+
+## 2025年4月分
+
+### 2025年4月3日 ～ 5日
+
+- Zora による静的ブログの構築]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[fix(2025-03): 英単語への空白挿入、不要な空行の削除]]></title>
         <id>a2efd2dad6ccba544e6f68cdf645012b685f82de</id>
@@ -234,31 +261,6 @@ layout: default
 
 ------
 .husky/pre-commit]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[merge: merge RSS Feed]]></title>
-        <id>f7c6548cd751ae0a61978ac79a57b9e30b30c0b8</id>
-        <link href="https://github.com/atsushifx/til/commit/f7c6548cd751ae0a61978ac79a57b9e30b30c0b8"/>
-        <updated>2025-01-31T07:51:44.000Z</updated>
-        <summary type="html"><![CDATA[merge: merge RSS Feed]]></summary>
-        <content type="html"><![CDATA[docs/rss/feeds.xml
-
-    <updated>2025-01-31T07:27:51.000Z</updated>
-    <entry>
-        <title type="html"><![CDATA[build: update system configuration</title>
-        <id>77e08a525b631c419247ff356d2d9873b9ac2c06</id>
-        <link href="https://github.com/atsushifx/til/commit/77e08a525b631c419247ff356d2d9873b9ac2c06"/>
-        <updated>2025-01-31T05:57:24.000Z</updated>
-        <summary type="html"><![CDATA[build: update system configuration
-
-- install commitlint
-- config commitlint with .commitlintrc.ts
-- add husky to run commitlint on commit
-- husky : update ci-lint.sh use markdownlint-cli2]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
