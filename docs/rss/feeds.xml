@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-05T02:06:19.000Z</updated>
+    <updated>2025-04-10T16:10:18.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,25 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025/04): 4月10日分の更新]]></title>
+        <id>4e4b6caff3dd18097b83aafcce7392383317f80f</id>
+        <link href="https://github.com/atsushifx/til/commit/4e4b6caff3dd18097b83aafcce7392383317f80f"/>
+        <updated>2025-04-10T16:10:18.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025/04): 4月10日分の更新]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月10日
+
+- [開発環境セットアップガイド (インデックス)](https://zenn.dev/atsushifx/articles/wsl2-setup-overview)
+を執筆。
+
+- Zola による静的ブログの構築。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025-04): 2025年4月用のTILページを設定]]></title>
         <id>efa5a7192236e9b21547e6d2f5646f051c3ff0cc</id>
@@ -229,38 +248,6 @@ layout: default
 
 - ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/)に`Github Actions`導入
   PR時に記事をlint]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[build: lefthook: add lefthook instead of husky for githook]]></title>
-        <id>c5a11bc4f044d862342c9babcbeeb4f4c8652b9c</id>
-        <link href="https://github.com/atsushifx/til/commit/c5a11bc4f044d862342c9babcbeeb4f4c8652b9c"/>
-        <updated>2025-02-06T12:07:19.000Z</updated>
-        <summary type="html"><![CDATA[build: lefthook: add lefthook instead of husky for githook
---
-
-- lefthook.yml:		lefthook config
-- gitignore:s		ignore cache
-- textlintrc.yaml:  remove preset-japanese]]></summary>
-        <content type="html"><![CDATA[.gitignore
-
-# cache
-*cache*
-
-
-------
-.husky/ci-lint.sh
-
-
-------
-.husky/commit-msg
-
-
-------
-.husky/pre-commit]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
