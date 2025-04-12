@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-10T16:10:18.000Z</updated>
+    <updated>2025-04-12T10:42:27.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,27 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025-04): 20225年4月12日の作業を記録]]></title>
+        <id>181d96ba70019fde3a619a08fb2ed42cd495110f</id>
+        <link href="https://github.com/atsushifx/til/commit/181d96ba70019fde3a619a08fb2ed42cd495110f"/>
+        <updated>2025-04-12T10:42:27.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025-04): 20225年4月12日の作業を記録]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月12日
+
+- [skip-frontmatterフィルター](https://github.com/atsushifx/textlint-filter-rule-skip-frontmatter) 開発用に、開発環境を設定
+  typescript, tsup によるビルド環境、dprint によるフォーマット, eslint の設定など
+- [skip-frontmatterフィルター](https://github.com/atsushifx/textlint-filter-rule-skip-frontmatter) で、vitest, textlint-tester用のテスト環境を構築
+
+- `pnpm-workspace.yaml` は不要なため削除（monorepo 構成ではない）。
+- 将来の npm 公開に向けて `README.md`, CI 設定, npm 公開設定を進行予定。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025/04): 4月10日分の更新]]></title>
         <id>4e4b6caff3dd18097b83aafcce7392383317f80f</id>
@@ -224,30 +245,6 @@ docs/2025/2025-02.md
 ### 2025年2月19日
 
 - 開発用PCにWindowsを再インストール、再度環境構築]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs: 2025-02: zenn-devにgithub actionsを導入]]></title>
-        <id>804f9ccd39f715ea49beb84a44285300dbf1d714</id>
-        <link href="https://github.com/atsushifx/til/commit/804f9ccd39f715ea49beb84a44285300dbf1d714"/>
-        <updated>2025-02-06T12:14:09.000Z</updated>
-        <summary type="html"><![CDATA[docs: 2025-02: zenn-devにgithub actionsを導入]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-02.md
-
----
-title: 2025-02
-layout: default
----
-
-## TIL: 2025年2月分
-
-### 2025年2月6日
-
-- ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/)に`Github Actions`導入
-  PR時に記事をlint]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
