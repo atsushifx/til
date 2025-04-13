@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-12T10:42:27.000Z</updated>
+    <updated>2025-04-13T13:52:08.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,51 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(filter): add ignoreFrontmatterFilterRule and utility for frontmatter range]]></title>
+        <id>13ee76d1f955247ff9964e9c940399f28da3c82e</id>
+        <link href="https://github.com/atsushifx/til/commit/13ee76d1f955247ff9964e9c940399f28da3c82e"/>
+        <updated>2025-04-13T13:52:08.000Z</updated>
+        <summary type="html"><![CDATA[feat(filter): add ignoreFrontmatterFilterRule and utility for frontmatter range
+
+- Implement `ignoreFrontmatterFilterRule` to ignore YAML (---) / TOML (+++) frontmatter
+- Design `getFrontmatterRange` utility for range-based filtering
+
+build(env): setup development environment with ESM and vitest
+
+- Configure BDD-style testing environment using vitest
+- Enable testing with textlint kernel and markdown plugin
+
+test(filter): develop filter with TDD approach
+
+- Verify functionality with `ngWordRule` sample rule
+- Add support for TOML frontmatter
+- Validate AST structure using unified + remark-frontmatter
+
+refactor: organize structure and improve debugging
+
+- Consolidate test runner into `textlintTestRunner`
+- Restructure directories for rules and tests
+- Add debugging support with `console.debug` for filter ranges and AST]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月13日
+
+- ✅ textlint フィルターの開発と設計
+  - YAML (---) / TOML (+++) frontmatter を無視するための ignoreFrontmatterFilterRule を実装
+  - getFrontmatterRange ユーティリティを設計し、範囲指定でフィルタリング可能に
+- 🛠 開発環境構築（ESM, vitest, textlint-kernel）
+  - vitest を使った BDD スタイルのテスト環境を整備
+  - textlint kernel と markdown plugin の組み合わせでテスト可能に
+- 🧪 テスト駆動でのフィルター開発
+  - ngWordRule によるサンプルルールで動作確認
+  - TOML フロントマターへの対応確認
+  - unified + remark-frontmatter を使った AST 構造の検証も実施]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025-04): 20225年4月12日の作業を記録]]></title>
         <id>181d96ba70019fde3a619a08fb2ed42cd495110f</id>
@@ -213,38 +258,6 @@ layout: default
 - ["Zenn-dev"](https://github.com/atsushifx/zenn-dev/) に、"WindowsでGnuPGによる署名付きコミットを確実に実現する設定方"を執筆
 
 ### 2025年2月209日]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat: add project-specific dictionary to VSCode settings]]></title>
-        <id>ea72e333cce480d5cc30c4eb04b7af21270fddec</id>
-        <link href="https://github.com/atsushifx/til/commit/ea72e333cce480d5cc30c4eb04b7af21270fddec"/>
-        <updated>2025-02-21T08:18:40.000Z</updated>
-        <summary type="html"><![CDATA[feat: add project-specific dictionary to VSCode settings
-
-- Add `project.dic` to `.vscode/cspell/dicts` for custom spell-checking
-- Update `.gitignore` to exclude VSCode settings
-- Modify documentation in `docs/2025/2025-02.md` to reflect changes]]></summary>
-        <content type="html"><![CDATA[.gitignore
-
-!.vscode/cspell*
-------
-.vscode/cspell/dicts/project.dic
-
-# user dictionary for til
-lefthook
-Zenn
-------
-docs/2025/2025-02.md
-
-- GitHub用にGnuPGによる署名を設定
-
-### 2025年2月19日
-
-- 開発用PCにWindowsを再インストール、再度環境構築]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
