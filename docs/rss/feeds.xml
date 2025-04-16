@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-14T18:42:29.000Z</updated>
+    <updated>2025-04-16T13:04:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-04): TOMLパーサ組み込み成功、CIテストも通過]]></title>
+        <id>3e6df14584696e0da7a9d7773b4478707bf7352e</id>
+        <link href="https://github.com/atsushifx/til/commit/3e6df14584696e0da7a9d7773b4478707bf7352e"/>
+        <updated>2025-04-16T13:04:28.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-04): TOMLパーサ組み込み成功、CIテストも通過]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年5月16日
+
+- MarkdownProcessor に TOML 対応パーサを組み込み、Textlint プラグインのテストを整備
+  1. モノレポ環境でのテスト実行整備
+     - 各パッケージで test:ci を走らせるために、lerna を導入
+     - ルートから lerna run test:ci で一括実行可能に
+     - vitest を使って fixture ベースのテストを構築
+  2. MarkdownProcessor の型定義・Processor 実装の整理
+     - availableExtensions() を追加して .md 対応を明示
+     - preProcess() で AST を返すよう parse() を統合
+     - postProcess() の戻り値を TextlintPluginPostProcessResult に修正し、型エラーを完全解消
+  3. Textlint プラグインとしての動作確認]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(parser): add TOML frontmatter support to markdown-to-ast]]></title>
         <id>7c64915e889c9ba3fe5e4f37d9eb186585145c24</id>
@@ -244,30 +269,6 @@ docs/2025/2025-02.md
 ### 2025年3月16日
 
 - cSpellでプロジェクト用辞書の設定を見直し]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[build: 2024年3月分を追加]]></title>
-        <id>e8ac23a4ad6422c0b7e203c153d592ce22ca9132</id>
-        <link href="https://github.com/atsushifx/til/commit/e8ac23a4ad6422c0b7e203c153d592ce22ca9132"/>
-        <updated>2025-03-08T00:00:29.000Z</updated>
-        <summary type="html"><![CDATA[build: 2024年3月分を追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-03.md
-
----
-title: 2025-03
-layout: default
----
-
-##  2025年2月分
-
-### 2025年3月6日 ～ 8日
-
-- WSL をセットアップする方法`の記事を執筆
-- [`Tech Article Reviwer`](https://github.com/atsushifx/tech-article-reviewer)もプロンプトをバージョンアップ]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
