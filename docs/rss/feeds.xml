@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-16T13:04:28.000Z</updated>
+    <updated>2025-04-17T15:20:12.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025-04-17): templateを整備]]></title>
+        <id>c675bd7910b12734bb8ad003a372ec71d3dd87d5</id>
+        <link href="https://github.com/atsushifx/til/commit/c675bd7910b12734bb8ad003a372ec71d3dd87d5"/>
+        <updated>2025-04-17T15:20:12.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025-04-17): templateを整備
+
+- 日本語ドキュメントの整備
+- templatesディレクトリ下にドキュメントライティング用設定を整備し、インストールスクリプトを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月17日
+
+1. OSSテンプレート用に日本語ドキュメント一式を整備
+   - `README.ja.md`, `LICENSE.ja`, `CONTRIBUTING.ja.md`, `CODE_OF_CONDUCT.ja.md` を追加
+   - 日本語ユーザー向けの導入ドキュメントを完備し、`docs:` スコープでまとめてコミット
+
+2. writer向け Linter セットアップスクリプトを実装
+   - `installLinter.ps1` を作成し、PowerShell で `textlint`, `markdownlint-cli2`, `cspell` をインストール
+   - `.textlintrc.yaml`, `.markdownlint.yaml`, `.cspell.json` などをテンプレートからコピー
+   - `--global` や `--destination` パラメータに対応、RoboCopy を使って既存ファイルを安全に保持
+
+3. textlint のルールを整備]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-04): TOMLパーサ組み込み成功、CIテストも通過]]></title>
         <id>3e6df14584696e0da7a9d7773b4478707bf7352e</id>
@@ -251,24 +279,6 @@ docs/2025/2025-02.md
 			"description": " dictionary: til(Today I Leaened) specific words",
 			"path": "./cspell/dicts/til.dic",
 			"addWords": true,]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025/03): cSpellの設定を更新]]></title>
-        <id>bc2e4a1c51d607f1a124d440757e554a299eb4d4</id>
-        <link href="https://github.com/atsushifx/til/commit/bc2e4a1c51d607f1a124d440757e554a299eb4d4"/>
-        <updated>2025-03-17T23:23:26.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025/03): cSpellの設定を更新]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-03.md
-
-##  2025年3月分
-
-### 2025年3月16日
-
-- cSpellでプロジェクト用辞書の設定を見直し]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
