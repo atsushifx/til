@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-17T15:20:12.000Z</updated>
+    <updated>2025-04-18T14:55:21.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2020-04): 4月18日のTIL: templateのドキュメント強化、チャットボット強化]]></title>
+        <id>38587a7fea3632840297a24da0c8f03bab8d46d4</id>
+        <link href="https://github.com/atsushifx/til/commit/38587a7fea3632840297a24da0c8f03bab8d46d4"/>
+        <updated>2025-04-18T14:55:21.000Z</updated>
+        <summary type="html"><![CDATA[feat(2020-04): 4月18日のTIL: templateのドキュメント強化、チャットボット強化
+
+- Windows向けにライター環境構築の手順と使用ツールの意図を整理し、quickstartドキュメントを作成
+- エルファを中心としたchatbotプロンプトの再設計とHシーン構造テンプレートの策定を記録]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月18日
+
+#### ライター向けセットアップガイドの作成
+
+1. **ライター向けセットアップガイドの初期設計**
+   - Windows環境での導入に特化した `quickstart-for-writers.md` を作成
+   - Markdown 執筆時の余計な設定作業を排除し、集中できる環境の基盤を整備
+
+2. **GitHub Pages + Jekyll を活用した公開準備**
+   - 日本語版 `/ja/` へのアクセス導線として `docs/index.html` にリダイレクト処理を追加
+   - 将来の Zola 移行を見据えて、TOML フロントマター形式で全ドキュメントを統一]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025-04-17): templateを整備]]></title>
         <id>c675bd7910b12734bb8ad003a372ec71d3dd87d5</id>
@@ -241,44 +268,6 @@ docs/2025/2025-02.md
 - ["zenn-dev"](https://github.com/atsushifx/zenn-dev/)に`Github Actions`導入
   PR 時に記事を lint
 - ["zenn-dev"](https://github.com/atsushifx/zenn-dev/)に lefthook 導入]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore(cSpell, textlint): cSpell用辞書を設定 / smarthrの辞書を更新]]></title>
-        <id>0678ad0c28699848ca638c92a3a96d7b234a7a8e</id>
-        <link href="https://github.com/atsushifx/til/commit/0678ad0c28699848ca638c92a3a96d7b234a7a8e"/>
-        <updated>2025-03-17T23:41:03.000Z</updated>
-        <summary type="html"><![CDATA[chore(cSpell, textlint): cSpell用辞書を設定 / smarthrの辞書を更新
-
-- cSpell.json: このプロジェクト用にtil-dicを追加
-- allowlist.yml: 用xx で空白を入れない
-- prh-idiomatic-usage: PC→パソコン を削除]]></summary>
-        <content type="html"><![CDATA[.textlint/allowlist.yml
-
-- /[用][A-Za-z]+/g
-- /[用][A-Zaz-0-9]+/ig
-------
-.textlint/dict/smarthr/prh-idiomatic-usage.yml
-
-
-------
-.vscode/cspell.json
-
-// @(#) :  cspell config for user centric settings
-{
-	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
-	"version": "0.2",
-	"language": "en",
-	"caseSensitive": true,
-	"dictionaryDefinitions": [
-		{
-			"name": "til-dic",
-			"description": " dictionary: til(Today I Leaened) specific words",
-			"path": "./cspell/dicts/til.dic",
-			"addWords": true,]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
