@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-19T16:42:39.000Z</updated>
+    <updated>2025-04-20T15:26:44.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025-04-20): add structured E2E test utils with fixture support]]></title>
+        <id>54b463df7c0dd8b1b4d7da938d9724c883594e17</id>
+        <link href="https://github.com/atsushifx/til/commit/54b463df7c0dd8b1b4d7da938d9724c883594e17"/>
+        <updated>2025-04-20T15:26:44.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025-04-20): add structured E2E test utils with fixture support
+
+- `@textlint/e2etest` に再利用可能な lintFile / runFixtures を統合
+- `getLintTestCase` 関数で Vitest 対応のテスト登録を分離・整理
+- 型定義を `e2e-lint.types.ts` に集約し JSDoc を整備
+- markdown プラグインに fixture ベースの E2E テストを適用・確認]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+etest
+------
+docs/2025/2025-04.md
+
+### 2025年4月20日
+
+- `@textlint/e2etest` に reusable な E2E ユーティリティを整備・統合。
+- `lintFileHelper` / `runFixtures` による構造化と型・JSDoc を整理。
+- `getLintTestCase()` で Vitest に対応する動的テスト定義を分離。
+- markdown プラグインで fixture テスト適用＆正常動作を確認。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(205-04-19): Markdown対応パーサの開発、ChatGPTプロンプトのカスタマイズ]]></title>
         <id>99387753b39eaa7a63267694e41f3bb66eb7dfd4</id>
@@ -252,21 +280,6 @@ layout: default
 ### 2025年4月3日 ～ 5日
 
 - Zora による静的ブログの構築]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[fix(2025-03): 英単語への空白挿入、不要な空行の削除]]></title>
-        <id>a2efd2dad6ccba544e6f68cdf645012b685f82de</id>
-        <link href="https://github.com/atsushifx/til/commit/a2efd2dad6ccba544e6f68cdf645012b685f82de"/>
-        <updated>2025-03-25T06:08:06.000Z</updated>
-        <summary type="html"><![CDATA[fix(2025-03): 英単語への空白挿入、不要な空行の削除]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-03.md
-
-- Zenn に[はじめての apt 設定とアップグレード](https://zenn.dev/atsushifx/articles/wsl2-setup-apt-basics-and-maintenance)を追加
-- Zenn に[Debian を快適に使うための APT 設定とメンテナンス](https://zenn.dev/atsushifx/articles/wsl2-config-debian-apt-maintenance)を追加]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
