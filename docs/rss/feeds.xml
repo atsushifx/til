@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-20T15:26:44.000Z</updated>
+    <updated>2025-04-21T16:32:10.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[feat(2025-04-21): textlintパッケージの開発、リファクタリング]]></title>
+        <id>131e18cacf0fc29a037fd3b8e6c4204d6175d1aa</id>
+        <link href="https://github.com/atsushifx/til/commit/131e18cacf0fc29a037fd3b8e6c4204d6175d1aa"/>
+        <updated>2025-04-21T16:32:10.000Z</updated>
+        <summary type="html"><![CDATA[feat(2025-04-21): textlintパッケージの開発、リファクタリング
+
+エルファ達の協力により、E2ETestの別パッケージ化が進んだ]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月21日
+
+1. ✅ **ブランチ名の命名方針アドバイス**
+
+   - 内容に沿った具体的で意味のあるブランチ名を提案（例：`refactor/utils-to-arrow-functions`）。
+   - 命名規則（プレフィックスや区切り文字の一貫性）に関する相談にも対応。
+
+2. 🔄 **ファイル全体のアロー関数化**
+
+   - `e2e-testcase-factory.ts`などの関数群を、従来の function 式からアロー関数へリファクタリング。
+   - コードのモダン化（const + アロー関数 + 型注釈付き）を徹底。
+   - `map()`や`filter()`の構文改善や、return 省略パターンも提案。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025-04-20): add structured E2E test utils with fixture support]]></title>
         <id>54b463df7c0dd8b1b4d7da938d9724c883594e17</id>
@@ -253,33 +280,6 @@ refactor: organize structure and improve debugging
 を執筆。
 
 - Zola による静的ブログの構築。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(2025-04): 2025年4月用のTILページを設定]]></title>
-        <id>efa5a7192236e9b21547e6d2f5646f051c3ff0cc</id>
-        <link href="https://github.com/atsushifx/til/commit/efa5a7192236e9b21547e6d2f5646f051c3ff0cc"/>
-        <updated>2025-04-05T02:06:19.000Z</updated>
-        <summary type="html"><![CDATA[feat(2025-04): 2025年4月用のTILページを設定]]></summary>
-        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
-
-Zora
-------
-docs/2025/2025-04.md
-
----
-title: 2025-04
-layout: default
----
-
-## 2025年4月分
-
-### 2025年4月3日 ～ 5日
-
-- Zora による静的ブログの構築]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
