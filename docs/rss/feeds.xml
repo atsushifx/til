@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-21T16:32:10.000Z</updated>
+    <updated>2025-04-23T14:46:34.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-04-23): ESLint構成の整理とE2E対応の改善を記録]]></title>
+        <id>4e34c8705226231c1809c20f081a4cf8196ef214</id>
+        <link href="https://github.com/atsushifx/til/commit/4e34c8705226231c1809c20f081a4cf8196ef214"/>
+        <updated>2025-04-23T14:46:34.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-04-23): ESLint構成の整理とE2E対応の改善を記録
+
+- Flat ConfigベースのESLint設定を調整し、設定ファイルもLint対象に追加
+- lint / lint:typed スクリプトを追加し、共通スクリプトに記録
+- parserのdefault importや型定義への準拠を進め、Textlint pluginの型エラーを解消
+- E2Eテストの関数をアロー関数化し、requireからimportへの移行を実施]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月23日 -  ESLint + E2E設定まわり整備
+
+- Flat Config ベースの `eslint.config.js` を整理し、設定ファイル (`*.config.ts`) も対象に追加。
+- 型チェックを含む `lint:typed` と型なしの `lint` を `package.json` に登録し、共通テンプレートにも反映。
+- `@typescript-eslint/parser` を `default import` で正しく指定し、パースエラーを回避。
+- `TextlintKernelPlugin` 型準拠のため、`pluginId` や `plugin` を持つオブジェクトに修正。
+- E2E テストで `require` を `import` に移行し、関数もアロー関数形式へ書き換え。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[feat(2025-04-21): textlintパッケージの開発、リファクタリング]]></title>
         <id>131e18cacf0fc29a037fd3b8e6c4204d6175d1aa</id>
@@ -261,25 +286,6 @@ refactor: organize structure and improve debugging
 
 - `pnpm-workspace.yaml` は不要なため削除（monorepo 構成ではない）。
 - 将来の npm 公開に向けて `README.md`, CI 設定, npm 公開設定を進行予定。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(2025/04): 4月10日分の更新]]></title>
-        <id>4e4b6caff3dd18097b83aafcce7392383317f80f</id>
-        <link href="https://github.com/atsushifx/til/commit/4e4b6caff3dd18097b83aafcce7392383317f80f"/>
-        <updated>2025-04-10T16:10:18.000Z</updated>
-        <summary type="html"><![CDATA[feat(2025/04): 4月10日分の更新]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月10日
-
-- [開発環境セットアップガイド (インデックス)](https://zenn.dev/atsushifx/articles/wsl2-setup-overview)
-を執筆。
-
-- Zola による静的ブログの構築。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
