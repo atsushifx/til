@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-23T14:46:34.000Z</updated>
+    <updated>2025-04-24T14:34:23.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,35 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年4月24日): モノレポ用ユーティリティの開発に着手]]></title>
+        <id>3ee9a992063c5e1a61c45f43ae0a6be17905ff7d</id>
+        <link href="https://github.com/atsushifx/til/commit/3ee9a992063c5e1a61c45f43ae0a6be17905ff7d"/>
+        <updated>2025-04-24T14:34:23.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年4月24日): モノレポ用ユーティリティの開発に着手]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+skel
+------
+docs/2025/2025-04.md
+
+### 2025年4月24日 -  モノレポ用ユーティリティの開発に着手
+
+- 🛠 Makefile ベースの初期化フロー設計を確定
+  - `init`, `sync-configs`, `create-workspace` などをタスク化し、全体を OS 分岐付きで管理。
+  - Volta + pnpm 環境前提で `tsx` による同期スクリプトを活用。
+
+- 📦 スケルトン・共有設定ファイルの構成を整理
+  - `.skel.ts` や `*.base.ts` による明確な役割分担。
+  - `tsup`, `vitest`, `eslint`, `dprint` などを包括的に網羅。
+
+- 🔁 ワークスペース自動生成機能を設計
+  - `.env` で GitHub テンプレートを指定し、`make create-workspace` で新規作成。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-04-23): ESLint構成の整理とE2E対応の改善を記録]]></title>
         <id>4e34c8705226231c1809c20f081a4cf8196ef214</id>
@@ -265,27 +294,6 @@ refactor: organize structure and improve debugging
   - ngWordRule によるサンプルルールで動作確認
   - TOML フロントマターへの対応確認
   - unified + remark-frontmatter を使った AST 構造の検証も実施]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(2025-04): 20225年4月12日の作業を記録]]></title>
-        <id>181d96ba70019fde3a619a08fb2ed42cd495110f</id>
-        <link href="https://github.com/atsushifx/til/commit/181d96ba70019fde3a619a08fb2ed42cd495110f"/>
-        <updated>2025-04-12T10:42:27.000Z</updated>
-        <summary type="html"><![CDATA[feat(2025-04): 20225年4月12日の作業を記録]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月12日
-
-- [skip-frontmatterフィルター](https://github.com/atsushifx/textlint-filter-rule-skip-frontmatter) 開発用に、開発環境を設定
-  typescript, tsup によるビルド環境、dprint によるフォーマット, eslint の設定など
-- [skip-frontmatterフィルター](https://github.com/atsushifx/textlint-filter-rule-skip-frontmatter) で、vitest, textlint-tester用のテスト環境を構築
-
-- `pnpm-workspace.yaml` は不要なため削除（monorepo 構成ではない）。
-- 将来の npm 公開に向けて `README.md`, CI 設定, npm 公開設定を進行予定。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
