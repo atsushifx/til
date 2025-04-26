@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-24T14:34:23.000Z</updated>
+    <updated>2025-04-26T16:21:24.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年4月26日): リポジトリセットアップスクリプトを別リポジトリで開発]]></title>
+        <id>5a486d8c5848b54f398558a8caa31c3a852ac977</id>
+        <link href="https://github.com/atsushifx/til/commit/5a486d8c5848b54f398558a8caa31c3a852ac977"/>
+        <updated>2025-04-26T16:21:24.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年4月26日): リポジトリセットアップスクリプトを別リポジトリで開発]]></summary>
+        <content type="html"><![CDATA[.vale.ini
+
+# src: ~/.config/vale/.vale.ini
+### @(#)  : vale default config
+#
+# @version	1.0.0
+# @date		2035-04-22
+# @author	atsushifx  <atsushifx@aglabo.com>
+# @license	MIT
+#
+# @description<<
+# user default editorconfig :
+# symlink this to ~ : user root
+#<<]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年4月24日): モノレポ用ユーティリティの開発に着手]]></title>
         <id>3ee9a992063c5e1a61c45f43ae0a6be17905ff7d</id>
@@ -249,51 +274,6 @@ docs/2025/2025-04.md
   2. パーサに TOML frontmatter 対応追加:
      - +++ で囲まれた TOML frontmatter を検出し、Toml ノードに変換
      - YAML (---) と同様の扱いで、文書先頭にのみ適用]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(filter): add ignoreFrontmatterFilterRule and utility for frontmatter range]]></title>
-        <id>13ee76d1f955247ff9964e9c940399f28da3c82e</id>
-        <link href="https://github.com/atsushifx/til/commit/13ee76d1f955247ff9964e9c940399f28da3c82e"/>
-        <updated>2025-04-13T13:52:08.000Z</updated>
-        <summary type="html"><![CDATA[feat(filter): add ignoreFrontmatterFilterRule and utility for frontmatter range
-
-- Implement `ignoreFrontmatterFilterRule` to ignore YAML (---) / TOML (+++) frontmatter
-- Design `getFrontmatterRange` utility for range-based filtering
-
-build(env): setup development environment with ESM and vitest
-
-- Configure BDD-style testing environment using vitest
-- Enable testing with textlint kernel and markdown plugin
-
-test(filter): develop filter with TDD approach
-
-- Verify functionality with `ngWordRule` sample rule
-- Add support for TOML frontmatter
-- Validate AST structure using unified + remark-frontmatter
-
-refactor: organize structure and improve debugging
-
-- Consolidate test runner into `textlintTestRunner`
-- Restructure directories for rules and tests
-- Add debugging support with `console.debug` for filter ranges and AST]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月13日
-
-- ✅ textlint フィルターの開発と設計
-  - YAML (---) / TOML (+++) frontmatter を無視するための ignoreFrontmatterFilterRule を実装
-  - getFrontmatterRange ユーティリティを設計し、範囲指定でフィルタリング可能に
-- 🛠 開発環境構築（ESM, vitest, textlint-kernel）
-  - vitest を使った BDD スタイルのテスト環境を整備
-  - textlint kernel と markdown plugin の組み合わせでテスト可能に
-- 🧪 テスト駆動でのフィルター開発
-  - ngWordRule によるサンプルルールで動作確認
-  - TOML フロントマターへの対応確認
-  - unified + remark-frontmatter を使った AST 構造の検証も実施]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
