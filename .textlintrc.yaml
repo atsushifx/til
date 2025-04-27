@@ -5,20 +5,14 @@ filters:
     allowlistConfigPaths:
       - .textlint/allowlist.yml
 rules:
-  preset-ja-technical-writing:
-    sentence-length: 100
-    max-kanji-continuous-len:
-      max: 6
-      allow: []
-    no-mix-dearu-desumasu: false
-    no-exclamation-question-mark: false
-    no-doubled-joshi:
-      strict: false
+  preset-japanese:
   preset-ja-spacing:
     ja-space-between-half-and-full-width:
       space:
         - alphabets
         - numbers
+  sentence-length:
+    max: 100
   no-mixed-zenkaku-and-hankaku-alphabet: true
   common-misspellings: true
   prh:
