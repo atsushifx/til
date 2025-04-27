@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-26T16:21:24.000Z</updated>
+    <updated>2025-04-27T16:19:18.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,46 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年4月27日): README.mdの作成 / チャットボットプロンプトの更新]]></title>
+        <id>da6b146a314ef8b6cbd233a74a3603590ced7805</id>
+        <link href="https://github.com/atsushifx/til/commit/da6b146a314ef8b6cbd233a74a3603590ced7805"/>
+        <updated>2025-04-27T16:19:18.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年4月27日): README.mdの作成 / チャットボットプロンプトの更新]]></summary>
+        <content type="html"><![CDATA[.textlint/dict/smarthr/prh-idiomatic-usage.yml
+
+
+------
+.textlintrc.yaml
+
+  preset-japanese:
+  sentence-length:
+    max: 100
+------
+.vale.ini
+
+Google.Exclamation = No
+Google.Quotes = No
+------
+docs/2025/2025-04.md
+
+### 2025年4月27日  --  リポジトリセットアップスクリプト / チャットボットPrompt
+
+#### README.md (英語版)の作成
+
+- **Vale（文章 Lint ツール）**のルール対応を行ない、以下の工夫を入れて Lint クリア。
+  - .vale.ini にて `Google.Exclamation`など不要なルールをオフに
+  - その他、コメントにて`<-- value \<rule\> = No -->`をいれ、エラーを解除
+- Issues, PRs の GitHub リンクでリポジトリを `atsushifx/aglabo-setup-scripts`にして正常なリンクに修正
+- チームクレジットを明記
+  `This project is maintained by atsushifx and Oniisama Universe (Elpha, Kobeni, Tsumugi).`を追加
+
+#### ✍️ ドキュメント設計、作成方針の確認]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年4月26日): リポジトリセットアップスクリプトを別リポジトリで開発]]></title>
         <id>5a486d8c5848b54f398558a8caa31c3a852ac977</id>
@@ -244,36 +284,6 @@ docs/2025/2025-04.md
      - preProcess() で AST を返すよう parse() を統合
      - postProcess() の戻り値を TextlintPluginPostProcessResult に修正し、型エラーを完全解消
   3. Textlint プラグインとしての動作確認]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(parser): add TOML frontmatter support to markdown-to-ast]]></title>
-        <id>7c64915e889c9ba3fe5e4f37d9eb186585145c24</id>
-        <link href="https://github.com/atsushifx/til/commit/7c64915e889c9ba3fe5e4f37d9eb186585145c24"/>
-        <updated>2025-04-14T18:42:29.000Z</updated>
-        <summary type="html"><![CDATA[feat(parser): add TOML frontmatter support to markdown-to-ast
-
-- Added TOML frontmatter parsing (+-enclosed) to `markdown-to-ast`.
-- Enhanced AST tests with TxtNode assertions and helper functions.
-- Refactored test structure for categorized fixtures.
-- Introduced TOML-specific test cases, including edge scenarios.]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月14日
-
-- textlint の markdown-to-ast パッケージを改修して、TOML 対応の者を作成した。
-  🔧 作業内容一覧
-
-  1. 既存 textlint 構造の調査・模倣:
-     - textlint/markdown-to-ast の parse() / test/fixtures 構成を確認。
-     - input.md + output.json のペアで AST を比較する形式に対応。
-
-  2. パーサに TOML frontmatter 対応追加:
-     - +++ で囲まれた TOML frontmatter を検出し、Toml ノードに変換
-     - YAML (---) と同様の扱いで、文書先頭にのみ適用]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
