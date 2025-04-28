@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-27T16:19:18.000Z</updated>
+    <updated>2025-04-28T14:48:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年4月28日): チャットボットプロンプトの強化、TDD用スクリプトの強化など]]></title>
+        <id>16de952b8632e8356318a422f5798b6454d16fc2</id>
+        <link href="https://github.com/atsushifx/til/commit/16de952b8632e8356318a422f5798b6454d16fc2"/>
+        <updated>2025-04-28T14:48:28.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年4月28日): チャットボットプロンプトの強化、TDD用スクリプトの強化など]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-04.md
+
+### 2025年4月28日  --  リポジトリセットアップスクリプト / チャットボットPrompt
+
+#### mkdirFromList関数のモジュール化とリファクタリング
+
+- 内部ヘルパー createDirectoryWithCurrent を切り出し、モジュールスコープ管理に統一
+- パイプライン入力と通常パラメータ両対応で、begin-process-end 構成にリファクタリング
+- Mock で作成パスリストを記録し、mkdirFromList の複数ディレクトリ作成テストを堅牢化
+
+#### チャットボットプロンプトのブラッシュアップ
+
+- ✨ 改善ポイントまとめ
+  - モード分離の徹底整理]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年4月27日): README.mdの作成 / チャットボットプロンプトの更新]]></title>
         <id>da6b146a314ef8b6cbd233a74a3603590ced7805</id>
@@ -259,31 +284,6 @@ docs/2025/2025-04.md
    - `--global` や `--destination` パラメータに対応、RoboCopy を使って既存ファイルを安全に保持
 
 3. textlint のルールを整備]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-04): TOMLパーサ組み込み成功、CIテストも通過]]></title>
-        <id>3e6df14584696e0da7a9d7773b4478707bf7352e</id>
-        <link href="https://github.com/atsushifx/til/commit/3e6df14584696e0da7a9d7773b4478707bf7352e"/>
-        <updated>2025-04-16T13:04:28.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-04): TOMLパーサ組み込み成功、CIテストも通過]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年5月16日
-
-- MarkdownProcessor に TOML 対応パーサを組み込み、Textlint プラグインのテストを整備
-  1. モノレポ環境でのテスト実行整備
-     - 各パッケージで test:ci を走らせるために、lerna を導入
-     - ルートから lerna run test:ci で一括実行可能に
-     - vitest を使って fixture ベースのテストを構築
-  2. MarkdownProcessor の型定義・Processor 実装の整理
-     - availableExtensions() を追加して .md 対応を明示
-     - preProcess() で AST を返すよう parse() を統合
-     - postProcess() の戻り値を TextlintPluginPostProcessResult に修正し、型エラーを完全解消
-  3. Textlint プラグインとしての動作確認]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
