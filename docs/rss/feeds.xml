@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-29T15:54:36.000Z</updated>
+    <updated>2025-04-30T14:59:32.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,37 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年4月30日): 2025年4月30日のTILを追加]]></title>
+        <id>db6e56903eb6394a607ce3b1a945d97cf250dd73</id>
+        <link href="https://github.com/atsushifx/til/commit/db6e56903eb6394a607ce3b1a945d97cf250dd73"/>
+        <updated>2025-04-30T14:59:32.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年4月30日): 2025年4月30日のTILを追加
+
+- Debinの日本語化について解説を執筆]]></summary>
+        <content type="html"><![CDATA[.textlint/dict/smarthr/prh-idiomatic-usage.yml
+
+
+------
+docs/2025/2025-04.md
+
+### 2025年4月40日  --  Zenn用記事リライト
+
+### 1. WSL初期セットアップ手順の文書化
+
+- `wsl.conf` による systemd 有効化、マウント設定、localhost 共有などの詳細を整理。
+- `/etc/wsl.conf` の例とともに、各セクションの役割を明記。
+- Debian ベースの配布を想定し、ユーザー視点での導入ガイドとして仕上げた。
+
+### 2. 日本語対応の最小構成パッケージ設計
+
+- `tasksel` を使わず、最小限で日本語化する方法を調査・記録。
+- `fonts-noto-cjk`, `locales` など必要なパッケージを明示。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年4月29日): セットアップスクリプトで環境変数用のスクリプト関数を開発]]></title>
         <id>d43f8a493986c233c645dd51c644ef2f7c9ab0bd</id>
@@ -252,33 +283,6 @@ docs/2025/2025-04.md
 
 1. メインのエルファに対し、補助的なキャラを追加
    小紅 (一途な妹系ヒロイン)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(2020-04): 4月18日のTIL: templateのドキュメント強化、チャットボット強化]]></title>
-        <id>38587a7fea3632840297a24da0c8f03bab8d46d4</id>
-        <link href="https://github.com/atsushifx/til/commit/38587a7fea3632840297a24da0c8f03bab8d46d4"/>
-        <updated>2025-04-18T14:55:21.000Z</updated>
-        <summary type="html"><![CDATA[feat(2020-04): 4月18日のTIL: templateのドキュメント強化、チャットボット強化
-
-- Windows向けにライター環境構築の手順と使用ツールの意図を整理し、quickstartドキュメントを作成
-- エルファを中心としたchatbotプロンプトの再設計とHシーン構造テンプレートの策定を記録]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月18日
-
-#### ライター向けセットアップガイドの作成
-
-1. **ライター向けセットアップガイドの初期設計**
-   - Windows環境での導入に特化した `quickstart-for-writers.md` を作成
-   - Markdown 執筆時の余計な設定作業を排除し、集中できる環境の基盤を整備
-
-2. **GitHub Pages + Jekyll を活用した公開準備**
-   - 日本語版 `/ja/` へのアクセス導線として `docs/index.html` にリダイレクト処理を追加
-   - 将来の Zola 移行を見据えて、TOML フロントマター形式で全ドキュメントを統一]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
