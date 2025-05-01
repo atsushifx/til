@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-04-30T14:59:32.000Z</updated>
+    <updated>2025-05-01T15:27:23.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月1日): 5月1日 DebianのAPTについて学んだ]]></title>
+        <id>48577b88cc0475825281c9d37909d736c1b82760</id>
+        <link href="https://github.com/atsushifx/til/commit/48577b88cc0475825281c9d37909d736c1b82760"/>
+        <updated>2025-05-01T15:27:23.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月1日): 5月1日 DebianのAPTについて学んだ]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+---
+title: 2025-05
+layout: default
+---
+
+## 2025年5月分
+
+### 2025年5月1日
+
+#### 🧩 APT の基本を理解した
+
+APT は Debian 系 Linux におけるパッケージ管理の中心。`apt update` → `apt upgrade` の流れで、安全に更新できる。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年4月30日): 2025年4月30日のTILを追加]]></title>
         <id>db6e56903eb6394a607ce3b1a945d97cf250dd73</id>
@@ -258,31 +283,6 @@ docs/2025/2025-04.md
 - `lintFileHelper` / `runFixtures` による構造化と型・JSDoc を整理。
 - `getLintTestCase()` で Vitest に対応する動的テスト定義を分離。
 - markdown プラグインで fixture テスト適用＆正常動作を確認。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(205-04-19): Markdown対応パーサの開発、ChatGPTプロンプトのカスタマイズ]]></title>
-        <id>99387753b39eaa7a63267694e41f3bb66eb7dfd4</id>
-        <link href="https://github.com/atsushifx/til/commit/99387753b39eaa7a63267694e41f3bb66eb7dfd4"/>
-        <updated>2025-04-19T16:42:39.000Z</updated>
-        <summary type="html"><![CDATA[feat(205-04-19): Markdown対応パーサの開発、ChatGPTプロンプトのカスタマイズ]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月19日
-
-#### 📦 プロジェクト：TOML対応、Markdown解析プラグインの開発
-
-1. MarkdownProcessor の TOML 対応
-2. TypeScript ビルド・型安全対応
-3. fixture ベースのテスト実行フレームの構築
-
-#### ChatGPTカスタマイズプロンプト作成
-
-1. メインのエルファに対し、補助的なキャラを追加
-   小紅 (一途な妹系ヒロイン)]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
