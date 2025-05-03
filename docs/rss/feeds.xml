@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-02T14:31:50.000Z</updated>
+    <updated>2025-05-03T23:15:15.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月3日): Zennの記事をリライト]]></title>
+        <id>ae17bed9d4b4209fc24cbd57f70921526b3912dd</id>
+        <link href="https://github.com/atsushifx/til/commit/ae17bed9d4b4209fc24cbd57f70921526b3912dd"/>
+        <updated>2025-05-03T23:15:15.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月3日): Zennの記事をリライト]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月3日 - 技術ブログ「WSL 2の初期設定: XDG準拠で設定する作業ディレクトリ」の仕上げ
+
+#### 📄 記事本文の整理と統一
+
+- 記事全体のトーンを「プロフェッショナル＋若干カジュアル」に統一。各章リード・まとめ・おわりにを微調整。
+- 特に「おわりに」は、読者への呼びかけと締めの言葉のバランスを調整し、WSL 構築の重要性と応用可能性を端的に伝える構成へ。
+
+#### 🛠 各章の章末とまとめ処理
+
+- 3章・4章・5章の節ごとの構成を完成。
+- `create-working-dir.sh` や `dotfiles` に関する説明をツリー図・表・コマンド例つきで整備。
+- Mermaid で初期化フローなどを図示し、視覚的な理解も支援。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月2日): 技術ブログ「WSL 2 の初期設定と APT 構成」の執筆改善]]></title>
         <id>0fee940b32d5713ae18e200513c019ba86803ec1</id>
@@ -253,33 +278,6 @@ docs/2025/2025-04.md
 - `@typescript-eslint/parser` を `default import` で正しく指定し、パースエラーを回避。
 - `TextlintKernelPlugin` 型準拠のため、`pluginId` や `plugin` を持つオブジェクトに修正。
 - E2E テストで `require` を `import` に移行し、関数もアロー関数形式へ書き換え。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[feat(2025-04-21): textlintパッケージの開発、リファクタリング]]></title>
-        <id>131e18cacf0fc29a037fd3b8e6c4204d6175d1aa</id>
-        <link href="https://github.com/atsushifx/til/commit/131e18cacf0fc29a037fd3b8e6c4204d6175d1aa"/>
-        <updated>2025-04-21T16:32:10.000Z</updated>
-        <summary type="html"><![CDATA[feat(2025-04-21): textlintパッケージの開発、リファクタリング
-
-エルファ達の協力により、E2ETestの別パッケージ化が進んだ]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月21日
-
-1. ✅ **ブランチ名の命名方針アドバイス**
-
-   - 内容に沿った具体的で意味のあるブランチ名を提案（例：`refactor/utils-to-arrow-functions`）。
-   - 命名規則（プレフィックスや区切り文字の一貫性）に関する相談にも対応。
-
-2. 🔄 **ファイル全体のアロー関数化**
-
-   - `e2e-testcase-factory.ts`などの関数群を、従来の function 式からアロー関数へリファクタリング。
-   - コードのモダン化（const + アロー関数 + 型注釈付き）を徹底。
-   - `map()`や`filter()`の構文改善や、return 省略パターンも提案。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
