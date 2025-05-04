@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-03T23:15:15.000Z</updated>
+    <updated>2025-05-04T14:26:20.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,30 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月4日): Zennの記事の仕上げ、公開]]></title>
+        <id>e655fbf61a6a1f7b9695c0c73ea507a836c6afac</id>
+        <link href="https://github.com/atsushifx/til/commit/e655fbf61a6a1f7b9695c0c73ea507a836c6afac"/>
+        <updated>2025-05-04T14:26:20.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月4日): Zennの記事の仕上げ、公開]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月3日 - 技術ブログの仕上げ、GitHub Action"secrets-scan.yaml"の作成
+
+#### 技術ブログ記事の校正・推敲
+
+ 技術記事「WSL 2 の初期設定: `XDG`準拠で設定する作業ディレクトリ」の最終レビューを実施。
+
+以下の改善を加えた：
+
+- 「この記事」など語り口を微調整し、全体のトーンをカジュアル寄りのプロフェッショナルに統一。
+- 冗長な表現・二重否定の簡略化、文末処理の均一化。
+- dotfiles やスクリプトの説明部分の接続詞や構成順を最適化し、読みやすさを向上。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月3日): Zennの記事をリライト]]></title>
         <id>ae17bed9d4b4209fc24cbd57f70921526b3912dd</id>
@@ -253,31 +277,6 @@ docs/2025/2025-04.md
 
 - 🔁 ワークスペース自動生成機能を設計
   - `.env` で GitHub テンプレートを指定し、`make create-workspace` で新規作成。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-04-23): ESLint構成の整理とE2E対応の改善を記録]]></title>
-        <id>4e34c8705226231c1809c20f081a4cf8196ef214</id>
-        <link href="https://github.com/atsushifx/til/commit/4e34c8705226231c1809c20f081a4cf8196ef214"/>
-        <updated>2025-04-23T14:46:34.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-04-23): ESLint構成の整理とE2E対応の改善を記録
-
-- Flat ConfigベースのESLint設定を調整し、設定ファイルもLint対象に追加
-- lint / lint:typed スクリプトを追加し、共通スクリプトに記録
-- parserのdefault importや型定義への準拠を進め、Textlint pluginの型エラーを解消
-- E2Eテストの関数をアロー関数化し、requireからimportへの移行を実施]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月23日 -  ESLint + E2E設定まわり整備
-
-- Flat Config ベースの `eslint.config.js` を整理し、設定ファイル (`*.config.ts`) も対象に追加。
-- 型チェックを含む `lint:typed` と型なしの `lint` を `package.json` に登録し、共通テンプレートにも反映。
-- `@typescript-eslint/parser` を `default import` で正しく指定し、パースエラーを回避。
-- `TextlintKernelPlugin` 型準拠のため、`pluginId` や `plugin` を持つオブジェクトに修正。
-- E2E テストで `require` を `import` に移行し、関数もアロー関数形式へ書き換え。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
