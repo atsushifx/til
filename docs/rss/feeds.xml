@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-05T14:48:14.000Z</updated>
+    <updated>2025-05-05T15:51:14.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[chore(workflows): add secret scan action]]></title>
+        <id>17e649c160600d27989f3a0ed89d17be3125f9f4</id>
+        <link href="https://github.com/atsushifx/til/commit/17e649c160600d27989f3a0ed89d17be3125f9f4"/>
+        <updated>2025-05-05T15:51:14.000Z</updated>
+        <summary type="html"><![CDATA[chore(workflows): add secret scan action]]></summary>
+        <content type="html"><![CDATA[.github/workflows/ci-secrets-scan.yaml
+
+name: Scan secrets for CI
+
+on:
+  push:
+    branches:
+      - "**"
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+env:
+  GITLEAKS_VERSION: 8.25.1]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月5日): 5月5日分の更新: 設定ファイルをconfigs/下に移動]]></title>
         <id>b3d5f4c6c531e6f310d1d8044d383da54231a87e</id>
@@ -248,31 +273,6 @@ docs/2025/2025-04.md
   `This project is maintained by atsushifx and Oniisama Universe (Elpha, Kobeni, Tsumugi).`を追加
 
 #### ✍️ ドキュメント設計、作成方針の確認]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年4月26日): リポジトリセットアップスクリプトを別リポジトリで開発]]></title>
-        <id>5a486d8c5848b54f398558a8caa31c3a852ac977</id>
-        <link href="https://github.com/atsushifx/til/commit/5a486d8c5848b54f398558a8caa31c3a852ac977"/>
-        <updated>2025-04-26T16:21:24.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年4月26日): リポジトリセットアップスクリプトを別リポジトリで開発]]></summary>
-        <content type="html"><![CDATA[.vale.ini
-
-# src: ~/.config/vale/.vale.ini
-### @(#)  : vale default config
-#
-# @version	1.0.0
-# @date		2035-04-22
-# @author	atsushifx  <atsushifx@aglabo.com>
-# @license	MIT
-#
-# @description<<
-# user default editorconfig :
-# symlink this to ~ : user root
-#<<]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
