@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-06T17:32:10.000Z</updated>
+    <updated>2025-05-06T20:41:33.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,60 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[merge: sync from remote]]></title>
+        <id>4e0f5c6ef385ea9e01e9904a1f72eaaa23daf7e1</id>
+        <link href="https://github.com/atsushifx/til/commit/4e0f5c6ef385ea9e01e9904a1f72eaaa23daf7e1"/>
+        <updated>2025-05-06T20:41:33.000Z</updated>
+        <summary type="html"><![CDATA[merge: sync from remote]]></summary>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2025-05-06T17:32:10.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定</title>
+        <id>ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de</id>
+        <link href="https://github.com/atsushifx/til/commit/ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de"/>
+        <updated>2025-05-06T17:32:10.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定</summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+#### 2025年5月6日  -  TDD環境稿陸の記事を執筆 / valeの設定
+
+#### ✅ PowerShell TDD環境構築記事を執筆！📘]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore(config): move configs files to configs directory]]></title>
+        <id>ec43044a4c3439f20747470723da9505619df05c</id>
+        <link href="https://github.com/atsushifx/til/commit/ec43044a4c3439f20747470723da9505619df05c"/>
+        <updated>2025-05-06T20:40:28.000Z</updated>
+        <summary type="html"><![CDATA[chore(config): move configs files to configs directory]]></summary>
+        <content type="html"><![CDATA[.commitlintrc.ts
+
+
+------
+.editorconfig
+
+## @(#) : editorconfig common template for atsushifx
+##
+# @version  1.2.0
+# @date     2025-01-31
+# @author   atsushifx <atsushuifx@gmail.com>
+# Common editor settings for general programming and documentation files.
+# Applies consistent indentation and line-ending rules.
+### Base Settings
+# Markdown
+[*.md]
+indent_size = 2
+tab_width = 2]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定]]></title>
         <id>ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de</id>
@@ -193,60 +247,6 @@ layout: default
 #### 🧩 APT の基本を理解した
 
 APT は Debian 系 Linux におけるパッケージ管理の中心。`apt update` → `apt upgrade` の流れで、安全に更新できる。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年4月30日): 2025年4月30日のTILを追加]]></title>
-        <id>db6e56903eb6394a607ce3b1a945d97cf250dd73</id>
-        <link href="https://github.com/atsushifx/til/commit/db6e56903eb6394a607ce3b1a945d97cf250dd73"/>
-        <updated>2025-04-30T14:59:32.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年4月30日): 2025年4月30日のTILを追加
-
-- Debinの日本語化について解説を執筆]]></summary>
-        <content type="html"><![CDATA[.textlint/dict/smarthr/prh-idiomatic-usage.yml
-
-
-------
-docs/2025/2025-04.md
-
-### 2025年4月40日  --  Zenn用記事リライト
-
-### 1. WSL初期セットアップ手順の文書化
-
-- `wsl.conf` による systemd 有効化、マウント設定、localhost 共有などの詳細を整理。
-- `/etc/wsl.conf` の例とともに、各セクションの役割を明記。
-- Debian ベースの配布を想定し、ユーザー視点での導入ガイドとして仕上げた。
-
-### 2. 日本語対応の最小構成パッケージ設計
-
-- `tasksel` を使わず、最小限で日本語化する方法を調査・記録。
-- `fonts-noto-cjk`, `locales` など必要なパッケージを明示。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年4月29日): セットアップスクリプトで環境変数用のスクリプト関数を開発]]></title>
-        <id>d43f8a493986c233c645dd51c644ef2f7c9ab0bd</id>
-        <link href="https://github.com/atsushifx/til/commit/d43f8a493986c233c645dd51c644ef2f7c9ab0bd"/>
-        <updated>2025-04-29T15:54:36.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年4月29日): セットアップスクリプトで環境変数用のスクリプト関数を開発]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-04.md
-
-### 2025年4月29日  --  セットアップスクリプト
-
-#### 🛠 作業・開発まとめ
-
-- AgEnv (Environment Variable Manager) 完成
-  - **AgEnvScope enum**を定義して、`CURRENT` / `USER` / `SYSTEM` スコープに対応
-  - **AgEnvクラス**を作成し、内部ヘルパー (`_setEnv`, `_getEnv`, `_removeEnv`) を整理
-  - スクリプト関数 (`agSetEnv`, `agGetEnv`, `agRemoveEnv`, `agSetEnvFromList`) を実装
-  - **デフォルト Scope を USER、同期 On** に統一し、開発者負担を最小化
-  - **保護対象変数の設定**と、**空白チェック＆トリミング**による堅牢化を実施]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
