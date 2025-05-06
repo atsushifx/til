@@ -2,7 +2,7 @@ name: Generate RSS Feed
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -16,8 +16,8 @@ jobs:
         id: generate-feed
         uses: atsushifx/commit2feed@v0
         with:
-          user: 'atsushifx'
-          repo: 'TIL'
+          user: "atsushifx"
+          repo: "TIL"
 
       - name: Save Feed
         run: |
@@ -34,4 +34,3 @@ jobs:
           git commit -m "Update RSS feed"
           git push
           exit 0
-

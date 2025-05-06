@@ -1,7 +1,8 @@
+# src: lefthook.yml
 ## @(#) : lefthook config
 #
 # @version 1.0.0
-# @author  Furukawa, Atsushi <atsushifx@gmail.com>
+# @author  atsushifx <https://github.com/atsushifx>
 # @date    2024-02-05
 # @license MIT
 #
@@ -18,20 +19,30 @@ pre-commit:
       run: gitleaks protect --staged
 
     secretlint:
-      glob: '**/*'
-      run: secretlint --maskSecrets --secretlintignore .gitignore "{staged_files}"
+      glob: "**/*"
+      run: >
+        secretlint
+        --secretlintrc ./configs/secretlint.config.yaml
+        --secretlintignore .gitignore
+        --maskSecrets
+        "{staged_files}"
 
     textlint:
-      glob: '**/*.md'
-      run: textlint --cache "{staged_files}"
+      glob: "**/*.md"
+      run: >
+        textlint
+        --config ./configs/textlintrc.yaml
+        --cache
+        --cache-location .cache/textlint_cache
+        "{staged_files}"
 
     markdownlint:
-      glob: '**/*.md'
-      run: markdownlint-cli2 "{staged_files}"
+      glob: "**/*.md"
+      run: markdownlint-cli2 --config ./configs/.markdownlint.yaml "{staged_files}"
 
 # check commit message style
 commit-msg:
   parallel: true
   commands:
     commitlint:
-      run: pnpx commitlint -e
+      run: commitlint --config ./configs/commitlint.config.js --edit
