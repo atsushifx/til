@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-06T20:41:33.000Z</updated>
+    <updated>2025-05-08T20:09:32.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,35 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月8日): VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正]]></title>
+        <id>b3b9788b8fbc3381206531ae9b06719c61da11b3</id>
+        <link href="https://github.com/atsushifx/til/commit/b3b9788b8fbc3381206531ae9b06719c61da11b3"/>
+        <updated>2025-05-08T20:09:32.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月8日): VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正]]></summary>
+        <content type="html"><![CDATA[.vale.ini
+
+
+------
+docs/2025/2025-05.md
+
+#### 2025年5月8日  - `dprint`のVSCode拡張のBugFix
+
+#### 🐞 VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正
+
+- 🧩 原因
+  - Logger や OutputChannel が activateLsp / activateLegacy の切り替え時に毎回生成されていた
+  - dispose() のタイミングで、共有インスタンスが破棄されてしまい、ログが出力されなくなっていた
+
+- 🔧 対応内容
+  - Logger / OutputChannel をシングルトンに変更し、再初期化に強い構造へ変更
+  - 拡張全体で使い回される Logger インスタンスを Logger.getLogger() で取得する方式に統一
+  - リソースの管理、破棄を専用クラスでローカルによる管理に切り替え]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[merge: sync from remote]]></title>
         <id>4e0f5c6ef385ea9e01e9904a1f72eaaa23daf7e1</id>
@@ -222,31 +251,6 @@ env:
 
 - **はじめに**：技術背景に偏りすぎないよう一般ユーザー向けにリライト。APT の重要性をやさしく導入。
 - **sources.list 解説**：操作のリスクやポイントを明記し、リネームやバックアップの必要性も説明。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月1日): 5月1日 DebianのAPTについて学んだ]]></title>
-        <id>48577b88cc0475825281c9d37909d736c1b82760</id>
-        <link href="https://github.com/atsushifx/til/commit/48577b88cc0475825281c9d37909d736c1b82760"/>
-        <updated>2025-05-01T15:27:23.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月1日): 5月1日 DebianのAPTについて学んだ]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
----
-title: 2025-05
-layout: default
----
-
-## 2025年5月分
-
-### 2025年5月1日
-
-#### 🧩 APT の基本を理解した
-
-APT は Debian 系 Linux におけるパッケージ管理の中心。`apt update` → `apt upgrade` の流れで、安全に更新できる。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
