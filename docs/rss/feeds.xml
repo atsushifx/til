@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-10T23:05:50.000Z</updated>
+    <updated>2025-05-13T15:38:37.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,30 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月13日): 環境変数マネージャーの実装と記事作成]]></title>
+        <id>1b15c4b2a2875dec8a5d3418857ca4aa542b2bf2</id>
+        <link href="https://github.com/atsushifx/til/commit/1b15c4b2a2875dec8a5d3418857ca4aa542b2bf2"/>
+        <updated>2025-05-13T15:38:37.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月13日): 環境変数マネージャーの実装と記事作成]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月13日  - 環境変数マネージャーの実装  / 環境変数マネージャー実装に関する記事を作成
+
+#### 環境変数マネージャークラスをTDDで実装
+
+-  `_agEnvCore` クラスを中心に、Pester を使った TDD で機能を段階的に実装
+- **Raw 操作**:  `SetRaw`/`_GetRaw`/`_RemoveRaw`/`IsEnvExist `をまず実装・テスト
+- **``Get` メソッド}**: 内部の `_GetRaw` を呼び出す公開 API として実装し、明示的なスコープ指定に統一
+- **`Set` メソッド**: `Name`, `Value`, `Scope`, `Sync` を受け取り、Sync=true 時に`User`/`Current`を同時設定。返値は`"Name = Value"`
+- **`Remove` メソッド**:  Sync=true 時に User→Current 同時削除、返り値は削除した変数名
+- 各テストで `BeforeEach`/`AfterEach` を使い、環境変数の準備とクリーンアップを自動化
+- コミット履歴は機能単位でSquashし、意味のあるメッセージに整理]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月10日): 環境変数マネージャー、仕様設計]]></title>
         <id>a10bad5116a03f51fb4190233a5145943d1b90a5</id>
@@ -227,30 +251,6 @@ env:
 
 - プロジェクトルートに `dprint.json` が存在しないと VSCode 側で formatter が動作しない問題に遭遇。
 - `"dprint fmt"` に引数で設定ファイルを指定できれば解決できるが、現行拡張では未対応。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月4日): Zennの記事の仕上げ、公開]]></title>
-        <id>e655fbf61a6a1f7b9695c0c73ea507a836c6afac</id>
-        <link href="https://github.com/atsushifx/til/commit/e655fbf61a6a1f7b9695c0c73ea507a836c6afac"/>
-        <updated>2025-05-04T14:26:20.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月4日): Zennの記事の仕上げ、公開]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月3日 - 技術ブログの仕上げ、GitHub Action"secrets-scan.yaml"の作成
-
-#### 技術ブログ記事の校正・推敲
-
- 技術記事「WSL 2 の初期設定: `XDG`準拠で設定する作業ディレクトリ」の最終レビューを実施。
-
-以下の改善を加えた：
-
-- 「この記事」など語り口を微調整し、全体のトーンをカジュアル寄りのプロフェッショナルに統一。
-- 冗長な表現・二重否定の簡略化、文末処理の均一化。
-- dotfiles やスクリプトの説明部分の接続詞や構成順を最適化し、読みやすさを向上。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
