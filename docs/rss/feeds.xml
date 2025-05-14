@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-13T15:38:37.000Z</updated>
+    <updated>2025-05-14T19:48:38.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月14日): GItHub Action / setup-tool-with-egetの開発]]></title>
+        <id>ed20aa6f6d460ec20aa72cd66b41c0c6747a6110</id>
+        <link href="https://github.com/atsushifx/til/commit/ed20aa6f6d460ec20aa72cd66b41c0c6747a6110"/>
+        <updated>2025-05-14T19:48:38.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月14日): GItHub Action / setup-tool-with-egetの開発]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月14日  - egetDownload GitHub Actionsの開発
+
+1. `getExistEget`モジュールの開発
+   - vitestによるMock化、正常系、異常系のテスト
+   - `vi.mocked` を用いた型付きモック化の手法を習得
+
+2. `prepareInstallDirectory`モジュールの開発
+   - `fs/promises.mkdir` と `@actions/core.addPath`  を `vi.mock／vi.spyOn` でモック
+   - GitHub Actions 上で PATH に追加する処理の検証
+
+3. `getPlatform` ユーティリティ実装とテスト
+    - `os.platform()` → `windows`|`linux`に正規化する関数を作成]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月13日): 環境変数マネージャーの実装と記事作成]]></title>
         <id>1b15c4b2a2875dec8a5d3418857ca4aa542b2bf2</id>
@@ -226,31 +251,6 @@ on:
 
 env:
   GITLEAKS_VERSION: 8.25.1]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月5日): 5月5日分の更新: 設定ファイルをconfigs/下に移動]]></title>
-        <id>b3d5f4c6c531e6f310d1d8044d383da54231a87e</id>
-        <link href="https://github.com/atsushifx/til/commit/b3d5f4c6c531e6f310d1d8044d383da54231a87e"/>
-        <updated>2025-05-05T14:48:14.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月5日): 5月5日分の更新: 設定ファイルをconfigs/下に移動]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-#### 2025年5月5日 GitHub Actions + dprint + Secretlint関連の整理と改善
-
-#### 1. `eget`を使ったGitHub Actionsセットアップの懸念点整理
--
- `eget` を使用してツールをインストールするカスタムアクションのアイデアを検討。
-- セキュリティ上の懸念 (そのままでは、どんなツールでもインストールできる点）に気づき、**AllowListの導入が必須**と確認。
-- GitHub Actions で実行されるアクションにおいて、外部ツール取得時の信頼性確保の必要性を再認識。
-
-### 2. `dprint` の VSCode Extension 挙動に関する問題発見と対応案
-
-- プロジェクトルートに `dprint.json` が存在しないと VSCode 側で formatter が動作しない問題に遭遇。
-- `"dprint fmt"` に引数で設定ファイルを指定できれば解決できるが、現行拡張では未対応。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
