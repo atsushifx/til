@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-14T19:48:38.000Z</updated>
+    <updated>2025-05-16T15:06:36.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月124日): typesctiptをアロー関数などのモダンか、eslintによるlintほか]]></title>
+        <id>29ae00a34852965e9beb49ebd6d2c6d431282e4c</id>
+        <link href="https://github.com/atsushifx/til/commit/29ae00a34852965e9beb49ebd6d2c6d431282e4c"/>
+        <updated>2025-05-16T15:06:36.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月124日): typesctiptをアロー関数などのモダンか、eslintによるlintほか]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月15日  - egetDownload GitHub Actionsの開発
+
+#### 1. インストーラリファクタ（昨日実施）
+
+- EgetInitializer を AgActionInstallerExecutor として実装
+- NotSupportedExecutor を追加し、AgExecutorsMap に全タイプ登録
+- E2E テストで initializer.execute(options) と eget --version を検証
+
+#### 2. 型定義の整備
+
+- `src/shared/types/AgActionToolConfig.types.ts` を作成
+  - AgActionToolConfigBase（共通: type, tool, options）]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月14日): GItHub Action / setup-tool-with-egetの開発]]></title>
         <id>ed20aa6f6d460ec20aa72cd66b41c0c6747a6110</id>
@@ -104,153 +129,6 @@ enumにエイリアスを導入し、ユーザーにとってわかりやすい�
 -  ProtectedKeys（保護変数）検出用の `_isProtected()` を調整
 - テストスクリプト側も Describe/Context 構造で再整理し、モジュール化
  - テストケースは `MOCK_ENV` に統一し、例外発生を安定して検証]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月8日): VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正]]></title>
-        <id>b3b9788b8fbc3381206531ae9b06719c61da11b3</id>
-        <link href="https://github.com/atsushifx/til/commit/b3b9788b8fbc3381206531ae9b06719c61da11b3"/>
-        <updated>2025-05-08T20:09:32.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月8日): VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正]]></summary>
-        <content type="html"><![CDATA[.vale.ini
-
-
-------
-docs/2025/2025-05.md
-
-#### 2025年5月8日  - `dprint`のVSCode拡張のBugFix
-
-#### 🐞 VSCode拡張 `dprint-vscode` にて Logger 出力が行われないバグを修正
-
-- 🧩 原因
-  - Logger や OutputChannel が activateLsp / activateLegacy の切り替え時に毎回生成されていた
-  - dispose() のタイミングで、共有インスタンスが破棄されてしまい、ログが出力されなくなっていた
-
-- 🔧 対応内容
-  - Logger / OutputChannel をシングルトンに変更し、再初期化に強い構造へ変更
-  - 拡張全体で使い回される Logger インスタンスを Logger.getLogger() で取得する方式に統一
-  - リソースの管理、破棄を専用クラスでローカルによる管理に切り替え]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[merge: sync from remote]]></title>
-        <id>4e0f5c6ef385ea9e01e9904a1f72eaaa23daf7e1</id>
-        <link href="https://github.com/atsushifx/til/commit/4e0f5c6ef385ea9e01e9904a1f72eaaa23daf7e1"/>
-        <updated>2025-05-06T20:41:33.000Z</updated>
-        <summary type="html"><![CDATA[merge: sync from remote]]></summary>
-        <content type="html"><![CDATA[docs/rss/feeds.xml
-
-    <updated>2025-05-06T17:32:10.000Z</updated>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定</title>
-        <id>ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de</id>
-        <link href="https://github.com/atsushifx/til/commit/ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de"/>
-        <updated>2025-05-06T17:32:10.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定</summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-#### 2025年5月6日  -  TDD環境稿陸の記事を執筆 / valeの設定
-
-#### ✅ PowerShell TDD環境構築記事を執筆！📘]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore(config): move configs files to configs directory]]></title>
-        <id>ec43044a4c3439f20747470723da9505619df05c</id>
-        <link href="https://github.com/atsushifx/til/commit/ec43044a4c3439f20747470723da9505619df05c"/>
-        <updated>2025-05-06T20:40:28.000Z</updated>
-        <summary type="html"><![CDATA[chore(config): move configs files to configs directory]]></summary>
-        <content type="html"><![CDATA[.commitlintrc.ts
-
-
-------
-.editorconfig
-
-## @(#) : editorconfig common template for atsushifx
-##
-# @version  1.2.0
-# @date     2025-01-31
-# @author   atsushifx <atsushuifx@gmail.com>
-# Common editor settings for general programming and documentation files.
-# Applies consistent indentation and line-ending rules.
-### Base Settings
-# Markdown
-[*.md]
-indent_size = 2
-tab_width = 2]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定]]></title>
-        <id>ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de</id>
-        <link href="https://github.com/atsushifx/til/commit/ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de"/>
-        <updated>2025-05-06T17:32:10.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-#### 2025年5月6日  -  TDD環境稿陸の記事を執筆 / valeの設定
-
-#### ✅ PowerShell TDD環境構築記事を執筆！📘
-
-- Pester v5 を使ったユニットテストの導入方法を、実践＋対話形式＋デバッグ付きでまとめた。
--  runTests.ps1、sample.Tests.ps1、sample.ps1 含む3点セットのコードを整理して、初学者にも優しい構成に。
-- $ScriptRoot のスコープ罠や BeforeAll での読み込みといった 実践でつまづきやすいポイントも丁寧に解説。
-- エルファ・こべに・つむぎと一緒に進めることで、TDDとバイブコーディングの両立という新しいスタイルを提示！
-
-#### ✅ `.vale.ini` の調整で Git コミットメッセージのチェック抑制
-
-- `COMMIT_EDITMSG` が誤って `vale` に拾われてしまう問題に対処。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore(til): add words]]></title>
-        <id>7f0f68aec28bc3f9c267940d9b5e0a0c558c3dc4</id>
-        <link href="https://github.com/atsushifx/til/commit/7f0f68aec28bc3f9c267940d9b5e0a0c558c3dc4"/>
-        <updated>2025-05-06T17:31:28.000Z</updated>
-        <summary type="html"><![CDATA[chore(til): add words]]></summary>
-        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
-
-eget]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore(workflows): add secret scan action]]></title>
-        <id>17e649c160600d27989f3a0ed89d17be3125f9f4</id>
-        <link href="https://github.com/atsushifx/til/commit/17e649c160600d27989f3a0ed89d17be3125f9f4"/>
-        <updated>2025-05-05T15:51:14.000Z</updated>
-        <summary type="html"><![CDATA[chore(workflows): add secret scan action]]></summary>
-        <content type="html"><![CDATA[.github/workflows/ci-secrets-scan.yaml
-
-name: Scan secrets for CI
-
-on:
-  push:
-    branches:
-      - "**"
-  pull_request:
-    branches: [main, develop]
-  workflow_dispatch:
-
-env:
-  GITLEAKS_VERSION: 8.25.1]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
