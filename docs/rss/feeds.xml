@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-21T15:55:34.000Z</updated>
+    <updated>2025-05-23T15:16:12.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,30 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025/05/23): shared/common新設ほか]]></title>
+        <id>ca978874ec13823e9602d9db4a8fd0b6b9612c2f</id>
+        <link href="https://github.com/atsushifx/til/commit/ca978874ec13823e9602d9db4a8fd0b6b9612c2f"/>
+        <updated>2025-05-23T15:16:12.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025/05/23): shared/common新設ほか]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月23日 -  GHAツール開発
+
+#### **/shared/common 新設**
+
+- TypeScript 共通型・定数の一元化を目的に `/shared/common` ディレクトリを新設。
+- モノレポ全体での再利用性・保守性を重視した構造設計を強化。
+
+#### **base configs ファイルのアップデート**
+
+- `/shared/configs` 配下の ESLint, Secretlint, tsup, vitest など **base設定ファイル群**を `/shared/common` 仕様に対応。
+- 各種 config 内のパス解決や import 記述を、**新しい共通ディレクトリ構成**に合わせて修正。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月21日): easy-set-toolsの開発進捗]]></title>
         <id>f0c6b8e58919a54c4433bf2b2ea6d2b667fc0d1c</id>
@@ -239,31 +263,6 @@ docs/2025/2025-05.md
 [*.md]
 indent_size = 2
 tab_width = 2]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定]]></title>
-        <id>ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de</id>
-        <link href="https://github.com/atsushifx/til/commit/ce28ae9acf8d5d44a8e8b40fb39fb05448fc78de"/>
-        <updated>2025-05-06T17:32:10.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月6日): tdd環境稿陸の記事を執筆 / valeの設定]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-#### 2025年5月6日  -  TDD環境稿陸の記事を執筆 / valeの設定
-
-#### ✅ PowerShell TDD環境構築記事を執筆！📘
-
-- Pester v5 を使ったユニットテストの導入方法を、実践＋対話形式＋デバッグ付きでまとめた。
--  runTests.ps1、sample.Tests.ps1、sample.ps1 含む3点セットのコードを整理して、初学者にも優しい構成に。
-- $ScriptRoot のスコープ罠や BeforeAll での読み込みといった 実践でつまづきやすいポイントも丁寧に解説。
-- エルファ・こべに・つむぎと一緒に進めることで、TDDとバイブコーディングの両立という新しいスタイルを提示！
-
-#### ✅ `.vale.ini` の調整で Git コミットメッセージのチェック抑制
-
-- `COMMIT_EDITMSG` が誤って `vale` に拾われてしまう問題に対処。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
