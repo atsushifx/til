@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-23T15:16:12.000Z</updated>
+    <updated>2025-05-24T15:23:10.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5ガル24日): リファクタリング実行、進捗]]></title>
+        <id>c7f07215a3bc02ee1baa13c77c27d9e858b49da0</id>
+        <link href="https://github.com/atsushifx/til/commit/c7f07215a3bc02ee1baa13c77c27d9e858b49da0"/>
+        <updated>2025-05-24T15:23:10.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5ガル24日): リファクタリング実行、進捗]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月25日 - easy-setup-tools-actionのリファクタリング
+
+#### getPlatformユーティリティの分割と集約リファクタ
+
+- モノレポ共通の OS 判定関数（getPlatform, getDelimiter）を独立パッケージ化
+- strict モードでエラースロー or undefined 返却の柔軟な API 設計
+- 型、JSDoc、ユニットテストも新規整備
+
+#### Kebab-case命名＆バレルファイルで統一的にexport
+
+- npm/pnpm 規約に従い、@ag-utils/get-platform のような kebab-case・小文字スコープで命名
+- index.ts（バレルファイル）で個別関数と agUtils 名前空間（object）export に対応]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025/05/23): shared/common新設ほか]]></title>
         <id>ca978874ec13823e9602d9db4a8fd0b6b9612c2f</id>
@@ -234,35 +259,6 @@ docs/2025/2025-05.md
 #### 2025年5月6日  -  TDD環境稿陸の記事を執筆 / valeの設定
 
 #### ✅ PowerShell TDD環境構築記事を執筆！📘]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore(config): move configs files to configs directory]]></title>
-        <id>ec43044a4c3439f20747470723da9505619df05c</id>
-        <link href="https://github.com/atsushifx/til/commit/ec43044a4c3439f20747470723da9505619df05c"/>
-        <updated>2025-05-06T20:40:28.000Z</updated>
-        <summary type="html"><![CDATA[chore(config): move configs files to configs directory]]></summary>
-        <content type="html"><![CDATA[.commitlintrc.ts
-
-
-------
-.editorconfig
-
-## @(#) : editorconfig common template for atsushifx
-##
-# @version  1.2.0
-# @date     2025-01-31
-# @author   atsushifx <atsushuifx@gmail.com>
-# Common editor settings for general programming and documentation files.
-# Applies consistent indentation and line-ending rules.
-### Base Settings
-# Markdown
-[*.md]
-indent_size = 2
-tab_width = 2]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
