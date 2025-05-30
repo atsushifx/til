@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-27T17:56:58.000Z</updated>
+    <updated>2025-05-30T15:24:51.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2o25年5月30日): ESTAで、eslintの設定を集約、monorepo rootでlint]]></title>
+        <id>efec634ac8ca7565a6bda60b31ba15e15d116b56</id>
+        <link href="https://github.com/atsushifx/til/commit/efec634ac8ca7565a6bda60b31ba15e15d116b56"/>
+        <updated>2025-05-30T15:24:51.000Z</updated>
+        <summary type="html"><![CDATA[docs(2o25年5月30日): ESTAで、eslintの設定を集約、monorepo rootでlint]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月30日 --- ESTA開発の続き
+
+#### ✅ **1. ESLint型チェックをmonorepoルートに統一**
+
+- `eslint.config.typed.js` を作成し、`@typescript-eslint/parser`と複数`tsconfig.json`を統合
+- 各サブパッケージの ESLint 型設定を集約 → 全体で `pnpm run lint-all-types` が通るように
+- 型チェックルール（`no-unnecessary-condition` など）も Flat Config で反映 OK🎉
+
+#### ✅ **2. 型付きLintの落とし穴を突破**
+
+- `eslint.config.*.js` 自身が Lint 対象になる → `ignores` や `--ignore-pattern` で明示除外
+- `rules`のみの設定でも`files`がないと**全ファイル対象になる**ので注意！]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025/05/27): CIにeslint組み込み]]></title>
         <id>8647ded43de46cfc017925b30bf29185910c017c</id>
@@ -234,31 +259,6 @@ enumにエイリアスを導入し、ユーザーにとってわかりやすい�
 
 | スコープ | エイリアス |意味 | 反映範囲 |
 | ---  | --- | --- | --- |]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月9日):  refactor PowerShell 環境変数マネージャのリファクタとTDD対応]]></title>
-        <id>e34089f2772d97e32f5c01a9794109c48e8c26e3</id>
-        <link href="https://github.com/atsushifx/til/commit/e34089f2772d97e32f5c01a9794109c48e8c26e3"/>
-        <updated>2025-05-09T14:40:10.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月9日):  refactor PowerShell 環境変数マネージャのリファクタとTDD対応]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月9日  - PowerShell 環境変数マネージャのリファクタとTDD対応
-
-#### 🔧 実施内容
-
-- `AgEnv` クラスを `_AgEnvManager` にリネームし、内部実装として明示
-- 環境変数の設定処理 `_setEnv()` を `NoSync` 対応付きで再設計
- - 同期処理は `Scope != CURRENT` のときにのみ適用
- - `_setEnvScoped()` によって1スコープ限定の操作を明確化
-- `-WhatIf` 処理は外部関数側（`agSetEnv`）に集約し、クラス内には持たせない方針
--  ProtectedKeys（保護変数）検出用の `_isProtected()` を調整
-- テストスクリプト側も Describe/Context 構造で再整理し、モジュール化
- - テストケースは `MOCK_ENV` に統一し、例外発生を安定して検証]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
