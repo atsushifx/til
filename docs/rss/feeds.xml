@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-30T15:24:51.000Z</updated>
+    <updated>2025-05-31T14:44:06.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,30 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年5月31日): ESTAのキャッシュを共通化し、効率化]]></title>
+        <id>c320a850af6480f7d6bd57e23abd26934f193f63</id>
+        <link href="https://github.com/atsushifx/til/commit/c320a850af6480f7d6bd57e23abd26934f193f63"/>
+        <updated>2025-05-31T14:44:06.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年5月31日): ESTAのキャッシュを共通化し、効率化]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+### 2025年5月31日 --- ESTA開発: eslint, cspellキャッシュの共通化
+
+#### ✅ 実施概要
+
+Monorepo における開発体験の高速化と簡便化のため、
+
+- eslint / cspell のキャッシュ共通化
+- tsc のパッケージ単位キャッシュ維持
+- パッケージスコープ名の簡略リネーム
+
+を実施し、Pull Request を作成・マージ。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2o25年5月30日): ESTAで、eslintの設定を集約、monorepo rootでlint]]></title>
         <id>efec634ac8ca7565a6bda60b31ba15e15d116b56</id>
@@ -234,31 +258,6 @@ docs/2025/2025-05.md
 - **`Remove` メソッド**:  Sync=true 時に User→Current 同時削除、返り値は削除した変数名
 - 各テストで `BeforeEach`/`AfterEach` を使い、環境変数の準備とクリーンアップを自動化
 - コミット履歴は機能単位でSquashし、意味のあるメッセージに整理]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月10日): 環境変数マネージャー、仕様設計]]></title>
-        <id>a10bad5116a03f51fb4190233a5145943d1b90a5</id>
-        <link href="https://github.com/atsushifx/til/commit/a10bad5116a03f51fb4190233a5145943d1b90a5"/>
-        <updated>2025-05-10T23:05:50.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月10日): 環境変数マネージャー、仕様設計]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月10日  - 環境変数数マネージャー仕様設計
-
-Zennの記事作成用に、再度、仕様設計。
-スコープ仕様、および `Sync`の仕様を若干リファクタリング
-
-#### ✅ スコープ仕様の整理
-
-関数呼び出し時のスコープはenumを導入し、型安全に。
-enumにエイリアスを導入し、ユーザーにとってわかりやすい呼び出しを可能に。
-
-| スコープ | エイリアス |意味 | 反映範囲 |
-| ---  | --- | --- | --- |]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
