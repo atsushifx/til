@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-05-31T14:44:06.000Z</updated>
+    <updated>2025-06-02T15:29:53.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,40 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-06-02): 2025年6月分のTILを追加]]></title>
+        <id>174b467cab9cf42dddebb8aaa5935426f372fdcc</id>
+        <link href="https://github.com/atsushifx/til/commit/174b467cab9cf42dddebb8aaa5935426f372fdcc"/>
+        <updated>2025-06-02T15:29:53.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-06-02): 2025年6月分のTILを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-05.md
+
+- ✨ 概要
+  - disposeAsync(); タイムアウト付きの非同期破棄 (stop() → dispose() 両対応)
+<!-- vale Google.WordList = NO -->
+- GitHub Actions における外部ツール利用は「セキュリティ前提の設計」が不可欠。
+- `.vscode` に依存せず、CLI や CI でも整合性が取れる設定ファイル構成が重要。
+<!-- vale Google.WordList = YES -->
+------
+docs/2025/2025-06.md
+
+---
+title: 2025-06
+layout: default
+---
+
+## 2025年6月分
+
+### 2025年6月2日 -- ESTA開発: errorによる実行制御の要件定義
+
+#### 🔧 今日のテーマ
+
+プロセス終了処理 (`process.exit`) の一元化とログ出力・exitCode 制御の分離。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年5月31日): ESTAのキャッシュを共通化し、効率化]]></title>
         <id>c320a850af6480f7d6bd57e23abd26934f193f63</id>
@@ -234,30 +268,6 @@ docs/2025/2025-05.md
 
 3. `getPlatform` ユーティリティ実装とテスト
     - `os.platform()` → `windows`|`linux`に正規化する関数を作成]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月13日): 環境変数マネージャーの実装と記事作成]]></title>
-        <id>1b15c4b2a2875dec8a5d3418857ca4aa542b2bf2</id>
-        <link href="https://github.com/atsushifx/til/commit/1b15c4b2a2875dec8a5d3418857ca4aa542b2bf2"/>
-        <updated>2025-05-13T15:38:37.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月13日): 環境変数マネージャーの実装と記事作成]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月13日  - 環境変数マネージャーの実装  / 環境変数マネージャー実装に関する記事を作成
-
-#### 環境変数マネージャークラスをTDDで実装
-
--  `_agEnvCore` クラスを中心に、Pester を使った TDD で機能を段階的に実装
-- **Raw 操作**:  `SetRaw`/`_GetRaw`/`_RemoveRaw`/`IsEnvExist `をまず実装・テスト
-- **``Get` メソッド}**: 内部の `_GetRaw` を呼び出す公開 API として実装し、明示的なスコープ指定に統一
-- **`Set` メソッド**: `Name`, `Value`, `Scope`, `Sync` を受け取り、Sync=true 時に`User`/`Current`を同時設定。返値は`"Name = Value"`
-- **`Remove` メソッド**:  Sync=true 時に User→Current 同時削除、返り値は削除した変数名
-- 各テストで `BeforeEach`/`AfterEach` を使い、環境変数の準備とクリーンアップを自動化
-- コミット履歴は機能単位でSquashし、意味のあるメッセージに整理]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
