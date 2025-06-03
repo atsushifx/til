@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-02T15:29:53.000Z</updated>
+    <updated>2025-06-03T17:32:49.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年6月3日): パッケージマネージャの設定のドキュメント作成]]></title>
+        <id>e15c363852c0d2fa9964fef2e6024165e47600bd</id>
+        <link href="https://github.com/atsushifx/til/commit/e15c363852c0d2fa9964fef2e6024165e47600bd"/>
+        <updated>2025-06-03T17:32:49.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年6月3日): パッケージマネージャの設定のドキュメント作成]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-06.md
+
+### 2025年6月3日-- ESTA開発: オンボーディング用ドキュメント作成
+
+#### パッケージマネージャー導入フロードキュメント作成
+
+- **Volta / pnpm / scoop / winget** のセットアップ手順を整理
+- Volta による Node.js / pnpm のバージョン管理と環境変数の設定を明記
+- `pnpm` グローバルインストール時の `global-bin-dir`の**Path追記**を明示
+
+#### 気づき
+
+- `pnpm config get global-bin-dir`の出力を`Path`に反映する必要あり
+- `volta` は PowerShell 再起動しないと反映されないことがあるため、再起動指示は必須。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-06-02): 2025年6月分のTILを追加]]></title>
         <id>174b467cab9cf42dddebb8aaa5935426f372fdcc</id>
@@ -243,31 +268,6 @@ docs/2025/2025-05.md
 
 - `src/shared/types/AgActionToolConfig.types.ts` を作成
   - AgActionToolConfigBase（共通: type, tool, options）]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月14日): GItHub Action / setup-tool-with-egetの開発]]></title>
-        <id>ed20aa6f6d460ec20aa72cd66b41c0c6747a6110</id>
-        <link href="https://github.com/atsushifx/til/commit/ed20aa6f6d460ec20aa72cd66b41c0c6747a6110"/>
-        <updated>2025-05-14T19:48:38.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月14日): GItHub Action / setup-tool-with-egetの開発]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月14日  - egetDownload GitHub Actionsの開発
-
-1. `getExistEget`モジュールの開発
-   - vitestによるMock化、正常系、異常系のテスト
-   - `vi.mocked` を用いた型付きモック化の手法を習得
-
-2. `prepareInstallDirectory`モジュールの開発
-   - `fs/promises.mkdir` と `@actions/core.addPath`  を `vi.mock／vi.spyOn` でモック
-   - GitHub Actions 上で PATH に追加する処理の検証
-
-3. `getPlatform` ユーティリティ実装とテスト
-    - `os.platform()` → `windows`|`linux`に正規化する関数を作成]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
