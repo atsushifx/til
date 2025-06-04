@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-03T17:32:49.000Z</updated>
+    <updated>2025-06-04T16:23:54.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,21 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[chore(textlint): allowlistに数詞関連の設定を追加]]></title>
+        <id>9ae084b5ba05278ec1b0f17fcb8121f8763bd4ba</id>
+        <link href="https://github.com/atsushifx/til/commit/9ae084b5ba05278ec1b0f17fcb8121f8763bd4ba"/>
+        <updated>2025-06-04T16:23:54.000Z</updated>
+        <summary type="html"><![CDATA[chore(textlint): allowlistに数詞関連の設定を追加]]></summary>
+        <content type="html"><![CDATA[configs/.textlint/allowlist.yml
+
+- "/[第][0-9]+/"
+- "/[0-9]+[つ章年月日時分秒]"]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年6月3日): パッケージマネージャの設定のドキュメント作成]]></title>
         <id>e15c363852c0d2fa9964fef2e6024165e47600bd</id>
@@ -243,31 +258,6 @@ docs/2025/2025-05.md
   - ESM-only 方針で `tsup.config.ts` を調整
 
 #### 2. 定数整理と JSDoc ドキュメント化]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年5月124日): typesctiptをアロー関数などのモダンか、eslintによるlintほか]]></title>
-        <id>29ae00a34852965e9beb49ebd6d2c6d431282e4c</id>
-        <link href="https://github.com/atsushifx/til/commit/29ae00a34852965e9beb49ebd6d2c6d431282e4c"/>
-        <updated>2025-05-16T15:06:36.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年5月124日): typesctiptをアロー関数などのモダンか、eslintによるlintほか]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月15日  - egetDownload GitHub Actionsの開発
-
-#### 1. インストーラリファクタ（昨日実施）
-
-- EgetInitializer を AgActionInstallerExecutor として実装
-- NotSupportedExecutor を追加し、AgExecutorsMap に全タイプ登録
-- E2E テストで initializer.execute(options) と eget --version を検証
-
-#### 2. 型定義の整備
-
-- `src/shared/types/AgActionToolConfig.types.ts` を作成
-  - AgActionToolConfigBase（共通: type, tool, options）]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
