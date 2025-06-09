@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-09T10:50:04.000Z</updated>
+    <updated>2025-06-09T15:25:36.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,38 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025年6月9日): 自動コミットメッセージ生成ワークフローの統合]]></title>
+        <id>e5919ac37d71a8fd50c1b654ca0000fcfc01b889</id>
+        <link href="https://github.com/atsushifx/til/commit/e5919ac37d71a8fd50c1b654ca0000fcfc01b889"/>
+        <updated>2025-06-09T15:25:36.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025年6月9日): 自動コミットメッセージ生成ワークフローの統合
+
+- .cspell/dicts/til.dic: カスタムスペル辞書に「appleboy」を追加
+- docs/2025/2025-06.md: appleboy/codegptとlefthookを使用した自動コミットメッセージ生成の実装]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+appleboy
+------
+docs/2025/2025-06.md
+
+### 2025年6月7日-- コミットメッセージ自動生成機能の調査、実装
+
+#### 📌 今日やったこと
+
+`appleboy/codegpt` を導入し、Lefthook のコミットメッセージ生成フックに組み込んだ。
+
+#### 🛠 実施内容
+
+<!-- vale Google.WordList = NO -->
+
+1. `codeGpt`のインストール
+   - `appleboy/codegpt` を GitHub Releases から取得]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[config(CodeGPT): CodeGPTによるコミットメッセージ作成]]></title>
         <id>141b056b9488a2cc464e6f201a10674d5017dd5b</id>
@@ -239,31 +271,6 @@ Monorepo における開発体験の高速化と簡便化のため、
 - パッケージスコープ名の簡略リネーム
 
 を実施し、Pull Request を作成・マージ。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2o25年5月30日): ESTAで、eslintの設定を集約、monorepo rootでlint]]></title>
-        <id>efec634ac8ca7565a6bda60b31ba15e15d116b56</id>
-        <link href="https://github.com/atsushifx/til/commit/efec634ac8ca7565a6bda60b31ba15e15d116b56"/>
-        <updated>2025-05-30T15:24:51.000Z</updated>
-        <summary type="html"><![CDATA[docs(2o25年5月30日): ESTAで、eslintの設定を集約、monorepo rootでlint]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-05.md
-
-### 2025年5月30日 --- ESTA開発の続き
-
-#### ✅ **1. ESLint型チェックをmonorepoルートに統一**
-
-- `eslint.config.typed.js` を作成し、`@typescript-eslint/parser`と複数`tsconfig.json`を統合
-- 各サブパッケージの ESLint 型設定を集約 → 全体で `pnpm run lint-all-types` が通るように
-- 型チェックルール（`no-unnecessary-condition` など）も Flat Config で反映 OK🎉
-
-#### ✅ **2. 型付きLintの落とし穴を突破**
-
-- `eslint.config.*.js` 自身が Lint 対象になる → `ignores` や `--ignore-pattern` で明示除外
-- `rules`のみの設定でも`files`がないと**全ファイル対象になる**ので注意！]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
