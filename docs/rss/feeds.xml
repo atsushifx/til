@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-06T16:05:35.000Z</updated>
+    <updated>2025-06-09T10:50:04.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,44 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[config(CodeGPT): CodeGPTによるコミットメッセージ作成]]></title>
+        <id>141b056b9488a2cc464e6f201a10674d5017dd5b</id>
+        <link href="https://github.com/atsushifx/til/commit/141b056b9488a2cc464e6f201a10674d5017dd5b"/>
+        <updated>2025-06-09T10:50:04.000Z</updated>
+        <summary type="html"><![CDATA[config(CodeGPT): CodeGPTによるコミットメッセージ作成
+
+- .gitignore: 環境ファイル（.env*）を無視リストに追加
+- configs/commitlint.config.js: コミットタイプをより明確に分類し、config、release、depsなどのカスタムタイプを追加
+- configs/secretlint.config.yaml: 設定ファイル名をsecretlintrc.yamlからリネーム
+- docs/2025/2025-06.md: valeによるエラーを除外
+- dprint.jsonc: markdownでの強調を"*"に設定
+- lefthook.yml: prepare-commit-msg: CodeGPTによりコミットメッセージを自動生成]]></summary>
+        <content type="html"><![CDATA[.gitignore
+
+## Env
+.env*
+
+------
+configs/commitlint.config.js
+
+// @(#) : commitlint 基本設定
+//
+// Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'type-enum': [2, 'always', [
+      // === Default conventional types ===
+      'feat', // New feature
+      'fix', // Bug fix]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025年6月6日): Zennに紹介記事を掲載]]></title>
         <id>dda1eab5de03a3f53de60e8cfd810cf65db988d8</id>
@@ -226,35 +264,6 @@ Monorepo における開発体験の高速化と簡便化のため、
 
 - `eslint.config.*.js` 自身が Lint 対象になる → `ignores` や `--ignore-pattern` で明示除外
 - `rules`のみの設定でも`files`がないと**全ファイル対象になる**ので注意！]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025/05/27): CIにeslint組み込み]]></title>
-        <id>8647ded43de46cfc017925b30bf29185910c017c</id>
-        <link href="https://github.com/atsushifx/til/commit/8647ded43de46cfc017925b30bf29185910c017c"/>
-        <updated>2025-05-27T17:56:58.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025/05/27): CIにeslint組み込み]]></summary>
-        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
-
-ESTA
-------
-docs/2025/2025-05.md
-
-### 2025年5月27 --- ESTA開発の続き
-
-#### 🚀 本日の開発TOPIC
-
-- **pnpmモノレポ構成でのESLint/type lint/workflow整備とCI最適化**
-- ワークスペース依存/型解決・CI 上でのエラー対応・アーティファクト運用まで一連の自動化導入
-
----
-
-## 🛠 作業まとめ
-
-- **pnpm -r run lint/型Lint CI整備**]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
