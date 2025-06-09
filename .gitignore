@@ -28,6 +28,9 @@ $~*
 *swap
 *lock
 
+## Env
+.env*
+
 ##  Editor
 
 # Vim
