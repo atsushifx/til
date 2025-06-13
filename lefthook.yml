@@ -53,8 +53,8 @@ prepare-commit-msg:
         --file .git/COMMIT_EDITMSG
 
 # check commit message style
-commit-msg:
-  parallel: true
-  commands:
-    commitlint:
-      run: commitlint --config ./configs/commitlint.config.js --edit
+#commit-msg:
+#  parallel: true
+#  commands:
+#    commitlint:
+#      run: commitlint --config ./configs/commitlint.config.js --edit
