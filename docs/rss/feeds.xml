@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-28T03:10:51.000Z</updated>
+    <updated>2025-06-30T18:45:03.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,35 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-06): ドキュメントを強化し、テストフレームワークのOSS移行計画を策定]]></title>
+        <id>3e5091e12b5f213ca5c86e7aa5024cfc90ac759a</id>
+        <link href="https://github.com/atsushifx/til/commit/3e5091e12b5f213ca5c86e7aa5024cfc90ac759a"/>
+        <updated>2025-06-30T18:45:03.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-06): ドキュメントを強化し、テストフレームワークのOSS移行計画を策定
+
+- e2e-fixture-framework用にテストの書き方に関するドキュメントを追加
+- 更新されたパッケージスコープとモノレポ構成を含むOSS移行計画を定義
+- Vitestにおける例外処理とスキップ制御のテスト設計パターンを明確化]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-06.md
+
+### 2005年6月30日 -- e2e-fixture-framework ドキュメント執筆 / ESTA仕様策定
+
+#### 📘 ドキュメント構築・執筆 (E2E Fixture Framework)
+
+- 「E2E テスト書き方ガイド」としてトップ README を定義、章立てを `01〜09` で整理
+- **既存ドキュメント完成章（01〜05章）**
+  - 導入〜テスト実装までの基礎ガイドを整備済み
+- **新規執筆：06章「パーサ、バリデータの理解と拡張」**
+  - カスタムパーサ・バリデータの例を豊富に追加
+  - `parser/validator` オプション、ファイル拡張子連携 (`EXT_TO_FILETYPE`) を明示
+- **04章の拡充**
+  - `.error` 拡張子と `expectedErrorMessage` による異常系テスト仕様を定義]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-06): 2025年6月27日のTIL追加]]></title>
         <id>eeda688d01a032f0c51061f1b65aee34d8ef5906</id>
@@ -268,30 +297,6 @@ configs/commitlint.config.js
 #### 📝 オンボーディング紹介用ブログ記事の執筆
 
 - 記事タイトル:「1 人プロジェクトなのに、オンボーディングドキュメントを書いてみた」]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年12月5日): ESTA 10章〜12章 ドキュメント作成]]></title>
-        <id>71db99620d9518d48129122a861e0723456cb61b</id>
-        <link href="https://github.com/atsushifx/til/commit/71db99620d9518d48129122a861e0723456cb61b"/>
-        <updated>2025-06-05T18:20:57.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年12月5日): ESTA 10章〜12章 ドキュメント作成]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2025年6月5日-- ESTA 10章〜12章 ドキュメント作成
-
-#### 10章 ドキュメント作成時のチェックツール
-
-textlint、markdownlint、cspell などのドキュメント向けチェックツールの導入と設定を行ない、ドキュメントの品質と一貫性を確保する仕組みを整備した。
-
-#### 11章 CI/CDでの自動検証ツール
-
-GitHub Actions を用いたコード静的解析（ESLint）や機密情報漏洩検査（Gitleaks）などの自動検証ワークフローの構築と運用方法を解説し、将来的な拡張計画を示した。
-
-#### 12章 コミット・プッシュ関連のツール]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
