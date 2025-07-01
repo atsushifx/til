@@ -5,7 +5,8 @@ filters:
     allowlistConfigPaths:
       - .textlint/allowlist.yml
 rules:
-  preset-japanese:
+  preset-japanese: true
+  "@textlint-ja/preset-ai-writing": true
   preset-ja-spacing:
     ja-space-between-half-and-full-width:
       space:
