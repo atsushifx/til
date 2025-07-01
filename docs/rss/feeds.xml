@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-06-30T18:45:03.000Z</updated>
+    <updated>2025-07-01T15:16:46.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,78 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月1日: CI連携に関するドキュメント]]></title>
+        <id>f85ba29e5b36a48835608b74e512515914370e37</id>
+        <link href="https://github.com/atsushifx/til/commit/f85ba29e5b36a48835608b74e512515914370e37"/>
+        <updated>2025-07-01T15:16:46.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月1日: CI連携に関するドキュメント
+
+- E2E Fixture Frameworkのテストの書き方ガイドにおいて、CI連携についてのドキュメントを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+---
+title: 2025-07
+layout: default
+---
+
+## 2025年7月分
+
+### 2005年7月1日 -- E2E Fixture FrameworkのCI統合とGitHub Actions構築
+
+#### 🔧 作業概要
+
+- 「第8章 CI 連携と自動実行」セクションの本文を執筆]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[config(textlint): 日本語の textlint ルールを強化し、校正プラグインを有効化]]></title>
+        <id>24b33846c7a94720ce4e389552d21a6a9a55e96f</id>
+        <link href="https://github.com/atsushifx/til/commit/24b33846c7a94720ce4e389552d21a6a9a55e96f"/>
+        <updated>2025-07-01T15:12:50.000Z</updated>
+        <summary type="html"><![CDATA[config(textlint): 日本語の textlint ルールを強化し、校正プラグインを有効化
+
+- textlint ルールを更新・再編成し、明瞭性と構造を改善
+- ja-hiraku と ja-no-orthographic-variants ルールを追加し、日本語テキストの品質向上を図る
+- sentence-length ルールを preset-japanese に統合し、最大文字数を100に設定
+- 校正支援のために辞書 URL を指定して proofdict プラグインを有効化]]></summary>
+        <content type="html"><![CDATA[configs/textlintrc.yaml
+
+# src: ./configs/textlintrc.yaml
+# @(#) : yaml type textlint config
+#
+# Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+plugins: {}
+  preset-japanese:
+    sentence-length:
+      max: 100]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[config(textlint): textlint設定でAIらしい記述をチェックするプリセットを追加]]></title>
+        <id>eb48a2e4c42ab28a392d11e91aa649647fc85a05</id>
+        <link href="https://github.com/atsushifx/til/commit/eb48a2e4c42ab28a392d11e91aa649647fc85a05"/>
+        <updated>2025-07-01T15:00:44.000Z</updated>
+        <summary type="html"><![CDATA[config(textlint): textlint設定でAIらしい記述をチェックするプリセットを追加]]></summary>
+        <content type="html"><![CDATA[configs/textlintrc.yaml
+
+  preset-japanese: true
+  "@textlint-ja/preset-ai-writing": true]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-06): ドキュメントを強化し、テストフレームワークのOSS移行計画を策定]]></title>
         <id>3e5091e12b5f213ca5c86e7aa5024cfc90ac759a</id>
@@ -202,101 +274,6 @@ ESTA プロジェクトの E2E テストフレームワークにおいて、フ�
 #### ✅ 今日やったこと
 
 ##### 🔧 インストール用ライブラリ `AgInstaller.ps1` を実装・強化]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年6月9日): 自動コミットメッセージ生成ワークフローの統合]]></title>
-        <id>e5919ac37d71a8fd50c1b654ca0000fcfc01b889</id>
-        <link href="https://github.com/atsushifx/til/commit/e5919ac37d71a8fd50c1b654ca0000fcfc01b889"/>
-        <updated>2025-06-09T15:25:36.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年6月9日): 自動コミットメッセージ生成ワークフローの統合
-
-- .cspell/dicts/til.dic: カスタムスペル辞書に「appleboy」を追加
-- docs/2025/2025-06.md: appleboy/codegptとlefthookを使用した自動コミットメッセージ生成の実装]]></summary>
-        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
-
-appleboy
-------
-docs/2025/2025-06.md
-
-### 2025年6月7日-- コミットメッセージ自動生成機能の調査、実装
-
-#### 📌 今日やったこと
-
-`appleboy/codegpt` を導入し、Lefthook のコミットメッセージ生成フックに組み込んだ。
-
-#### 🛠 実施内容
-
-<!-- vale Google.WordList = NO -->
-
-1. `codeGpt`のインストール
-   - `appleboy/codegpt` を GitHub Releases から取得]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[config(CodeGPT): CodeGPTによるコミットメッセージ作成]]></title>
-        <id>141b056b9488a2cc464e6f201a10674d5017dd5b</id>
-        <link href="https://github.com/atsushifx/til/commit/141b056b9488a2cc464e6f201a10674d5017dd5b"/>
-        <updated>2025-06-09T10:50:04.000Z</updated>
-        <summary type="html"><![CDATA[config(CodeGPT): CodeGPTによるコミットメッセージ作成
-
-- .gitignore: 環境ファイル（.env*）を無視リストに追加
-- configs/commitlint.config.js: コミットタイプをより明確に分類し、config、release、depsなどのカスタムタイプを追加
-- configs/secretlint.config.yaml: 設定ファイル名をsecretlintrc.yamlからリネーム
-- docs/2025/2025-06.md: valeによるエラーを除外
-- dprint.jsonc: markdownでの強調を"*"に設定
-- lefthook.yml: prepare-commit-msg: CodeGPTによりコミットメッセージを自動生成]]></summary>
-        <content type="html"><![CDATA[.gitignore
-
-## Env
-.env*
-
-------
-configs/commitlint.config.js
-
-// @(#) : commitlint 基本設定
-//
-// Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-  extends: ['@commitlint/config-conventional'],
-  rules: {
-    'type-enum': [2, 'always', [
-      // === Default conventional types ===
-      'feat', // New feature
-      'fix', // Bug fix]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年6月6日): Zennに紹介記事を掲載]]></title>
-        <id>dda1eab5de03a3f53de60e8cfd810cf65db988d8</id>
-        <link href="https://github.com/atsushifx/til/commit/dda1eab5de03a3f53de60e8cfd810cf65db988d8"/>
-        <updated>2025-06-06T16:05:35.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年6月6日): Zennに紹介記事を掲載]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2025年6月6日-- ESTA オンボーディングドキュメント完成／オンボーディングドキュメント紹介記事作成
-
-#### ✅ オンボーディングドキュメントの main へのマージ
-
-- `easy-setup-tools-action` プロジェクトにおける初期導入ドキュメント（`docs/onboarding/`）を本日 `main` ブランチへマージ。
-- 各章は、プロジェクトの開発・構成・運用フローを順に理解できるように整理済み。
-- セットアップスクリプトや共通設定の同期、環境変数の扱い方など、**1人プロジェクトでも意義のある構成管理戦略**を文書化。
-- マージ後にブランチ削除と CI 確認も完了。
-
-#### 📝 オンボーディング紹介用ブログ記事の執筆
-
-- 記事タイトル:「1 人プロジェクトなのに、オンボーディングドキュメントを書いてみた」]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
