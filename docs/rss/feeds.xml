@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-01T15:16:46.000Z</updated>
+    <updated>2025-07-03T13:51:11.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,32 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月3日のTIL: E2E Fixtures Frameworkのドキュメント執筆]]></title>
+        <id>cd1fefb2262a9661bebcf0f216432faab8db45af</id>
+        <link href="https://github.com/atsushifx/til/commit/cd1fefb2262a9661bebcf0f216432faab8db45af"/>
+        <updated>2025-07-03T13:51:11.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月3日のTIL: E2E Fixtures Frameworkのドキュメント執筆
+
+- 2025-07.md: E2E Fixtures Frameworkを使ってテストを書くガイドを執筆(1章、2章まで)]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月3日 -- E2E Fixtures Framework ドキュメント執筆
+
+#### 作業概要
+
+- 記事作成用プロンプトを用いて、第1章・第2章の原稿を `/begin` → `/write` 形式で段階的に執筆
+- セクションごとに構成を分割し、見出し構造・表・出力例を整理しながら章全体を構築
+
+#### 作業結果
+
+- 第1章ではセットアップ〜初テスト実行までを一通り解説し、fixture 構成やテスト実行例を明記
+- 第2章ではフレームワークの設計意図と構成要素、処理フロー、推奨ディレクトリ構成を体系的に記述]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月1日: CI連携に関するドキュメント]]></title>
         <id>f85ba29e5b36a48835608b74e512515914370e37</id>
@@ -250,30 +276,6 @@ ESTA プロジェクトの E2E テストフレームワークにおいて、フ�
 - 🗂 セクション構成の再編成
   - 配置パターンと参照形式（import/extends・同期コピー）で分類
   - セクション `7.3 共通設定`, `7.4 サブリポジトリ`, `7.5 monorepo` を明確に分離]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年6月11日): 開発環境構築セットアップスクリプトの整備、強化]]></title>
-        <id>a792cb151312497dfb655400dbdb4301e331de1a</id>
-        <link href="https://github.com/atsushifx/til/commit/a792cb151312497dfb655400dbdb4301e331de1a"/>
-        <updated>2025-06-11T14:29:22.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年6月11日): 開発環境構築セットアップスクリプトの整備、強化]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2025年6月11日 -- 開発環境構築スクリプトの整備
-
-#### 📌 目的
-
-- 開発支援ツール (textlint, cspell など) の一括インストール用 PowerShell スクリプトを整理・共通化。
-- 各種パッケージマネージャー (winget / scoop / pnpm / eget) に対応した統一的なラッパー関数を整備。
-- `.vscode`, `.textlintrc.yaml` などの設定ファイル群をテンプレートから安全にコピーできるように。
-
-#### ✅ 今日やったこと
-
-##### 🔧 インストール用ライブラリ `AgInstaller.ps1` を実装・強化]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
