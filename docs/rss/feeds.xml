@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-03T13:51:11.000Z</updated>
+    <updated>2025-07-04T13:50:28.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,31 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月4日: E2E Fixtures Frameworkのテスト書き方ガイドを執筆/mainにマージ]]></title>
+        <id>0f4f7459968af4b45131c4015709c6693deea13e</id>
+        <link href="https://github.com/atsushifx/til/commit/0f4f7459968af4b45131c4015709c6693deea13e"/>
+        <updated>2025-07-04T13:50:28.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月4日: E2E Fixtures Frameworkのテスト書き方ガイドを執筆/mainにマージ]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月4日 -- E2E Fixtures Framework ドキュメント作成/マージ
+
+#### ✅ 作業概要
+
+- `docs/writing-e2e-tests/` 以下に展開された技術ドキュメントの第1〜9 章をすべて見直し
+- 文体・構成・コード例・図解を精査し、統一感あるドキュメントに仕上げた
+- textlint による日本語技術表現のスタイルチェックも実施
+
+#### ✍️ 作業詳細と成果
+
+| 章番号 | タイトル                       | 概要                                                       |
+| ------ | ------------------------------ | ---------------------------------------------------------- |]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月3日のTIL: E2E Fixtures Frameworkのドキュメント執筆]]></title>
         <id>cd1fefb2262a9661bebcf0f216432faab8db45af</id>
@@ -248,34 +273,6 @@ ESTA プロジェクトの E2E テストフレームワークにおいて、フ�
 - 将来的にテスト関連パッケージ増加なら`@ag-unittest`名前空間を検討
 
 #### 利用例（Vitest）]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs: モノレポ導入手順を文書化し、コミットlintフックを調整]]></title>
-        <id>6feb1bfbe72a05f3ba9449ef5af73a8fec228784</id>
-        <link href="https://github.com/atsushifx/til/commit/6feb1bfbe72a05f3ba9449ef5af73a8fec228784"/>
-        <updated>2025-06-13T19:23:32.000Z</updated>
-        <summary type="html"><![CDATA[docs: モノレポ導入手順を文書化し、コミットlintフックを調整
-
-- docs/2025/2025-06.md: モノレポ構成および共有設定のオンボーディングドキュメントを追加
-- lefthook.yml: commit-msgフックでのコミットメッセージlintを一時的に無効化]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2025年6月13日 -- オンボーディングドキュメント整備
-
-#### ✅ monorepo構成と設定ファイルの共通化整理
-
-- 🔧 全体像の把握とドキュメント構造の再設計
-  - `/shared/configs/` を中心とした設定ファイル共通化構造の図解レビュー
-  - `tsconfig.json` は monorepo ルート／各サブレポジトリで `extends` による共通化
-  - `lefthook.yml` のような**独立型設定ファイル**との対比を明確に整理
-
-- 🗂 セクション構成の再編成
-  - 配置パターンと参照形式（import/extends・同期コピー）で分類
-  - セクション `7.3 共通設定`, `7.4 サブリポジトリ`, `7.5 monorepo` を明確に分離]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
