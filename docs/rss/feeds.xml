@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-04T13:50:28.000Z</updated>
+    <updated>2025-07-05T13:41:51.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,35 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月5日の更新: ESTA config-loaderモジュールのリファクタリング]]></title>
+        <id>61cb847404d384eafa9346895d54480de1f8d3df</id>
+        <link href="https://github.com/atsushifx/til/commit/61cb847404d384eafa9346895d54480de1f8d3df"/>
+        <updated>2025-07-05T13:41:51.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月5日の更新: ESTA config-loaderモジュールのリファクタリング
+
+- 2025-07.md:
+  - 型安全な拡張マッピングの導入
+  - e2eテストをE2E Frameworkパッケージの使用する型式に変更
+  - ts/jsファイルでの設定ファイルをtsx実行による非同期読み込みによる安全な読み込みに]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+<!-- markdownlint-disable no-duplicate-heading -->
+
+### 2025年7月5日 -- ESTA (config-loader) のリファクタリング
+
+#### ✅ 作業概要
+
+今回、`@ag-utils/config-loader` に対して以下の構造的なリファクタリングを実施：
+
+- 🧩 **Parser構成の明確化**
+  - 拡張子ごとのパーサを `src/parser/` に分離
+  - `parseScript.ts` にて安全な `tsx` 実行環境へ移行]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月4日: E2E Fixtures Frameworkのテスト書き方ガイドを執筆/mainにマージ]]></title>
         <id>0f4f7459968af4b45131c4015709c6693deea13e</id>
@@ -243,36 +272,6 @@ ESTA プロジェクトの E2E テストフレームワークにおいて、フ�
 #### 今日の作業まとめ
 
 ##### 1. ファイル拡張子とフォーマットの対応表設計]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-06): E2Eフレームワークにおけるモジュール化およびキャッシュ改善のドキュメント化]]></title>
-        <id>5361f2680101f74bfa94ff78e7870d57938d70c9</id>
-        <link href="https://github.com/atsushifx/til/commit/5361f2680101f74bfa94ff78e7870d57938d70c9"/>
-        <updated>2025-06-24T15:26:50.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-06): E2Eフレームワークにおけるモジュール化およびキャッシュ改善のドキュメント化
-
-- docs/2025/2025-06.md:
-  E2Eフレームワークのモジュール化とAPI設計改善に関する詳細なメモを追加
-  config-loaderを別パッケージに分割
-  ビルド成果物と精緻なキャッシュキーを活用したGitHub Actionsのキャッシュ強化
-  package.jsonの「types」条件警告への回避策を説明]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2025年6月24日 -- ESTAプロジェクト開発 (config-loader設計改善, e2eフレームワーク分割)
-
-#### 1. E2Eフレームワーク分割とパッケージ設計
-
-- ファイル入出力による e2e フレームワークを 1 パッケージ化
-- ESTA 内 1 パッケージに集約し、ファイル入出力、セットアップ、クリーンアップ、fixture 対応を包括的に管理
-- Vitest や Jest の`beforeEach`/`afterEach`で使いやすい API 設計を心がける
-- パッケージ命名は`@ag-utils/e2e-framework`がバランス良くおすすめ
-- 将来的にテスト関連パッケージ増加なら`@ag-unittest`名前空間を検討
-
-#### 利用例（Vitest）]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
