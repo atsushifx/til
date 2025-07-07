@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-06T15:11:09.000Z</updated>
+    <updated>2025-07-07T15:56:20.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月7日: 明確さと保守性向上のためプロジェクト構成をリファクタリング]]></title>
+        <id>d073f6ac68fa19ef034fa4500fb667c6dd9ca14e</id>
+        <link href="https://github.com/atsushifx/til/commit/d073f6ac68fa19ef034fa4500fb667c6dd9ca14e"/>
+        <updated>2025-07-07T15:56:20.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月7日: 明確さと保守性向上のためプロジェクト構成をリファクタリング
+
+- docs/2025/2025-07.md:
+  shared/common を types と constants パッケージにリファクタリングし、s
+  hared/configs を base/configs に移動することで、構造をより明確かつ保守しやすくしたことをドキュメント化]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月7日 -- ESTA (/shared/の共通設定ファイル、共通定数/型設定のリファクタリング)
+
+#### `/shared/common` のリファクタリング
+
+- 役割が混在していた `/shared/common` を用途別に明確に分割：
+  - 型定義 → `/shared/types` パッケージへ集約
+  - 定数定義 → `/shared/constants` パッケージに移動
+- 冗長な命名（例：`constants/constants.ts`）は回避し、`/shared/constants/base/flags.ts` のように分類と役割が明示される構造に再設計
+- 旧 `/shared/common` ディレクトリを全部削除し、依存パッケージを更新
+
+#### `shared/configs`のリファクタリング]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): パッケージの名前空間を整理し、OSSコンポーネントを分割]]></title>
         <id>fac99d6547338e8df74245a4c492576cd6c212d1</id>
@@ -241,33 +269,6 @@ plugins: {}
   - 型安全性、コード品質、テストの安定性を徹底的に追求。
 
 <!-- textlint-disable sentence-length -->]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025年6月26日): e2eフレームワーク用の開発者ガイドを整備]]></title>
-        <id>2a50ccea90d93d384a588bf43a3af4c5603092c5</id>
-        <link href="https://github.com/atsushifx/til/commit/2a50ccea90d93d384a588bf43a3af4c5603092c5"/>
-        <updated>2025-06-26T14:09:41.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025年6月26日): e2eフレームワーク用の開発者ガイドを整備
-
-- 2025-06.md: 非同期ファイルI/Oと型安全性の改善を含むE2Eフレームワーク向け詳細開発者ガイドとドキュメントを追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2005年6月26日 -- E2Eフレームワークの開発、ドキュメント整備
-
-#### 1. リポジトリと対象ソース
-
-- 対象は GitHub リポジトリの `@ag-utils/e2e-framework` パッケージ
-  <https://github.com/atsushifx/esta/tree/main/packages/%40ag-utils/e2e-framework>
-
-#### 2. 主な作業内容
-
-- E2E（エンドツーエンド）テスト用ファイル入出力（File I/O）フレームワークの開発・リファクタリング
-- ファイル操作の async/await 対応、ファイル形式の型安全な読み込み機能追加
-- 環境変数の管理ヘルパーや、同期・非同期処理の統合ユーティリティの実装]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
