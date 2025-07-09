@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-09T14:55:40.000Z</updated>
+    <updated>2025-07-09T15:02:37.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,46 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Merge remote-tracking branch 'refs/remotes/origin/main']]></title>
+        <id>18910fcd8afc35b4b9541e3981eaad95d178e546</id>
+        <link href="https://github.com/atsushifx/til/commit/18910fcd8afc35b4b9541e3981eaad95d178e546"/>
+        <updated>2025-07-09T15:02:37.000Z</updated>
+        <summary type="html"><![CDATA[Merge remote-tracking branch 'refs/remotes/origin/main']]></summary>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2025-07-09T14:55:40.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加</title>
+        <id>b54593d12a55c7184e4657a89a11c6e2e89e6f92</id>
+        <link href="https://github.com/atsushifx/til/commit/b54593d12a55c7184e4657a89a11c6e2e89e6f92"/>
+        <updated>2025-07-09T14:55:40.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加
+
+- docs/2025/2025-07.md: 実行制御フラグを分離し、ツール設定をモジュール化した ESTA設定 v2.0.0 の詳細仕様を追加
+- docs/index.md: インデックスページに2025年7月ドキュメントへのリンクを追加</summary>
+        <content type="html"><![CDATA[.vscode/cspell.json]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: VSCode cspell用のカスタムスペル辞書エントリを追加]]></title>
+        <id>7b62ab3712d3d2d5f1973a5c25921f72e384b9b0</id>
+        <link href="https://github.com/atsushifx/til/commit/7b62ab3712d3d2d5f1973a5c25921f72e384b9b0"/>
+        <updated>2025-07-09T14:56:33.000Z</updated>
+        <summary type="html"><![CDATA[chore: VSCode cspell用のカスタムスペル辞書エントリを追加
+
+- VSCode cspellのカスタムスペル辞書に' estarc 'を追加]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+estarc]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加]]></title>
         <id>b54593d12a55c7184e4657a89a11c6e2e89e6f92</id>
@@ -225,50 +265,6 @@ plugins: {}
   preset-japanese:
     sentence-length:
       max: 100]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[config(textlint): textlint設定でAIらしい記述をチェックするプリセットを追加]]></title>
-        <id>eb48a2e4c42ab28a392d11e91aa649647fc85a05</id>
-        <link href="https://github.com/atsushifx/til/commit/eb48a2e4c42ab28a392d11e91aa649647fc85a05"/>
-        <updated>2025-07-01T15:00:44.000Z</updated>
-        <summary type="html"><![CDATA[config(textlint): textlint設定でAIらしい記述をチェックするプリセットを追加]]></summary>
-        <content type="html"><![CDATA[configs/textlintrc.yaml
-
-  preset-japanese: true
-  "@textlint-ja/preset-ai-writing": true]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-06): ドキュメントを強化し、テストフレームワークのOSS移行計画を策定]]></title>
-        <id>3e5091e12b5f213ca5c86e7aa5024cfc90ac759a</id>
-        <link href="https://github.com/atsushifx/til/commit/3e5091e12b5f213ca5c86e7aa5024cfc90ac759a"/>
-        <updated>2025-06-30T18:45:03.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-06): ドキュメントを強化し、テストフレームワークのOSS移行計画を策定
-
-- e2e-fixture-framework用にテストの書き方に関するドキュメントを追加
-- 更新されたパッケージスコープとモノレポ構成を含むOSS移行計画を定義
-- Vitestにおける例外処理とスキップ制御のテスト設計パターンを明確化]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2005年6月30日 -- e2e-fixture-framework ドキュメント執筆 / ESTA仕様策定
-
-#### 📘 ドキュメント構築・執筆 (E2E Fixture Framework)
-
-- 「E2E テスト書き方ガイド」としてトップ README を定義、章立てを `01〜09` で整理
-- **既存ドキュメント完成章（01〜05章）**
-  - 導入〜テスト実装までの基礎ガイドを整備済み
-- **新規執筆：06章「パーサ、バリデータの理解と拡張」**
-  - カスタムパーサ・バリデータの例を豊富に追加
-  - `parser/validator` オプション、ファイル拡張子連携 (`EXT_TO_FILETYPE`) を明示
-- **04章の拡充**
-  - `.error` 拡張子と `expectedErrorMessage` による異常系テスト仕様を定義]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
