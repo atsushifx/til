@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-07T15:56:20.000Z</updated>
+    <updated>2025-07-09T14:55:40.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加]]></title>
+        <id>b54593d12a55c7184e4657a89a11c6e2e89e6f92</id>
+        <link href="https://github.com/atsushifx/til/commit/b54593d12a55c7184e4657a89a11c6e2e89e6f92"/>
+        <updated>2025-07-09T14:55:40.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加
+
+- docs/2025/2025-07.md: 実行制御フラグを分離し、ツール設定をモジュール化した ESTA設定 v2.0.0 の詳細仕様を追加
+- docs/index.md: インデックスページに2025年7月ドキュメントへのリンクを追加]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell.json
+
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "caseSensitive": true,
+  "dictionaryDefinitions": [
+    {
+      "name": "til-dic",
+      "description": " dictionary: til(Today I Leaened) specific words",
+      "path": "./cspell/dicts/til.dic",
+      "addWords": true,
+      "scope": "workspace"
+    }]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月7日: 明確さと保守性向上のためプロジェクト構成をリファクタリング]]></title>
         <id>d073f6ac68fa19ef034fa4500fb667c6dd9ca14e</id>
@@ -241,34 +269,6 @@ plugins: {}
   - `parser/validator` オプション、ファイル拡張子連携 (`EXT_TO_FILETYPE`) を明示
 - **04章の拡充**
   - `.error` 拡張子と `expectedErrorMessage` による異常系テスト仕様を定義]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-06): 2025年6月27日のTIL追加]]></title>
-        <id>eeda688d01a032f0c51061f1b65aee34d8ef5906</id>
-        <link href="https://github.com/atsushifx/til/commit/eeda688d01a032f0c51061f1b65aee34d8ef5906"/>
-        <updated>2025-06-28T03:10:51.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-06): 2025年6月27日のTIL追加
-
-2025-06.md:
-  - text-parser および e2e-fixture-framework パッケージの開発と改善に関する詳細レポートを追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-06.md
-
-### 2005年6月27日 -- ESTA開発 (text-parser, e2e-fixture-framework)
-
-#### 作業概要
-
-両パッケージはテキスト解析と E2E テストの効率化・品質向上を目的として開発されました。
-
-- **text-parser パッケージ**では、ファイルベースの fixture テストを中心に、Markdown やプレーンテキストのパース機能とそれを検証する E2E テストフレームワークを構築。
-  - シンプルな関数ベース設計を採用し、拡張子に応じた動的なパース処理を実装。
-  - 動的テスト生成とバリデーションを分離し、保守性と拡張性を高めました。
-  - 型安全性、コード品質、テストの安定性を徹底的に追求。
-
-<!-- textlint-disable sentence-length -->]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
