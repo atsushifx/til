@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-12T16:07:29.000Z</updated>
+    <updated>2025-07-14T15:46:13.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化]]></title>
+        <id>0c46f0e99bf4ad5c0eccc44497423be8095bdd89</id>
+        <link href="https://github.com/atsushifx/til/commit/0c46f0e99bf4ad5c0eccc44497423be8095bdd89"/>
+        <updated>2025-07-14T15:46:13.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化
+
+- docs/2025/2025-07.md:
+  @esta-core/tools-configパッケージの初期設定
+  仕様書運用用ガイドライン作成]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月14日 -- ESTA (Tools Configモジュール初期セットアップ、仕様書整備)
+
+#### `@esta-core/tools-config` セットアップ
+
+- 初期構造の scaffold:
+  - `configs/`, `src/`, `tests`/ ディレクトリ群整備
+  - `tsconfig.json`, `package.json`, ビルド・リント・テストスクリプト定義
+
+- package 情報定義:
+  - name: `@esta-core/tools-config`
+  - description:「インストールツール設定を取得・生成するための専用モジュール」]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月12日: 統一エラーハンドリングを備えたESTA設定ローダーの強化]]></title>
         <id>7481315a61af81ef7b2b4a4731de51bae8263aba</id>
@@ -245,31 +273,6 @@ estarc]]></content>
 - 🧩 **Parser構成の明確化**
   - 拡張子ごとのパーサを `src/parser/` に分離
   - `parseScript.ts` にて安全な `tsx` 実行環境へ移行]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月4日: E2E Fixtures Frameworkのテスト書き方ガイドを執筆/mainにマージ]]></title>
-        <id>0f4f7459968af4b45131c4015709c6693deea13e</id>
-        <link href="https://github.com/atsushifx/til/commit/0f4f7459968af4b45131c4015709c6693deea13e"/>
-        <updated>2025-07-04T13:50:28.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月4日: E2E Fixtures Frameworkのテスト書き方ガイドを執筆/mainにマージ]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月4日 -- E2E Fixtures Framework ドキュメント作成/マージ
-
-#### ✅ 作業概要
-
-- `docs/writing-e2e-tests/` 以下に展開された技術ドキュメントの第1〜9 章をすべて見直し
-- 文体・構成・コード例・図解を精査し、統一感あるドキュメントに仕上げた
-- textlint による日本語技術表現のスタイルチェックも実施
-
-#### ✍️ 作業詳細と成果
-
-| 章番号 | タイトル                       | 概要                                                       |
-| ------ | ------------------------------ | ---------------------------------------------------------- |]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
