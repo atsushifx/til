@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-14T15:46:13.000Z</updated>
+    <updated>2025-07-15T21:29:58.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月15日: `tools-config`モジュールの新規開発]]></title>
+        <id>567de166bbbb5671e00fc5e6db26239eadca5ae2</id>
+        <link href="https://github.com/atsushifx/til/commit/567de166bbbb5671e00fc5e6db26239eadca5ae2"/>
+        <updated>2025-07-15T21:29:58.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月15日: `tools-config`モジュールの新規開発
+
+- docs/2025/2025-07.md:
+  `tools=confgi`ジュール開発に関する作業]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月15日 - TIL開発 (`tools-config`モジュールの開発)
+
+#### ValibotによるSchema設計とパス検証の実装
+
+`ValibotP を活用して設定のスキーマを厳密に定義し、柔軟な構文バリデーションを設計。
+パス検証では、Windows/Unix 両対応の正規表現を導入し、安全な設定値だけを受け入れる仕組みに。
+
+#### デフォルト設定の導入と設計の初期化
+
+`.tools/bin`や`.tools/tmp`など、現実的な初期ディレクトリ構成を提案として組み込み。
+ツール 9 種を初期値として登録し、設定なしでも最低限動作する堅牢性を確保。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化]]></title>
         <id>0c46f0e99bf4ad5c0eccc44497423be8095bdd89</id>
@@ -244,35 +271,6 @@ estarc]]></content>
 
 - 各パッケージで import 経路を新スコープに変更。
 - ESLint と Vitest CI の対象プロジェクトとパス解決設定を更新。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月5日の更新: ESTA config-loaderモジュールのリファクタリング]]></title>
-        <id>61cb847404d384eafa9346895d54480de1f8d3df</id>
-        <link href="https://github.com/atsushifx/til/commit/61cb847404d384eafa9346895d54480de1f8d3df"/>
-        <updated>2025-07-05T13:41:51.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月5日の更新: ESTA config-loaderモジュールのリファクタリング
-
-- 2025-07.md:
-  - 型安全な拡張マッピングの導入
-  - e2eテストをE2E Frameworkパッケージの使用する型式に変更
-  - ts/jsファイルでの設定ファイルをtsx実行による非同期読み込みによる安全な読み込みに]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-<!-- markdownlint-disable no-duplicate-heading -->
-
-### 2025年7月5日 -- ESTA (config-loader) のリファクタリング
-
-#### ✅ 作業概要
-
-今回、`@ag-utils/config-loader` に対して以下の構造的なリファクタリングを実施：
-
-- 🧩 **Parser構成の明確化**
-  - 拡張子ごとのパーサを `src/parser/` に分離
-  - `parseScript.ts` にて安全な `tsx` 実行環境へ移行]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
