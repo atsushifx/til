@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-15T21:29:58.000Z</updated>
+    <updated>2025-07-16T15:52:30.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,36 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月16日: tools-configのバリデーション強化およびクロスプラットフォームのパス処理改善]]></title>
+        <id>53b790b5a8d075068a3389d04d42c9b494706bf1</id>
+        <link href="https://github.com/atsushifx/til/commit/53b790b5a8d075068a3389d04d42c9b494706bf1"/>
+        <updated>2025-07-16T15:52:30.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月16日: tools-configのバリデーション強化およびクロスプラットフォームのパス処理改善
+
+- 2025-07.md:
+  tools-configモジュールのスキーマバリデーションと包括的なBDDスタイルのテストを詳述
+  レガシーサンプルデータを削除し、クロスプラットフォーム正規化を用いたデフォルトパスのバリデーションロジックを強化。
+  valibot正規化、クロスプラットフォームパス処理、およびテストの保守性向上の利点を強調。]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月16日 -- ESTA(tools-config) におけるスキーマバリデーションとテスト整備
+
+#### 📌 作業概要
+
+- `@esta-core/tools-config` モジュールに対して **valibot スキーマバリデーション機構**と**包括的なテストスイート**を実装。
+- デフォルトツール設定のスキーマ正規化を導入し、Windows/Unix 両対応のパス処理を整備。
+- テスト設計では **BDD（振る舞い駆動開発）スタイル** を採用し、可読性・保守性を重視した構造に移行。
+
+#### 🛠 作業結果
+
+- `defaultToolsConfig`, `validateConfig`, `schemas`, `validateTools` 含む **350行以上のユニット/E2Eテスト**を新規追加。
+- `tools.ts` からのサンプルデータ・旧ロジックを削除し、責務を分離。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月15日: `tools-config`モジュールの新規開発]]></title>
         <id>567de166bbbb5671e00fc5e6db26239eadca5ae2</id>
@@ -244,33 +274,6 @@ estarc]]></content>
 - 旧 `/shared/common` ディレクトリを全部削除し、依存パッケージを更新
 
 #### `shared/configs`のリファクタリング]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): パッケージの名前空間を整理し、OSSコンポーネントを分割]]></title>
-        <id>fac99d6547338e8df74245a4c492576cd6c212d1</id>
-        <link href="https://github.com/atsushifx/til/commit/fac99d6547338e8df74245a4c492576cd6c212d1"/>
-        <updated>2025-07-06T15:11:09.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): パッケージの名前空間を整理し、OSSコンポーネントを分割
-
-- 2025-07.md: パッケージの名前空間再編とOSSコンポーネント分割に関する詳細な更新ログを追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月6日 -- ESTAパッケージのネームスペース整理とOSS分割作業
-
-#### 🗂 パッケージネームスペースの再構成
-
-- `@ag-utils/*` 系を `@esta-utils/*` に統一し、命名規則を整理。
-- OSS 分割対象は `@agla-utils/*`, `@agla-e2e/*` に移動。
-- 共通化されたユーティリティは `@esta-utils/utils` に集約。
-
-#### 🔁 共通修正とリファクタリング
-
-- 各パッケージで import 経路を新スコープに変更。
-- ESLint と Vitest CI の対象プロジェクトとパス解決設定を更新。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
