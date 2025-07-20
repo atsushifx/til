@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>1970-01-01T00:00:00.000Z</updated>
+    <updated>2025-07-20T18:00:59.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,4 +10,272 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月20日: /kiroコマンドの開発、新規モジュール開発開始]]></title>
+        <id>ffbde1449aa082e05ecad1d436654dd1b2d84ee3</id>
+        <link href="https://github.com/atsushifx/til/commit/ffbde1449aa082e05ecad1d436654dd1b2d84ee3"/>
+        <updated>2025-07-20T18:00:59.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月20日: /kiroコマンドの開発、新規モジュール開発開始]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月20日 -- ESTA(tools-configモジュール完成、テスト変更)
+
+#### ✅ 作業概要
+
+<!-- textlint-disable @textlint-ja/ai-writing/no-ai-list-formatting -->
+
+- 📦 `esta-config` モジュールの立ち上げ
+  - 初期パッケージ構成（`index.ts` の scaffold 含む）
+  - `ag-logger` の `LogLevel` サポートを組み込んだデフォルト設定を追加
+  - テスト・build 準備を含むパッケージ初期化完了
+
+- 🔧 `ag-logger` のリファクタリング]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月18日: CIテストをE2E, Integration に分割]]></title>
+        <id>3c85f51eb2fd26cb556f2ffeed1b4a1841ca9d38</id>
+        <link href="https://github.com/atsushifx/til/commit/3c85f51eb2fd26cb556f2ffeed1b4a1841ca9d38"/>
+        <updated>2025-07-18T16:08:30.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月18日: CIテストをE2E, Integration に分割
+
+- textlintによる日本語の問題を修正]]></summary>
+        <content type="html"><![CDATA[docs/2024/2024-04.md
+
+- 達人プログラマー(第2版) 1 章を読んだ:
+    - 新しいプログラミング言語を覚える (年に 1 つ)
+    - チームにいるのは、IT エンジニアだけではない
+------
+docs/2024/2024-05.md
+
+  リポジトリ名を変更、ISSUE TEMPLATE を.GitHub に移動
+  GitHub の各リポジトリの Global 設定、ISSUE TEMPLATE を追加してリポジトリを作成
+  file-opener 用に docfx をカスタマイズ
+  API ドキュメント作成用に`docfx`を組み込み
+------
+docs/2025/2025-02.md
+
+- GitHub 用に GnuPG による署名を設定
+- 開発用 PC に Windows を再インストール、再度環境構築]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月16日: tools-configのバリデーション強化およびクロスプラットフォームのパス処理改善]]></title>
+        <id>53b790b5a8d075068a3389d04d42c9b494706bf1</id>
+        <link href="https://github.com/atsushifx/til/commit/53b790b5a8d075068a3389d04d42c9b494706bf1"/>
+        <updated>2025-07-16T15:52:30.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月16日: tools-configのバリデーション強化およびクロスプラットフォームのパス処理改善
+
+- 2025-07.md:
+  tools-configモジュールのスキーマバリデーションと包括的なBDDスタイルのテストを詳述
+  レガシーサンプルデータを削除し、クロスプラットフォーム正規化を用いたデフォルトパスのバリデーションロジックを強化。
+  valibot正規化、クロスプラットフォームパス処理、およびテストの保守性向上の利点を強調。]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月16日 -- ESTA(tools-config) におけるスキーマバリデーションとテスト整備
+
+#### 📌 作業概要
+
+- `@esta-core/tools-config` モジュールに対して **valibot スキーマバリデーション機構**と**包括的なテストスイート**を実装。
+- デフォルトツール設定のスキーマ正規化を導入し、Windows/Unix 両対応のパス処理を整備。
+- テスト設計では **BDD（振る舞い駆動開発）スタイル** を採用し、可読性・保守性を重視した構造に移行。
+
+#### 🛠 作業結果
+
+- `defaultToolsConfig`, `validateConfig`, `schemas`, `validateTools` 含む **350行以上のユニット/E2Eテスト**を新規追加。
+- `tools.ts` からのサンプルデータ・旧ロジックを削除し、責務を分離。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月15日: `tools-config`モジュールの新規開発]]></title>
+        <id>567de166bbbb5671e00fc5e6db26239eadca5ae2</id>
+        <link href="https://github.com/atsushifx/til/commit/567de166bbbb5671e00fc5e6db26239eadca5ae2"/>
+        <updated>2025-07-15T21:29:58.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月15日: `tools-config`モジュールの新規開発
+
+- docs/2025/2025-07.md:
+  `tools=confgi`ジュール開発に関する作業]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月15日 - TIL開発 (`tools-config`モジュールの開発)
+
+#### ValibotによるSchema設計とパス検証の実装
+
+`ValibotP を活用して設定のスキーマを厳密に定義し、柔軟な構文バリデーションを設計。
+パス検証では、Windows/Unix 両対応の正規表現を導入し、安全な設定値だけを受け入れる仕組みに。
+
+#### デフォルト設定の導入と設計の初期化
+
+`.tools/bin`や`.tools/tmp`など、現実的な初期ディレクトリ構成を提案として組み込み。
+ツール 9 種を初期値として登録し、設定なしでも最低限動作する堅牢性を確保。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化]]></title>
+        <id>0c46f0e99bf4ad5c0eccc44497423be8095bdd89</id>
+        <link href="https://github.com/atsushifx/til/commit/0c46f0e99bf4ad5c0eccc44497423be8095bdd89"/>
+        <updated>2025-07-14T15:46:13.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化
+
+- docs/2025/2025-07.md:
+  @esta-core/tools-configパッケージの初期設定
+  仕様書運用用ガイドライン作成]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月14日 -- ESTA (Tools Configモジュール初期セットアップ、仕様書整備)
+
+#### `@esta-core/tools-config` セットアップ
+
+- 初期構造の scaffold:
+  - `configs/`, `src/`, `tests`/ ディレクトリ群整備
+  - `tsconfig.json`, `package.json`, ビルド・リント・テストスクリプト定義
+
+- package 情報定義:
+  - name: `@esta-core/tools-config`
+  - description:「インストールツール設定を取得・生成するための専用モジュール」]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月12日: 統一エラーハンドリングを備えたESTA設定ローダーの強化]]></title>
+        <id>7481315a61af81ef7b2b4a4731de51bae8263aba</id>
+        <link href="https://github.com/atsushifx/til/commit/7481315a61af81ef7b2b4a4731de51bae8263aba"/>
+        <updated>2025-07-12T16:07:29.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月12日: 統一エラーハンドリングを備えたESTA設定ローダーの強化
+
+- docs/2025/2025-07.md:
+  マルチベースネーム検索、プロジェクトディレクトリ対応検索
+  拡張子なしファイルのJSONCデフォルト解析を追加
+  解析エラーやIOエラーをExitErrorでラップする統一エラーハンドリングを導入し、パーサー層と実行層の役割分担を明確化
+  コンフィグファイル探索、解析失敗時のエラーラップ、拡張子なしコンフィグファイルの適切な解析に関するテストを追加
+  関心の分離およびデフォルトコンフィグの重要性を強調し、使いやすさとテスト容易性を向上]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月12日 -- ESTA (Config Loader 強化、リファクタリング)
+
+#### 課題
+
+- 複数ベース名（`estarc`, `esta.config`）の探索
+- 拡張子なしファイルを JSONC 既定で読み込み
+- `USER`/`SYSTEM` に加え `PROJECT` ディレクトリ探索が必要
+- パースエラー・未検出時のテストが未カバー
+- ExitError vs ParseError の責務設計迷走
+- GHA で設定ファイル任意化・デフォルト設定の要望
+
+#### 実装内容]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月11日: command-runner と error-handler コンポーネントのリファクタリング]]></title>
+        <id>9fc8603da735ed63e6077ea2c6308b9f80c0b310</id>
+        <link href="https://github.com/atsushifx/til/commit/9fc8603da735ed63e6077ea2c6308b9f80c0b310"/>
+        <updated>2025-07-11T13:32:36.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月11日: command-runner と error-handler コンポーネントのリファクタリング
+
+- docs/2025/2025-07.md: command-runner と error-handler のリファクタリングに関する詳細な7月11日のアップデートを追加（依存関係および設定のクリーンアップを含む）]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月11日 -- ESTA (Command Runner & Error Handler リファクタリング)
+
+#### ✅ command-runner モジュールのリファクタリング完了
+
+- `ExitCode` を `@shared/constants` に移動し、共通化
+- `command-runner` 側で `ExitCode` を使用するよう統一
+- `vitest.config.ts` から不要な `@shared` エイリアスを削除（これによりテストでの解決エラーを修正）
+- `tsconfig.json` に `@` → `./src` のパスエイリアスを追加し、import を統一
+- `package.json` の依存関係を整理し、`@shared/constants` と `@esta-utils/get-platform` を `devDependencies` に移動
+
+#### 🛠 error-handler モジュールの整備]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月10日: エラー処理および終了ステータス管理モジュールの開発]]></title>
+        <id>2dc06f295f28fee4f633d87b41f2437c4d9f88c6</id>
+        <link href="https://github.com/atsushifx/til/commit/2dc06f295f28fee4f633d87b41f2437c4d9f88c6"/>
+        <updated>2025-07-10T14:01:14.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月10日: エラー処理および終了ステータス管理モジュールの開発
+
+- エラーハンドラーの改善および新しい終了ステータスパッケージの実装]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+Aexecutor
+------
+docs/2025/2025-07.md
+
+### 2025年7月10日 -- ESTA (error-handlerの改善、exit-statusモジュール開発)
+
+#### ✅ 1. `error-handler` パッケージの改善
+
+- `E2eMockLogger` の追加により E2E ログのテスト検証が可能に
+- `ExitError` から ESLint 無効化コメントを削除
+- `errorExit.ts` / `fatalExit.ts` にてログメッセージ形式を統一
+- `execErrorExit()` → `handleExitError()` にリネームして意味明確化
+- `CLIexecutor` / `GHAexecutor` を error-handler 外へ分離
+
+##### 📄 仕様書対応]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Merge remote-tracking branch 'refs/remotes/origin/main']]></title>
+        <id>18910fcd8afc35b4b9541e3981eaad95d178e546</id>
+        <link href="https://github.com/atsushifx/til/commit/18910fcd8afc35b4b9541e3981eaad95d178e546"/>
+        <updated>2025-07-09T15:02:37.000Z</updated>
+        <summary type="html"><![CDATA[Merge remote-tracking branch 'refs/remotes/origin/main']]></summary>
+        <content type="html"><![CDATA[docs/rss/feeds.xml
+
+    <updated>2025-07-09T14:55:40.000Z</updated>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加</title>
+        <id>b54593d12a55c7184e4657a89a11c6e2e89e6f92</id>
+        <link href="https://github.com/atsushifx/til/commit/b54593d12a55c7184e4657a89a11c6e2e89e6f92"/>
+        <updated>2025-07-09T14:55:40.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月8日: ESTA設定 v2.0.0 の詳細ドキュメントを追加
+
+- docs/2025/2025-07.md: 実行制御フラグを分離し、ツール設定をモジュール化した ESTA設定 v2.0.0 の詳細仕様を追加
+- docs/index.md: インデックスページに2025年7月ドキュメントへのリンクを追加</summary>
+        <content type="html"><![CDATA[.vscode/cspell.json]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: VSCode cspell用のカスタムスペル辞書エントリを追加]]></title>
+        <id>7b62ab3712d3d2d5f1973a5c25921f72e384b9b0</id>
+        <link href="https://github.com/atsushifx/til/commit/7b62ab3712d3d2d5f1973a5c25921f72e384b9b0"/>
+        <updated>2025-07-09T14:56:33.000Z</updated>
+        <summary type="html"><![CDATA[chore: VSCode cspell用のカスタムスペル辞書エントリを追加
+
+- VSCode cspellのカスタムスペル辞書に' estarc 'を追加]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+estarc]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
 </feed>
