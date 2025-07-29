@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-28T22:47:42.000Z</updated>
+    <updated>2025-07-29T16:12:01.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始]]></title>
+        <id>bafd7277ef93b490b889b68e6f8570a1f17e1ee3</id>
+        <link href="https://github.com/atsushifx/til/commit/bafd7277ef93b490b889b68e6f8570a1f17e1ee3"/>
+        <updated>2025-07-29T16:12:01.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始
+
+- AgLoggerリファクタリング計画と実装概要を詳細に追加
+- 統一ログ出力用のexecuteLog導入およびAgLoggerConfigによる設定委譲を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月29日 -- AgLoggerリファクタリング - 計画策定、実装
+
+#### 📘 リファクタリング計画の策定
+
+- t-wada 式 TDD を継続し、expect、さらに細かいレベルで Red-Green-Refactor を実施する粒度で記述
+
+- `refactor-agLogger-phase2.tasks.md` を新規作成
+  - 目的：`AgLogger` に `AgLoggerConfig` を組み込み、設定責務を委譲する設計
+  - 各タスクを 7 カテゴリ（設定統合、委譲、ログ出力、段階的移行、E2E、エラー処理、型＆JSDoc）に分類
+- 各フェーズ完了後の成果物・品質基準・注意点を事前に文書化
+- `executeLog()` や `setAgLoggerOptions()` など、今後追加されるべき API の要件を明示]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月28日: AgLoggerリファクタリング フェーズ1の詳細]]></title>
         <id>26db661b71649e02862c930ca9c33cd8e3663dad</id>
@@ -249,32 +276,6 @@ docs/2025/2025-02.md
 - GHA で設定ファイル任意化・デフォルト設定の要望
 
 #### 実装内容]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月11日: command-runner と error-handler コンポーネントのリファクタリング]]></title>
-        <id>9fc8603da735ed63e6077ea2c6308b9f80c0b310</id>
-        <link href="https://github.com/atsushifx/til/commit/9fc8603da735ed63e6077ea2c6308b9f80c0b310"/>
-        <updated>2025-07-11T13:32:36.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月11日: command-runner と error-handler コンポーネントのリファクタリング
-
-- docs/2025/2025-07.md: command-runner と error-handler のリファクタリングに関する詳細な7月11日のアップデートを追加（依存関係および設定のクリーンアップを含む）]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月11日 -- ESTA (Command Runner & Error Handler リファクタリング)
-
-#### ✅ command-runner モジュールのリファクタリング完了
-
-- `ExitCode` を `@shared/constants` に移動し、共通化
-- `command-runner` 側で `ExitCode` を使用するよう統一
-- `vitest.config.ts` から不要な `@shared` エイリアスを削除（これによりテストでの解決エラーを修正）
-- `tsconfig.json` に `@` → `./src` のパスエイリアスを追加し、import を統一
-- `package.json` の依存関係を整理し、`@shared/constants` と `@esta-utils/get-platform` を `devDependencies` に移動
-
-#### 🛠 error-handler モジュールの整備]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
