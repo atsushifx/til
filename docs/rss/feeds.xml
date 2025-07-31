@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-29T16:12:01.000Z</updated>
+    <updated>2025-07-31T15:41:12.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,36 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月31日: AgLoggerのテストを改善し、ログユーティリティを強化]]></title>
+        <id>921325ca4daee9ef488004e8a3d1de4d6dc27a51</id>
+        <link href="https://github.com/atsushifx/til/commit/921325ca4daee9ef488004e8a3d1de4d6dc27a51"/>
+        <updated>2025-07-31T15:41:12.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月31日: AgLoggerのテストを改善し、ログユーティリティを強化
+
+- docs/2025/2025-07.md:
+  AgLoggerの単体テストのリファクタリングに関する詳細レポートを追加。
+  テストフレームワークの改善、型安全性の向上、MockLoggerの使用やログレベルの検証を含む
+  ロガーユーティリティの強化。]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月31日 -- AgLoggerのユニットテストをリファクタリング、簡素化
+
+#### 作業概要
+
+TypeScript 製の AgLogger において、テストフレームワークの改善、型安全性の向上、およびユーティリティ機能の追加を実施しました。主に MockLogger を活用したテスト品質向上とログレベル検証機能の強化に取り組みました。
+
+#### 1. ログレベル範囲検証機能
+
+**技術詳細:**
+
+- `AgLogger.class.ts`の`executeLog`メソッドにログレベル検証を追加
+- 実装箇所: ログ出力処理前に`this._config.validateLogLevel(level)`を呼び出し]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始]]></title>
         <id>bafd7277ef93b490b889b68e6f8570a1f17e1ee3</id>
@@ -244,38 +274,6 @@ docs/2025/2025-02.md
 - package 情報定義:
   - name: `@esta-core/tools-config`
   - description:「インストールツール設定を取得・生成するための専用モジュール」]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月12日: 統一エラーハンドリングを備えたESTA設定ローダーの強化]]></title>
-        <id>7481315a61af81ef7b2b4a4731de51bae8263aba</id>
-        <link href="https://github.com/atsushifx/til/commit/7481315a61af81ef7b2b4a4731de51bae8263aba"/>
-        <updated>2025-07-12T16:07:29.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月12日: 統一エラーハンドリングを備えたESTA設定ローダーの強化
-
-- docs/2025/2025-07.md:
-  マルチベースネーム検索、プロジェクトディレクトリ対応検索
-  拡張子なしファイルのJSONCデフォルト解析を追加
-  解析エラーやIOエラーをExitErrorでラップする統一エラーハンドリングを導入し、パーサー層と実行層の役割分担を明確化
-  コンフィグファイル探索、解析失敗時のエラーラップ、拡張子なしコンフィグファイルの適切な解析に関するテストを追加
-  関心の分離およびデフォルトコンフィグの重要性を強調し、使いやすさとテスト容易性を向上]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月12日 -- ESTA (Config Loader 強化、リファクタリング)
-
-#### 課題
-
-- 複数ベース名（`estarc`, `esta.config`）の探索
-- 拡張子なしファイルを JSONC 既定で読み込み
-- `USER`/`SYSTEM` に加え `PROJECT` ディレクトリ探索が必要
-- パースエラー・未検出時のテストが未カバー
-- ExitError vs ParseError の責務設計迷走
-- GHA で設定ファイル任意化・デフォルト設定の要望
-
-#### 実装内容]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
