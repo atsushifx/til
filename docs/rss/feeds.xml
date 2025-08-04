@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-07-31T15:41:12.000Z</updated>
+    <updated>2025-08-04T17:40:46.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加]]></title>
+        <id>d982c1a9ee67de8dd24e7dc314157636c247ddad</id>
+        <link href="https://github.com/atsushifx/til/commit/d982c1a9ee67de8dd24e7dc314157636c247ddad"/>
+        <updated>2025-08-04T17:40:46.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
+
+- docs/2025/2025-08.md: BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
+- docs/index.md: インデックスページに2025年8月レポートへのリンクを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+---
+title: 2025-08
+layout: default
+---
+
+## 2025年8月分
+
+<!-- markdownlint-disable no-duplicate-heading -->
+
+### 2025年8月4日 -- zenn: Claude CodeへのBDD導入記事を公開 / agla-loggerへの機能追加／改善
+
+#### ✅ 今日やったこと]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-07): 2025年7月31日: AgLoggerのテストを改善し、ログユーティリティを強化]]></title>
         <id>921325ca4daee9ef488004e8a3d1de4d6dc27a51</id>
@@ -246,34 +274,6 @@ docs/2025/2025-02.md
 
 `.tools/bin`や`.tools/tmp`など、現実的な初期ディレクトリ構成を提案として組み込み。
 ツール 9 種を初期値として登録し、設定なしでも最低限動作する堅牢性を確保。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化]]></title>
-        <id>0c46f0e99bf4ad5c0eccc44497423be8095bdd89</id>
-        <link href="https://github.com/atsushifx/til/commit/0c46f0e99bf4ad5c0eccc44497423be8095bdd89"/>
-        <updated>2025-07-14T15:46:13.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07.md): 2025年7月14に理: @esta-core/tools-configパッケージの初期設定とガイドラインをドキュメント化
-
-- docs/2025/2025-07.md:
-  @esta-core/tools-configパッケージの初期設定
-  仕様書運用用ガイドライン作成]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月14日 -- ESTA (Tools Configモジュール初期セットアップ、仕様書整備)
-
-#### `@esta-core/tools-config` セットアップ
-
-- 初期構造の scaffold:
-  - `configs/`, `src/`, `tests`/ ディレクトリ群整備
-  - `tsconfig.json`, `package.json`, ビルド・リント・テストスクリプト定義
-
-- package 情報定義:
-  - name: `@esta-core/tools-config`
-  - description:「インストールツール設定を取得・生成するための専用モジュール」]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
