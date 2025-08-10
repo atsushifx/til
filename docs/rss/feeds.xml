@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-08-06T22:36:52.000Z</updated>
+    <updated>2025-08-10T14:25:57.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,33 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善]]></title>
+        <id>33e2a2afd4503dd56b4cc6fcf39936047fda05b8</id>
+        <link href="https://github.com/atsushifx/til/commit/33e2a2afd4503dd56b4cc6fcf39936047fda05b8"/>
+        <updated>2025-08-10T14:25:57.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善
+
+- docs/2025/2025-08.md: API統一、検証の集中化、ロガーのリネーム、テスト構造の再編を伴うagla-loggerリファクタリングの詳細な概要を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月10日 -- agla-logger リベース／リファクタリング
+
+#### 作業内容
+
+- AgLogger の API を刷新（`logLevel`/`verbose` の統一、`FORCE_OUTPUT` レベル追加、`createLogger`/`getLogger` 分離）。
+- バリデーションを AgLogValidator に集中化し、安全性とエラーメッセージを強化。
+- MockLogger を TBufferLogger にリネームし、フォーマッタとロガーの出力仕様を改善。
+- テストを機能別に大規模再編（ユニット・統合・E2E 分割）し、冗長削除とカバレッジ拡張。
+
+#### 学び・気づき
+
+- ログ API はアクセサ統一とバリデーション集中化で保守性が飛躍的に向上する。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-08) 2025年8月6日: ユニットテストを振る舞い、期待別に分割、リファクタリング]]></title>
         <id>9fbfa4d9cfd83f02dae587a180046714773718c5</id>
@@ -237,31 +264,6 @@ TypeScript 製の AgLogger において、テストフレームワークの改�
   - 複数フォーマット対応の設定読み込み (TypeScript, JSON, YAML, JS)
   - Valibot スキーマによる型安全なバリデーション
   - 設定ファイルの自動検出 (`estarc`, `esta.config`)]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月20日: /kiroコマンドの開発、新規モジュール開発開始]]></title>
-        <id>ffbde1449aa082e05ecad1d436654dd1b2d84ee3</id>
-        <link href="https://github.com/atsushifx/til/commit/ffbde1449aa082e05ecad1d436654dd1b2d84ee3"/>
-        <updated>2025-07-20T18:00:59.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月20日: /kiroコマンドの開発、新規モジュール開発開始]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月20日 -- ESTA(tools-configモジュール完成、テスト変更)
-
-#### ✅ 作業概要
-
-<!-- textlint-disable @textlint-ja/ai-writing/no-ai-list-formatting -->
-
-- 📦 `esta-config` モジュールの立ち上げ
-  - 初期パッケージ構成（`index.ts` の scaffold 含む）
-  - `ag-logger` の `LogLevel` サポートを組み込んだデフォルト設定を追加
-  - テスト・build 準備を含むパッケージ初期化完了
-
-- 🔧 `ag-logger` のリファクタリング]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
