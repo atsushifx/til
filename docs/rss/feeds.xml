@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>1970-01-01T00:00:00.000Z</updated>
+    <updated>2025-08-14T14:15:11.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,4 +10,276 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月14日: AgLogger 統合の追加とエンドツーエンドテストのリファクタリング]]></title>
+        <id>1ac634e52773f229385e915495796864375e3160</id>
+        <link href="https://github.com/atsushifx/til/commit/1ac634e52773f229385e915495796864375e3160"/>
+        <updated>2025-08-14T14:15:11.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月14日: AgLogger 統合の追加とエンドツーエンドテストのリファクタリング
+
+- docs/2025/2025-08.md:
+  AgLogger 統合および E2E テストリファクタリングに関する詳細レポート
+  テストの整理改善、API の統一、型安全性の向上]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月14日 — AgLogger -- インテグレーションテスト/E2Eテストのリファクタリング
+
+#### 🔧 作業内容まとめ
+
+##### ✅ E2eMockLoggerの機能強化
+
+- 特別なログレベル `DEFAULT` をサポートするよう拡張。
+- 実際のユースケースを模した柔軟な E2E テスト環境を実現。
+
+##### ✅ テスト構造の再編成
+
+- E2E/統合/ユーティリティのテストを分類ベースで再構成。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月11日: AgLoggerManagerの大規模改修およびテストフレームワークヘルパーの統一]]></title>
+        <id>97bbb3a10c5e9881b90027c94a563ad5401f3f5a</id>
+        <link href="https://github.com/atsushifx/til/commit/97bbb3a10c5e9881b90027c94a563ad5401f3f5a"/>
+        <updated>2025-08-11T23:45:25.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月11日: AgLoggerManagerの大規模改修およびテストフレームワークヘルパーの統一
+
+- docs/2025/2025-08.md:
+  AgLoggerManagerの大幅改修と、
+  統一されたヘルパーおよび改善されたバリデーションを備えたテストフレームワークについての詳細な概要を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月11日 — AgLoggerManagerとテスト基盤の大規模刷新
+
+#### 📌 今日の作業まとめ（2–3行）
+
+AgLoggerManager の構造を全面的に見直し、設定バリデーション・エラーハンドリングを強化。
+統合テストは全スイートを再編成し、`defaultLoggerMap` の導入や `getLoggerFunction` ベースのアサーションに統一。
+ヘルパー関数 `AgLogHelpers` を新設してフォーマッタやバリデータの共通ロジックを一元化。
+
+#### 📚 学びと気づき
+
+- **一貫したテスト構造**は、可読性と保守性を向上させる。機能別スイート分割＋モック強化は長期運用で効く。
+- **設定とバリデーションの集中管理**により、複雑な変更でも安全に反映可能になった。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善]]></title>
+        <id>33e2a2afd4503dd56b4cc6fcf39936047fda05b8</id>
+        <link href="https://github.com/atsushifx/til/commit/33e2a2afd4503dd56b4cc6fcf39936047fda05b8"/>
+        <updated>2025-08-10T14:25:57.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善
+
+- docs/2025/2025-08.md: API統一、検証の集中化、ロガーのリネーム、テスト構造の再編を伴うagla-loggerリファクタリングの詳細な概要を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月10日 -- agla-logger リベース／リファクタリング
+
+#### 作業内容
+
+- AgLogger の API を刷新（`logLevel`/`verbose` の統一、`FORCE_OUTPUT` レベル追加、`createLogger`/`getLogger` 分離）。
+- バリデーションを AgLogValidator に集中化し、安全性とエラーメッセージを強化。
+- MockLogger を TBufferLogger にリネームし、フォーマッタとロガーの出力仕様を改善。
+- テストを機能別に大規模再編（ユニット・統合・E2E 分割）し、冗長削除とカバレッジ拡張。
+
+#### 学び・気づき
+
+- ログ API はアクセサ統一とバリデーション集中化で保守性が飛躍的に向上する。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08) 2025年8月6日: ユニットテストを振る舞い、期待別に分割、リファクタリング]]></title>
+        <id>9fbfa4d9cfd83f02dae587a180046714773718c5</id>
+        <link href="https://github.com/atsushifx/til/commit/9fbfa4d9cfd83f02dae587a180046714773718c5"/>
+        <updated>2025-08-06T22:36:52.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08) 2025年8月6日: ユニットテストを振る舞い、期待別に分割、リファクタリング
+
+- docs/2025/2025-08.md:
+  atsushifx スタイルの BDD プロセスを用いた
+  大規模ユニットテストリファクタリング]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月6日 -- agla-logger ユニットテストの大規模リファクタリング
+
+#### 🧪 TIL要約
+
+ユニットテストを対象に、**atsushifx式BDDプロセス**を用いてテスト自体を含む大規模リファクタリングを実施。
+validation 責務の再設計・API 変更・テスト削除など多岐にわたる変更を**小さなサイクルで安全に完遂**した。
+
+#### ✅ 実施内容ハイライト
+
+- **setLoggerConfig** の API を `boolean` → `void` に変更
+- **validateLogLevel** 系のロジック・テストを完全削除
+- テスト修正 → コード修正 → 即テスト実行のサイクルを徹底]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月5日: MCPセットアップドキュメントの改善とログ検証の強化]]></title>
+        <id>8f2f6126b0ff376f65d91204b286b8ae27f44c50</id>
+        <link href="https://github.com/atsushifx/til/commit/8f2f6126b0ff376f65d91204b286b8ae27f44c50"/>
+        <updated>2025-08-06T20:20:03.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月5日: MCPセットアップドキュメントの改善とログ検証の強化
+
+- docs/2025/2025-08.md: M
+  CP環境設定およびWindows安定性のための手動構成を記載
+  AgLoggerのログレベル検証機能を追加し、検証ロジックを集中管理
+  早期エラー検出に関する考察と、新技術導入と保守性のバランスについて追記]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月5日 -- agla-logger mcp導入、リファクタリング用基盤整備
+
+### 2025年8月5日 -- agla-logger MCP導入、リファクタリング用基盤整備
+
+#### 🧠 MCP環境の導入と設定
+
+##### 導入ツール
+
+- [`serena-mcp`](https://github.com/oraios/serena): セマンティックコーディング支援の MCP サーバー
+- [`@mizchi/lsmcp`](https://github.com/mizchi/lsmcp): TypeScript 向け LSP ラッパーとして活用
+
+##### 注意点]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chore: プロジェクトのスペル辞書にmizchiを追加]]></title>
+        <id>7f2adaa118039fe7137f4e706f8936b2b7d8c6c9</id>
+        <link href="https://github.com/atsushifx/til/commit/7f2adaa118039fe7137f4e706f8936b2b7d8c6c9"/>
+        <updated>2025-08-06T20:19:35.000Z</updated>
+        <summary type="html"><![CDATA[chore: プロジェクトのスペル辞書にmizchiを追加
+
+- .vscode/cspell/dicts/til.dic: スペル辞書に新しい単語mizchiを追加]]></summary>
+        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
+
+mizchi]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加]]></title>
+        <id>d982c1a9ee67de8dd24e7dc314157636c247ddad</id>
+        <link href="https://github.com/atsushifx/til/commit/d982c1a9ee67de8dd24e7dc314157636c247ddad"/>
+        <updated>2025-08-04T17:40:46.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
+
+- docs/2025/2025-08.md: BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
+- docs/index.md: インデックスページに2025年8月レポートへのリンクを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+---
+title: 2025-08
+layout: default
+---
+
+## 2025年8月分
+
+<!-- markdownlint-disable no-duplicate-heading -->
+
+### 2025年8月4日 -- zenn: Claude CodeへのBDD導入記事を公開 / agla-loggerへの機能追加／改善
+
+#### ✅ 今日やったこと]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月31日: AgLoggerのテストを改善し、ログユーティリティを強化]]></title>
+        <id>921325ca4daee9ef488004e8a3d1de4d6dc27a51</id>
+        <link href="https://github.com/atsushifx/til/commit/921325ca4daee9ef488004e8a3d1de4d6dc27a51"/>
+        <updated>2025-07-31T15:41:12.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月31日: AgLoggerのテストを改善し、ログユーティリティを強化
+
+- docs/2025/2025-07.md:
+  AgLoggerの単体テストのリファクタリングに関する詳細レポートを追加。
+  テストフレームワークの改善、型安全性の向上、MockLoggerの使用やログレベルの検証を含む
+  ロガーユーティリティの強化。]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月31日 -- AgLoggerのユニットテストをリファクタリング、簡素化
+
+#### 作業概要
+
+TypeScript 製の AgLogger において、テストフレームワークの改善、型安全性の向上、およびユーティリティ機能の追加を実施しました。主に MockLogger を活用したテスト品質向上とログレベル検証機能の強化に取り組みました。
+
+#### 1. ログレベル範囲検証機能
+
+**技術詳細:**
+
+- `AgLogger.class.ts`の`executeLog`メソッドにログレベル検証を追加
+- 実装箇所: ログ出力処理前に`this._config.validateLogLevel(level)`を呼び出し]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始]]></title>
+        <id>bafd7277ef93b490b889b68e6f8570a1f17e1ee3</id>
+        <link href="https://github.com/atsushifx/til/commit/bafd7277ef93b490b889b68e6f8570a1f17e1ee3"/>
+        <updated>2025-07-29T16:12:01.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始
+
+- AgLoggerリファクタリング計画と実装概要を詳細に追加
+- 統一ログ出力用のexecuteLog導入およびAgLoggerConfigによる設定委譲を追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月29日 -- AgLoggerリファクタリング - 計画策定、実装
+
+#### 📘 リファクタリング計画の策定
+
+- t-wada 式 TDD を継続し、expect、さらに細かいレベルで Red-Green-Refactor を実施する粒度で記述
+
+- `refactor-agLogger-phase2.tasks.md` を新規作成
+  - 目的：`AgLogger` に `AgLoggerConfig` を組み込み、設定責務を委譲する設計
+  - 各タスクを 7 カテゴリ（設定統合、委譲、ログ出力、段階的移行、E2E、エラー処理、型＆JSDoc）に分類
+- 各フェーズ完了後の成果物・品質基準・注意点を事前に文書化
+- `executeLog()` や `setAgLoggerOptions()` など、今後追加されるべき API の要件を明示]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-07): 2025年7月28日: AgLoggerリファクタリング フェーズ1の詳細]]></title>
+        <id>26db661b71649e02862c930ca9c33cd8e3663dad</id>
+        <link href="https://github.com/atsushifx/til/commit/26db661b71649e02862c930ca9c33cd8e3663dad"/>
+        <updated>2025-07-28T22:47:42.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-07): 2025年7月28日: AgLoggerリファクタリング フェーズ1の詳細
+
+- AgLoggerリファクタリングフェーズ1にもとづいて、AgLoggerConfigクラスを作成]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-07.md
+
+### 2025年7月28日 -- AgLoggerリファクタリング - フェーズ1完了
+
+#### 🎯 概要
+
+`@agla-utils/ag-logger` のリファクタリングにおける **AgLoggerConfig クラスの内部実装フェーズ1** を完了。
+設定の一元管理とログ出力制御を担う中核モジュールとして設計・実装。
+
+#### 🧩 実装内容
+
+##### 設定クラスの定義と初期化
+
+- `AgLoggerConfig` クラスを定義 (内部専用)]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
 </feed>
