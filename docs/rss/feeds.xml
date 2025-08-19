@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-08-16T10:23:41.000Z</updated>
+    <updated>2025-08-19T15:52:09.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月19日: エンドツーエンドテストのリファクタリング]]></title>
+        <id>abf3d79eb8c1c1821f9e454ce0ed83a7abb9cc20</id>
+        <link href="https://github.com/atsushifx/til/commit/abf3d79eb8c1c1821f9e454ce0ed83a7abb9cc20"/>
+        <updated>2025-08-19T15:52:09.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月19日: エンドツーエンドテストのリファクタリング
+
+- docs/2025/2025-08.md:
+  AgLoggerのe2eテストリファクタリングに関する詳細な概要を追加。
+  テストの分類、コンソールモックヘルパーの統合、リンター修正、およびMockLoggerのバグ修正を含む]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月19日 — AgLogger -- e2eテストを再構成
+
+#### 今日の作業まとめ
+
+1. **E2Eテストの再構成**
+   - E2E テストを「コンソール出力系」「モック出力系」に分類して整理。
+   - 出力や振る舞いごとに明確なスイートへ分割し、テストの役割を明確化。
+
+2. **コンソール出力用ヘルパーの統合**
+   - 各テストに散らばっていた console モック処理を外部ヘルパーに抽出。
+   - `setupTest()` ルーチンを導入し、安全なモックセットアップと自動復元を一元化。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-08): 2025/08/15: MockFormatterのリファクタリングとテストアーキテクチャおよびドキュメントの強化]]></title>
         <id>bca513a398c4a52baef33a86c8cf215ed0f4a3fc</id>
@@ -255,33 +283,6 @@ TypeScript 製の AgLogger において、テストフレームワークの改�
 
 - `AgLogger.class.ts`の`executeLog`メソッドにログレベル検証を追加
 - 実装箇所: ログ出力処理前に`this._config.validateLogLevel(level)`を呼び出し]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始]]></title>
-        <id>bafd7277ef93b490b889b68e6f8570a1f17e1ee3</id>
-        <link href="https://github.com/atsushifx/til/commit/bafd7277ef93b490b889b68e6f8570a1f17e1ee3"/>
-        <updated>2025-07-29T16:12:01.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-07): 2025年7月29日: リファクタリング計画作成、およびフェーズ2実装開始
-
-- AgLoggerリファクタリング計画と実装概要を詳細に追加
-- 統一ログ出力用のexecuteLog導入およびAgLoggerConfigによる設定委譲を追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-07.md
-
-### 2025年7月29日 -- AgLoggerリファクタリング - 計画策定、実装
-
-#### 📘 リファクタリング計画の策定
-
-- t-wada 式 TDD を継続し、expect、さらに細かいレベルで Red-Green-Refactor を実施する粒度で記述
-
-- `refactor-agLogger-phase2.tasks.md` を新規作成
-  - 目的：`AgLogger` に `AgLoggerConfig` を組み込み、設定責務を委譲する設計
-  - 各タスクを 7 カテゴリ（設定統合、委譲、ログ出力、段階的移行、E2E、エラー処理、型＆JSDoc）に分類
-- 各フェーズ完了後の成果物・品質基準・注意点を事前に文書化
-- `executeLog()` や `setAgLoggerOptions()` など、今後追加されるべき API の要件を明示]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
