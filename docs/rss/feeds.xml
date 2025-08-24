@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-08-23T15:35:09.000Z</updated>
+    <updated>2025-08-24T16:38:41.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,36 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月24日: AgLoggerのE2Eテストをリファクタリング、リストラクチャラインへマージ]]></title>
+        <id>f1b3d7294e308ed6831ab9d6e890091e624f2d93</id>
+        <link href="https://github.com/atsushifx/til/commit/f1b3d7294e308ed6831ab9d6e890091e624f2d93"/>
+        <updated>2025-08-24T16:38:41.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月24日: AgLoggerのE2Eテストをリファクタリング、リストラクチャラインへマージ
+
+- docs/2025/2025-08.md:
+  AgLoggerのE2Eテストリファクタリングに関する詳細な更新を追加。シナリオごとにテストを再構成し、型安全性を向上
+  古いE2Eテストを削除し、ケースをより明確なシナリオベースの構造に統合
+  一貫した命名規則、JSDocコメント、出力別ディレクトリ構成でコードの明確さを強化]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月24日 -- AgLogger E2Eテストリファクタリング完了 および restructureラインへのマージ
+
+#### コンソール出力側E2Eテストの構造再設計
+
+- `console-output/` 配下のテストを**シナリオベース**に全面再編成
+- テスト内容を以下の観点で整理・拡充:
+  - アプリケーションライフサイクル
+  - ログレベルフィルタリング
+  - ロガー設定の変更／永続化
+  - 出力フォーマット（JSON / Plain）の最適化
+
+#### コード品質と型の強化]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-08): 2025年8月23日: テストをリファクタリングし、厳格な出力制御によるログ記録を強化]]></title>
         <id>3cb55ee7a5b6d97864bcea6003d53ff715e6acde</id>
@@ -258,34 +288,6 @@ validation 責務の再設計・API 変更・テスト削除など多岐にわ�
         <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
 
 mizchi]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加]]></title>
-        <id>d982c1a9ee67de8dd24e7dc314157636c247ddad</id>
-        <link href="https://github.com/atsushifx/til/commit/d982c1a9ee67de8dd24e7dc314157636c247ddad"/>
-        <updated>2025-08-04T17:40:46.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-08): BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
-
-- docs/2025/2025-08.md: BDD記事、ag-loggerの改良、振り返りを含む2025年8月の月次レポートを追加
-- docs/index.md: インデックスページに2025年8月レポートへのリンクを追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-08.md
-
----
-title: 2025-08
-layout: default
----
-
-## 2025年8月分
-
-<!-- markdownlint-disable no-duplicate-heading -->
-
-### 2025年8月4日 -- zenn: Claude CodeへのBDD導入記事を公開 / agla-loggerへの機能追加／改善
-
-#### ✅ 今日やったこと]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
