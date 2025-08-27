@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-08-24T16:38:41.000Z</updated>
+    <updated>2025-08-27T18:24:44.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-08): 2025年8月27日: パッケージ再構成のドキュメント化とエラーハンドリングパッケージの追加]]></title>
+        <id>67d5b32eb87ccf4e49107746ccab22714f948da1</id>
+        <link href="https://github.com/atsushifx/til/commit/67d5b32eb87ccf4e49107746ccab22714f948da1"/>
+        <updated>2025-08-27T18:24:44.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-08): 2025年8月27日: パッケージ再構成のドキュメント化とエラーハンドリングパッケージの追加
+
+- docs/2025/2025-08.md:
+  パッケージの再構成およびエラーハンドリングパッケージの作成に関するドキュメント]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-08.md
+
+### 2025年8月27日 -- パッケージ再編、およびエラーハンドリングパッケージ作成
+
+#### 作業概要
+
+1. **パッケージ再編**
+   - error 関連を `@esta-core/esta-error` に統合
+
+2. **/shared パッケージ整理**
+   - `/base` を廃止し、`/shared/types`, `/shared/constants` にリファクタリング
+   - `@shared/types` に `AglaError` 基底クラスを追加
+
+3. **@esta-core/esta-error 実装**]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-08): 2025年8月24日: AgLoggerのE2Eテストをリファクタリング、リストラクチャラインへマージ]]></title>
         <id>f1b3d7294e308ed6831ab9d6e890091e624f2d93</id>
@@ -272,22 +300,6 @@ validation 責務の再設計・API 変更・テスト削除など多岐にわ�
 - [`@mizchi/lsmcp`](https://github.com/mizchi/lsmcp): TypeScript 向け LSP ラッパーとして活用
 
 ##### 注意点]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[chore: プロジェクトのスペル辞書にmizchiを追加]]></title>
-        <id>7f2adaa118039fe7137f4e706f8936b2b7d8c6c9</id>
-        <link href="https://github.com/atsushifx/til/commit/7f2adaa118039fe7137f4e706f8936b2b7d8c6c9"/>
-        <updated>2025-08-06T20:19:35.000Z</updated>
-        <summary type="html"><![CDATA[chore: プロジェクトのスペル辞書にmizchiを追加
-
-- .vscode/cspell/dicts/til.dic: スペル辞書に新しい単語mizchiを追加]]></summary>
-        <content type="html"><![CDATA[.vscode/cspell/dicts/til.dic
-
-mizchi]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
