@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-08-27T18:24:44.000Z</updated>
+    <updated>2025-09-03T18:19:40.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,36 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-09): 2025年9月3日: 2025年9月の進捗報告を機能強化と共に公開]]></title>
+        <id>d788131948ac4519db5d5ab9cceca8077ac88966</id>
+        <link href="https://github.com/atsushifx/til/commit/d788131948ac4519db5d5ab9cceca8077ac88966"/>
+        <updated>2025-09-03T18:19:40.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-09): 2025年9月3日: 2025年9月の進捗報告を機能強化と共に公開
+
+- 2025-09.md:
+  AglaErrorの機能強化および大幅なテスト改善を詳細に記述した2025年9月の進捗報告を追加
+- docs/index.md:
+  メインのドキュメントインデックスページに2025年9月分報告へのリンクを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-09.md
+
+---
+title: 2025-09
+layout: default
+---
+
+## 2025年8月分
+
+<!-- markdownlint-disable no-duplicate-heading -->
+
+### 2025年9月3日 -- AglaError機能拡張 および E2Eテスト
+
+### 2025-09-01 -- AglaErrorテストとドキュメント整理の進捗]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-08): 2025年8月27日: パッケージ再構成のドキュメント化とエラーハンドリングパッケージの追加]]></title>
         <id>67d5b32eb87ccf4e49107746ccab22714f948da1</id>
@@ -270,36 +300,6 @@ validation 責務の再設計・API 変更・テスト削除など多岐にわ�
 - **setLoggerConfig** の API を `boolean` → `void` に変更
 - **validateLogLevel** 系のロジック・テストを完全削除
 - テスト修正 → コード修正 → 即テスト実行のサイクルを徹底]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-08): 2025年8月5日: MCPセットアップドキュメントの改善とログ検証の強化]]></title>
-        <id>8f2f6126b0ff376f65d91204b286b8ae27f44c50</id>
-        <link href="https://github.com/atsushifx/til/commit/8f2f6126b0ff376f65d91204b286b8ae27f44c50"/>
-        <updated>2025-08-06T20:20:03.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-08): 2025年8月5日: MCPセットアップドキュメントの改善とログ検証の強化
-
-- docs/2025/2025-08.md: M
-  CP環境設定およびWindows安定性のための手動構成を記載
-  AgLoggerのログレベル検証機能を追加し、検証ロジックを集中管理
-  早期エラー検出に関する考察と、新技術導入と保守性のバランスについて追記]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-08.md
-
-### 2025年8月5日 -- agla-logger mcp導入、リファクタリング用基盤整備
-
-### 2025年8月5日 -- agla-logger MCP導入、リファクタリング用基盤整備
-
-#### 🧠 MCP環境の導入と設定
-
-##### 導入ツール
-
-- [`serena-mcp`](https://github.com/oraios/serena): セマンティックコーディング支援の MCP サーバー
-- [`@mizchi/lsmcp`](https://github.com/mizchi/lsmcp): TypeScript 向け LSP ラッパーとして活用
-
-##### 注意点]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
