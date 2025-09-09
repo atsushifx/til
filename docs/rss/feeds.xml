@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-09-03T18:19:40.000Z</updated>
+    <updated>2025-09-09T04:57:53.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-09): 2025年9月8日: 主要なプロジェクト変更を反映して2025年9月の変更履歴を更新]]></title>
+        <id>cce110a1c6e3da77f8aa973c35eb715a47b34555</id>
+        <link href="https://github.com/atsushifx/til/commit/cce110a1c6e3da77f8aa973c35eb715a47b34555"/>
+        <updated>2025-09-09T04:57:53.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-09): 2025年9月8日: 主要なプロジェクト変更を反映して2025年9月の変更履歴を更新
+
+- docs/2025/2025-09.md:
+  agla-loggerへの移行、tsconfigの分割、ドキュメント構成の見直し、コードの明瞭さと拡張性に関する重要な洞察を記録]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-09.md
+
+## 2025年9月分
+### 2025年9月8日 -- agla-logger へのログ機能マイグレーション
+
+#### ✅ agla-logger へのマイグレーション
+
+- `@aglabo/ag-logger` → `@aglabo/agla-logger` に改名・再構成
+- `AglaError`, `AgLoggerError` を導入し、共通エラー構造を整理
+
+#### ⚙️ tsconfig 分離・ビルド改善
+
+- `tsconfig`をテスト、リント用の`tsconfig.json`とビルド用の`tsconfig.build.json`に分割
+  → テストコードをコンパイルから除外]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-09): 2025年9月3日: 2025年9月の進捗報告を機能強化と共に公開]]></title>
         <id>d788131948ac4519db5d5ab9cceca8077ac88966</id>
@@ -271,35 +299,6 @@ AgLoggerManager の構造を全面的に見直し、設定バリデーション�
 #### 学び・気づき
 
 - ログ API はアクセサ統一とバリデーション集中化で保守性が飛躍的に向上する。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-08) 2025年8月6日: ユニットテストを振る舞い、期待別に分割、リファクタリング]]></title>
-        <id>9fbfa4d9cfd83f02dae587a180046714773718c5</id>
-        <link href="https://github.com/atsushifx/til/commit/9fbfa4d9cfd83f02dae587a180046714773718c5"/>
-        <updated>2025-08-06T22:36:52.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-08) 2025年8月6日: ユニットテストを振る舞い、期待別に分割、リファクタリング
-
-- docs/2025/2025-08.md:
-  atsushifx スタイルの BDD プロセスを用いた
-  大規模ユニットテストリファクタリング]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-08.md
-
-### 2025年8月6日 -- agla-logger ユニットテストの大規模リファクタリング
-
-#### 🧪 TIL要約
-
-ユニットテストを対象に、**atsushifx式BDDプロセス**を用いてテスト自体を含む大規模リファクタリングを実施。
-validation 責務の再設計・API 変更・テスト削除など多岐にわたる変更を**小さなサイクルで安全に完遂**した。
-
-#### ✅ 実施内容ハイライト
-
-- **setLoggerConfig** の API を `boolean` → `void` に変更
-- **validateLogLevel** 系のロジック・テストを完全削除
-- テスト修正 → コード修正 → 即テスト実行のサイクルを徹底]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
