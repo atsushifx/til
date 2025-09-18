@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-09-09T04:57:53.000Z</updated>
+    <updated>2025-09-18T21:08:54.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,35 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs: 2025年9月18日: 新しいアグリゲーターパッケージを追加 (再エクスポートおよび設定更新を含む)]]></title>
+        <id>758304be961fe8ca34ca8115b5be0dea39ca89d8</id>
+        <link href="https://github.com/atsushifx/til/commit/758304be961fe8ca34ca8115b5be0dea39ca89d8"/>
+        <updated>2025-09-18T21:08:54.000Z</updated>
+        <summary type="html"><![CDATA[docs: 2025年9月18日: 新しいアグリゲーターパッケージを追加 (再エクスポートおよび設定更新を含む)
+
+- docs/2025/2025-09.md:
+  アグリゲーターパッケージによる再エクスポート (公開用)
+  旧来のパッケージを`xxx-core`に移行]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-09.md
+
+### 2025年9月18日 -- 公開用、aggregator を追加
+
+#### 🌱 今日やったこと
+
+- **パッケージ構成整理**
+  - `agla-error` を `agla-error-core` に移行
+  - `agla-logger` を `agla-logger-core` に移行
+  - 再エクスポート専用の **aggregator パッケージ**を新規作成
+    - `@aglabo/agla-error`
+    - `@aglabo/agla-logger` (`logger` / `error` サブエクスポート対応)
+
+- **設定ファイル整備**]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs(2025-09): 2025年9月8日: 主要なプロジェクト変更を反映して2025年9月の変更履歴を更新]]></title>
         <id>cce110a1c6e3da77f8aa973c35eb715a47b34555</id>
@@ -272,33 +301,6 @@ AgLoggerManager の構造を全面的に見直し、設定バリデーション�
 
 - **一貫したテスト構造**は、可読性と保守性を向上させる。機能別スイート分割＋モック強化は長期運用で効く。
 - **設定とバリデーションの集中管理**により、複雑な変更でも安全に反映可能になった。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善]]></title>
-        <id>33e2a2afd4503dd56b4cc6fcf39936047fda05b8</id>
-        <link href="https://github.com/atsushifx/til/commit/33e2a2afd4503dd56b4cc6fcf39936047fda05b8"/>
-        <updated>2025-08-10T14:25:57.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-08): 2025年8月10日: agla-loggerのAPIを統一し、ログ検証を改善
-
-- docs/2025/2025-08.md: API統一、検証の集中化、ロガーのリネーム、テスト構造の再編を伴うagla-loggerリファクタリングの詳細な概要を追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-08.md
-
-### 2025年8月10日 -- agla-logger リベース／リファクタリング
-
-#### 作業内容
-
-- AgLogger の API を刷新（`logLevel`/`verbose` の統一、`FORCE_OUTPUT` レベル追加、`createLogger`/`getLogger` 分離）。
-- バリデーションを AgLogValidator に集中化し、安全性とエラーメッセージを強化。
-- MockLogger を TBufferLogger にリネームし、フォーマッタとロガーの出力仕様を改善。
-- テストを機能別に大規模再編（ユニット・統合・E2E 分割）し、冗長削除とカバレッジ拡張。
-
-#### 学び・気づき
-
-- ログ API はアクセサ統一とバリデーション集中化で保守性が飛躍的に向上する。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
