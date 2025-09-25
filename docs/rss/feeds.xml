@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://api.github.com/repos/atsushifx/til/commits/latest</id>
     <title>atsushifx / TIL</title>
-    <updated>2025-09-18T21:08:54.000Z</updated>
+    <updated>2025-09-25T17:46:25.000Z</updated>
     <generator>https://github.com/atsushifx/commit2feed</generator>
     <author>
         <name>atsushifx</name>
@@ -10,6 +10,34 @@
     </author>
     <link rel="alternate" href="https://api.github.com/repos/atsushifx/til/commits/latest"/>
     <subtitle>Latest 10 commits for atsushifx / TIL</subtitle>
+    <entry>
+        <title type="html"><![CDATA[docs(2025-09): 2025年9月25日: agla-logger の日本語APIドキュメントを高度な内容で更新]]></title>
+        <id>484a422cfc01905565077ee89fcb9b95f0049826</id>
+        <link href="https://github.com/atsushifx/til/commit/484a422cfc01905565077ee89fcb9b95f0049826"/>
+        <updated>2025-09-25T17:46:25.000Z</updated>
+        <summary type="html"><![CDATA[docs(2025-09): 2025年9月25日: agla-logger の日本語APIドキュメントを高度な内容で更新
+
+- docs/2025/2025-09.md:
+  高度な使用法、エラー処理、ユーティリティ、型、およびプラグインロガーを含む agla-logger の詳細な日本語APIリファレンスを追加]]></summary>
+        <content type="html"><![CDATA[docs/2025/2025-09.md
+
+### 2025年9月26日 --`agla-logger`ドキュメント整備
+
+### TIL: 2025-09-26 -- APIリファレンス文書の整備と改善
+
+#### APIリファレンスの日本語化と詳細化
+
+- **高度なAPI活用リファレンス**
+  - `07-advanced-usage.md` を追加し、`agla-logger` の実用的パターンを整理。
+  - 特殊なログレベルのフォールバック挙動を `defaultLogger` に明記。
+
+- **エラー処理APIリファレンス**
+  - `06-error-handling.md` を更新。]]></content>
+        <author>
+            <name>Furukawa Atsushi</name>
+            <email>atsushifx@gmail.com</email>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[docs: 2025年9月18日: 新しいアグリゲーターパッケージを追加 (再エクスポートおよび設定更新を含む)]]></title>
         <id>758304be961fe8ca34ca8115b5be0dea39ca89d8</id>
@@ -272,35 +300,6 @@ layout: default
 ##### ✅ テスト構造の再編成
 
 - E2E/統合/ユーティリティのテストを分類ベースで再構成。]]></content>
-        <author>
-            <name>Furukawa Atsushi</name>
-            <email>atsushifx@gmail.com</email>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[docs(2025-08): 2025年8月11日: AgLoggerManagerの大規模改修およびテストフレームワークヘルパーの統一]]></title>
-        <id>97bbb3a10c5e9881b90027c94a563ad5401f3f5a</id>
-        <link href="https://github.com/atsushifx/til/commit/97bbb3a10c5e9881b90027c94a563ad5401f3f5a"/>
-        <updated>2025-08-11T23:45:25.000Z</updated>
-        <summary type="html"><![CDATA[docs(2025-08): 2025年8月11日: AgLoggerManagerの大規模改修およびテストフレームワークヘルパーの統一
-
-- docs/2025/2025-08.md:
-  AgLoggerManagerの大幅改修と、
-  統一されたヘルパーおよび改善されたバリデーションを備えたテストフレームワークについての詳細な概要を追加]]></summary>
-        <content type="html"><![CDATA[docs/2025/2025-08.md
-
-### 2025年8月11日 — AgLoggerManagerとテスト基盤の大規模刷新
-
-#### 📌 今日の作業まとめ（2–3行）
-
-AgLoggerManager の構造を全面的に見直し、設定バリデーション・エラーハンドリングを強化。
-統合テストは全スイートを再編成し、`defaultLoggerMap` の導入や `getLoggerFunction` ベースのアサーションに統一。
-ヘルパー関数 `AgLogHelpers` を新設してフォーマッタやバリデータの共通ロジックを一元化。
-
-#### 📚 学びと気づき
-
-- **一貫したテスト構造**は、可読性と保守性を向上させる。機能別スイート分割＋モック強化は長期運用で効く。
-- **設定とバリデーションの集中管理**により、複雑な変更でも安全に反映可能になった。]]></content>
         <author>
             <name>Furukawa Atsushi</name>
             <email>atsushifx@gmail.com</email>
