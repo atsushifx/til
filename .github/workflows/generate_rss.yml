@@ -4,17 +4,24 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 */8 * * *" # Every 8 hours
 
 jobs:
   generate-feed:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6
+        with:
+          persist-credentials: false
 
       - name: Generate Feed
         id: generate-feed
-        uses: atsushifx/commit2feed@v0
+        uses: atsushifx/commit2feed@7661384462b8d323eeaab575bb41aa39a00c78ae # v0
         with:
           user: "atsushifx"
           repo: "TIL"
