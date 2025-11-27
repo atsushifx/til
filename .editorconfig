@@ -1,22 +1,16 @@
-## @(#) : editorconfig common template for atsushifx
-##
-## EditorConfig is awesome: https://EditorConfig.org
+# src: shared/configs/secretlint.config.base.yaml
+# @(#) : secretlint base configuration
 #
-# @version  1.2.0
-# @date     2025-01-31
-# @author   atsushifx <atsushuifx@gmail.com>
-# @license  MIT
+# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 #
-# @description<<
-#
-# Common editor settings for general programming and documentation files.
-# Applies consistent indentation and line-ending rules.
-#
-#<<
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
 
 root = true
 
-### Base Settings
+# ─────────────────────────────
+# Base Settings
+# ─────────────────────────────
 [*]
 end_of_line = lf
 insert_final_newline = true
@@ -25,42 +19,57 @@ indent_style = space
 indent_size = 2
 tab_width = 2
 
-### Documents
-# Markdown
+# ─────────────────────────────
+# Documents
+# ─────────────────────────────
 [*.md]
 indent_style = space
 indent_size = 2
 tab_width = 2
 
-### Programming Languages
-# Add language-specific settings here if needed (e.g., .ts, .js, .py)
-
-### Settings
+# ─────────────────────────────
 # JSON
+# ─────────────────────────────
 [*.json]
 indent_style = space
 indent_size = 2
 tab_width = 2
 
+# ─────────────────────────────
 # YAML
-[*.{yaml,yml}]
+# ─────────────────────────────
+[*.yaml]
 indent_style = space
 indent_size = 2
 tab_width = 2
 
-# INI, TOML
-[*.{ini,toml}]
+[*.yml]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# ─────────────────────────────
+# INI / TOML
+# ─────────────────────────────
+[*.ini]
 indent_style = tab
 tab_width = 4
 
-# rc files
+[*.toml]
+indent_style = tab
+tab_width = 4
+
+# ─────────────────────────────
+# rc Files
+# ─────────────────────────────
 [*rc]
 indent_style = space
 indent_size = 2
 tab_width = 2
 
-### Shell Scripts
-# Shell (sh, bash, zsh)
+# ─────────────────────────────
+# Shell Scripts
+# ─────────────────────────────
 [*.{sh,bash,zsh}]
 indent_style = space
 indent_size = 2
@@ -72,7 +81,9 @@ indent_style = space
 indent_size = 4
 tab_width = 4
 
-### Git config
+# ─────────────────────────────
+# Git Config Files
+# ─────────────────────────────
 [*.git*]
 indent_style = tab
 tab_width = 4
@@ -81,9 +92,9 @@ tab_width = 4
 indent_style = tab
 tab_width = 4
 
-
-### Special Files
-# Makefile, Dockerfile, LICENSE, etc.
-[{Makefile,Dockerfile,LICENSE}]
-indent_style = space
-indent_size = 2
+# ─────────────────────────────
+# Special Files (e.g. Dockerfile, LICENSE)
+# ─────────────────────────────
+# [Dockerfile]
+# indent_style = space
+# indent_size = 2

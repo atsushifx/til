@@ -1,3 +1,12 @@
+# src: ,configs/.textlint/dict/smarthr/prh-idiomatic-usage.yml
+#  @(#) : textlint prh dictionary
+#
+# Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+## dict start
 rules:
   - expected: あらかじめ
     pattern:
@@ -274,7 +283,7 @@ rules:
         to: アクセシビリティ
   - expected: あとで
     pattern:
-      - /(?<![始了直])後で/
+      - /(?<![始了直前])後で/
     prh: >-
       平仮名にしたほうが読みやすい漢字は平仮名にする
       https://smarthr.design/products/contents/writing-style/
@@ -283,6 +292,8 @@ rules:
         to: あとでやります。
       - from: 評価開始後でも編集できます。
         to: 評価開始後でも編集できます。
+      - from: 30分前後で回答します。
+        to: 30分前後で回答します。
   - expected: したうえで
     pattern:
       - した上で
@@ -443,7 +454,47 @@ rules:
     specs:
       - from: もとに戻す
         to: 元に戻す
-
+  - expected: $1！
+    pattern:
+      - >-
+          /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])![^!\?]/
+    prh: >-
+      「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+  - expected: $1？
+    pattern:
+      - >-
+          /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])\?[^!\?]/
+    prh: >-
+      「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+  - expected: "!!"
+    pattern:
+      - ！！
+    prh: >-
+      「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: ！！
+        to: "!!"
+  - expected: "!?"
+    pattern:
+      - ！？
+    prh: >-
+      「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: ！？
+        to: "!?"
+  - expected: "??"
+    pattern:
+      - ？？
+    prh: >-
+      「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: ？？
+        to: "??"
   - expected: 改善
     pattern:
       - カイゼン
@@ -831,6 +882,31 @@ rules:
         to: ポリシー
       - from: ポリシ
         to: ポリシー
+  - expected: マスターデータ
+    pattern:
+      - /(?<!部署|役職|雇用形態|等級|続柄|給与支給形態|評価記号|］|スキル|資格|研修|カスタム|システム標準|SmartHR ?|ドメイン)マスタ(?!ー)(データ)?/
+      - /(?<!部署|役職|雇用形態|等級|続柄|給与支給形態|評価記号|］|スキル|資格|研修|カスタム|システム標準|SmartHR ?|ドメイン)マスター(?!データ)/
+    prh: >-
+      マスターデータの総称は「マスターデータ」、総称以外は「◯◯マスター」と表記するhttps://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: マスタ
+        to: マスターデータ
+      - from: マスタデータ
+        to: マスターデータ
+      - from: 部署マスター
+        to: 部署マスター
+      - from: 役職マスター
+        to: 役職マスター
+      - from: 雇用形態マスター
+        to: 雇用形態マスター
+      - from: 続柄マスター
+        to: 続柄マスター
+      - from: 評価記号マスター
+        to: 評価記号マスター
+      - from: 給与支給形態マスター
+        to: 給与支給形態マスター
+      - from: SmartHRマスター
+        to: SmartHRマスター
   - expected: マネージャー
     pattern:
       - /マネージャ(?!ー)/
@@ -1019,15 +1095,6 @@ rules:
     pattern:
       - /[⓴]/
     prh: 丸数字は⓪（U+24EA）、①（U+2460）〜㊿（U+32BF）を使います。
-  - expected: 企業アカウント
-    pattern:
-      - /テナント(?!ID)/
-    prh: >-
-      「企業アカウント」と表現し、「テナント」の使用は控える
-      https://smarthr.design/products/contents/idiomatic-usage/usage/
-    specs:
-      - from: テナント
-        to: 企業アカウント
   - expected: 在籍状況
     pattern:
       - 在職状況
@@ -1095,6 +1162,32 @@ rules:
         to: コピーアンドペースト
       - from: コピペ
         to: コピーアンドペースト
+  - expected: システム標準マスター
+    pattern:
+      - /(システム標準マスターデータ|システム標準マスタ(?!ー))/
+    prh: >-
+      マスターデータの総称は「マスターデータ」、総称以外は「◯◯マスター」と表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: システム標準マスタ
+        to: システム標準マスター
+      - from: システム標準マスターデータ
+        to: システム標準マスター
+      - from: システム標準マスター
+        to: システム標準マスター
+  - expected: カスタムマスター
+    pattern:
+      - /(カスタムマスターデータ|カスタムマスタ(?!ー))/
+    prh: >-
+      マスターデータの総称は「マスターデータ」、総称以外は「◯◯マスター」と表記する
+      https://smarthr.design/products/contents/idiomatic-usage/usage/
+    specs:
+      - from: カスタムマスタ
+        to: カスタムマスター
+      - from: カスタムマスターデータ
+        to: カスタムマスター
+      - from: カスタムマスター
+        to: カスタムマスター
   - expected: SmartHR基本機能
     pattern:
       - /SmartHR本体アプリ|本体アプリ|SmartHR本体/
@@ -1159,6 +1252,17 @@ rules:
         to: 伴わない
       - from: ともなって
         to: 伴って
+  - expected: パソコン
+    pattern:
+      - /(?<![a-zA-Z])PC(?![a-zA-Z])/
+    prh: >-
+      「パソコン」と表記し、「PC」の使用は控える
+      https://smarthr.design/products/contents/idiomatic-usage/usage/#recw4wmIL3QqcKmoc-0
+    specs:
+      - from: PCを使用します
+        to: パソコンを使用します
+      - from: HOGEPCFOO
+        to: HOGEPCFOO
   - expected: 画面
     pattern:
       - /モーダルウィンドウ|モーダルダイアログ|ウィンドウ|ダイアログ|モーダル/
@@ -1210,7 +1314,7 @@ rules:
         to: 改めて
   - expected: ほぐ$1
     pattern:
-      - /(?<![正分理読])解([さしすせそ])/
+      - /(?<![正分理読誤])解([さしすせそ])/
     prh: >-
       平仮名にしたほうが読みやすい漢字は平仮名にする
       https://smarthr.design/products/contents/writing-style/
@@ -1233,6 +1337,8 @@ rules:
         to: 理解
       - from: 読解
         to: 読解
+      - from: 誤解
+        to: 誤解
   - expected: 手引き
     pattern:
       - /手引(?!き)/
@@ -1403,3 +1509,46 @@ rules:
     specs:
       - from: ボタンを押下した
         to: ボタンを押した
+  - expected: "$1　$2"
+    pattern:
+      - /(?<!^[#Q][^？！]+)(?!.*[\{｜\/\]］」])([？！])([^　'"\n<\\n])/
+    prh: >-
+      全角記号「？」と「！」の後に全角スペースを入れる
+      https://smarthr.design/products/contents/idiomatic-usage/symbol/#h2-5
+    specs:
+      - from: どうしましょうか？早急に決定が必要です。
+        to: どうしましょうか？　早急に決定が必要です。
+      - from: "# データを取り込めますか？取り込み方を教えてください。"
+        to: "# データを取り込めますか？取り込み方を教えてください。"
+      - from: "Q. データを取り込めますか？取り込み方を教えてください。"
+        to: "Q. データを取り込めますか？取り込み方を教えてください。"
+      - from: "「取り込みを始めますか？」または［取り込みを始めますか？］を押してください。"
+        to: "「取り込みを始めますか？」または［取り込みを始めますか？］を押してください。"
+      - from: "「完了！」または［完了！］を押してください。"
+        to: "「完了！」または［完了！］を押してください。"
+      - from: "\"どんなことにお困りですか？\""
+        to: "\"どんなことにお困りですか？\""
+      - from: "\"どんなことにお困りですか？具体的に教えて下さい。\""
+        to: "\"どんなことにお困りですか？　具体的に教えて下さい。\""
+      - from: "どんなことにお困りですか？｜ヘルプセンター"
+        to: "どんなことにお困りですか？｜ヘルプセンター"
+      - from: "[どんなことにお困りですか？]"
+        to: "[どんなことにお困りですか？]"
+      - from: "どんなことにお困りですか？/foo.md"
+        to: "どんなことにお困りですか？/foo.md"
+      - from: "どんなことにお困りですか？{br}具体的に教えて下さい。"
+        to: "どんなことにお困りですか？{br}具体的に教えて下さい。"
+      - from: "<p>どんなことにお困りですか？</p>"
+        to: "<p>どんなことにお困りですか？</p>"
+      - from: "<p>どんなことにお困りですか？</p>"
+        to: "<p>どんなことにお困りですか？</p>"
+      - from: >-
+          <p>
+            どんなことにお困りですか？
+          </p>
+        to: >-
+          <p>
+            どんなことにお困りですか？
+          </p>
+      - from: "どんなことにお困りですか？\\n"
+        to: "どんなことにお困りですか？\\n"

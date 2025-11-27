@@ -1,53 +1,61 @@
-##  @(#) : git ignore settings for til (Today I learned)
+# src: .gitignore
+# @(#) : typescript compile settings
 #
-# @version  1.0.0
-# @author   Furukawa Atsushi <atsushifx@aglabo.com>
-# @update   2024-04-22
-# @license  MIT
+# Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
 #
-# @desc<<
-#
-# git ignore settings for til,
-# ignore general
-#
-#<<
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
 
-##
-#	OS created files
-#
+
+##		General
+#	OS specific files
 .DS_Store
 thumbs.db
 
-##
+#	logs, patches
+*.log
+*.diff
+*.patch
+
+# 	history, cache
+.history/
+.cache/
+**/*cache
+
+
 #	backup/swap/temp
 $~*
 ~*
 *~
 *tmp
 *swp
-*swap
 *lock
 
-## Env
+#	.env files
 .env*
+.env.*
 
-##  Editor
+## AI generated files
 
-# Vim
+## Coding AI depended
+# sdd
+.cc-sdd/
 
-# Session
-Session.vim
-Sessionx.vim
+# claude code
+!CLAUDE.md
+.claude/*
 
-# cache
-*cache*
+# MCP server dependency files
+.serena/
+.lsmcp/
+
+## Temporary Directory
+temp/
+tmp/
 
 
-tags
-# Persistent undo
-[._]*.un~
-
-# VS Code
+##		Editor
+#	VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -56,8 +64,7 @@ tags
 !.vscode/*.code-snippets
 !.vscode/cspell*
 
-# Local History for Visual Studio Code
-.history/
-
-# Built Visual Studio Code Extensions
-
+## Node
+#	node_modules
+node_modules/
+**/node_modules/
