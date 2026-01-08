@@ -7,6 +7,10 @@
 # https://opensource.org/licenses/MIT
 
 ## dict start
+imports:
+  ## smarthr proofreading dictionary
+  ./smarthr/prh-idiomatic-usage.yml
+
 rules:
 # - expected: 修正後の表現
 #   pattern: 修正対象（正規表現も可）
