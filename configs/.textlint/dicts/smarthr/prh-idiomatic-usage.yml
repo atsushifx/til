@@ -1,12 +1,3 @@
-# src: ,configs/.textlint/dict/smarthr/prh-idiomatic-usage.yml
-#  @(#) : textlint prh dictionary
-#
-# Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
-#
-# This software is released under the MIT License.
-# https://opensource.org/licenses/MIT
-
-## dict start
 rules:
   - expected: あらかじめ
     pattern:
@@ -120,7 +111,7 @@ rules:
   - expected: そば$1
     pattern:
       - >-
-          /(?<![々〇〻\u3400-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF])側([にへが])/
+        /(?<![々〇〻\u3400-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF])側([にへが])/
     prh: >-
       平仮名にしたほうが読みやすい漢字は平仮名にする
       https://smarthr.design/products/contents/writing-style/
@@ -265,7 +256,7 @@ rules:
   - expected: アイコン
     pattern:
       - >-
-          /(?<!ウォーター|ベル|チェック|サービス|ランド|ロゴ|合意済み|合意済|破棄済み|破棄済|合意|合意前|「合意済み」|「破棄済み」|見本|アット|ブック)マーク(?![ァ-ヶ])(?=.*)/
+        /(?<!ウォーター|ベル|チェック|サービス|ランド|ロゴ|合意済み|合意済|破棄済み|破棄済|合意|合意前|「合意済み」|「破棄済み」|見本|アット|ブック)マーク(?![ァ-ヶ])(?=.*)/
     prh: >-
       「マーク」ではなく「アイコン」と表記する
       https://smarthr.design/products/contents/idiomatic-usage/usage/
@@ -457,18 +448,18 @@ rules:
   - expected: $1！
     pattern:
       - >-
-          /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])![^!\?]/
+        /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])![^!\?]/
     prh: >-
       「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
       https://smarthr.design/products/contents/idiomatic-usage/usage/
   - expected: $1？
     pattern:
       - >-
-          /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])\?[^!\?]/
+        /([\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])\?[^!\?]/
     prh: >-
       「！」と「？」は単独で使う場合は全角、ペアで使う場合は半角で表記する
       https://smarthr.design/products/contents/idiomatic-usage/usage/
-  - expected: "!!"
+  - expected: '!!'
     pattern:
       - ！！
     prh: >-
@@ -476,8 +467,8 @@ rules:
       https://smarthr.design/products/contents/idiomatic-usage/usage/
     specs:
       - from: ！！
-        to: "!!"
-  - expected: "!?"
+        to: '!!'
+  - expected: '!?'
     pattern:
       - ！？
     prh: >-
@@ -485,8 +476,8 @@ rules:
       https://smarthr.design/products/contents/idiomatic-usage/usage/
     specs:
       - from: ！？
-        to: "!?"
-  - expected: "??"
+        to: '!?'
+  - expected: '??'
     pattern:
       - ？？
     prh: >-
@@ -494,7 +485,7 @@ rules:
       https://smarthr.design/products/contents/idiomatic-usage/usage/
     specs:
       - from: ？？
-        to: "??"
+        to: '??'
   - expected: 改善
     pattern:
       - カイゼン
